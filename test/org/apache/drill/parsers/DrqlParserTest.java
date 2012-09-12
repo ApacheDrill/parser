@@ -297,4 +297,33 @@ public class DrqlParserTest {
 		assertTrue(query.getJoinOnClause() == null);
 		assertTrue(query.getLimitClause() == null);
 	}
+	
+	@Test
+	public void testQuery7() throws IOException {
+		
+		String drqlQueryText = "SELECT column1 FROM table1 LIMIT 5;";
+		DrqlParser parser = new Parser();
+		SemanticModelReader query = parser.parse(drqlQueryText);
+
+		//result column list
+		List<ResultColumn> resColList = query.getResultColumnList();
+		assertTrue(resColList.size() == 1);
+		ResultColumn col = resColList.get(0);
+		testBasicResultColumn(col, "column1");
+		
+		//from clause
+		List<SemanticModelReader> subQueryList = query.getFromClause();
+		assertTrue(subQueryList.size() == 1);
+		SemanticModelReader subQuery = subQueryList.get(0);
+		testBasicTable(subQuery, "table1");
+		
+		//limit clause
+		int limitClause = query.getLimitClause();
+		assertTrue(limitClause == 5);
+		
+		//check the rest of the model
+		assertTrue(query.getGroupByClause().size() == 0);
+		assertTrue(query.getJoinOnClause() == null);
+		assertTrue(query.getOrderByClause().size() == 0);
+	}
 }

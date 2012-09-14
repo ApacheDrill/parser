@@ -144,16 +144,17 @@ public class DrqlParserTest {
 				"INNER JOIN ordersTable ON customersTable.id = ordersTable.customerId";
 
 		DrqlParser parser = new Parser();
+        String ast = Parser.parseToAst(drqlQueryText).toStringTree();
 		SemanticModelReader query = parser.parse(drqlQueryText);
 
         SemanticModelReader.JoinOnClause join = query.getJoinOnClause();
         assertNotNull(join);
-        assertTrue(join.getTable().getName() == "customersTable");
+        assertTrue("ordersTable".equals(join.getTable().getName()));
         assertTrue(join.getJoinConditionClause().size() == 1);
         assertTrue(join.getJoinConditionClause().get(0).getLeftSymbol().getType() == Symbol.Type.COLUMN);
-        assertTrue(join.getJoinConditionClause().get(0).getLeftSymbol().getName() == "customersTable.id");
-        assertTrue(join.getJoinConditionClause().get(1).getRightSymbol().getType() == Symbol.Type.COLUMN);
-        assertTrue(join.getJoinConditionClause().get(1).getRightSymbol().getName() == "ordersTable.customerId");
+        assertTrue("customersTable.id".equals(join.getJoinConditionClause().get(0).getLeftSymbol().getName()));
+        assertTrue(join.getJoinConditionClause().get(0).getRightSymbol().getType() == Symbol.Type.COLUMN);
+        assertTrue("ordersTable.customerId".equals(join.getJoinConditionClause().get(0).getRightSymbol().getName()));
 
     }
 	

@@ -413,7 +413,7 @@ public class Parser implements DrqlParser{
 		
 		case DrqlAntlrParser.N_INT:
 			n2 = (AstNode) node.getChild(0);
-			assert (n2.getType() == DrqlAntlrParser.N_NAME);
+			assert (n2.getType() == DrqlAntlrParser.INT);
 			Integer integer = (Integer) Integer.parseInt(n2.getText());
 			constant = new SemanticModel.Expression.Constant();
 			constant.value = integer;

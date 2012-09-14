@@ -1,4 +1,4 @@
-// $ANTLR 3.4 /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g 2012-09-10 02:00:13
+// $ANTLR 3.4 /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g 2012-09-14 11:52:52
 package org.apache.drill.parsers.impl.drqlantlr.autogen;
 
 import org.antlr.runtime.*;
@@ -199,7 +199,7 @@ public TreeAdaptor getTreeAdaptor() {
     return adaptor;
 }
     public String[] getTokenNames() { return DrqlAntlrParser.tokenNames; }
-    public String getGrammarFileName() { return "/home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g"; }
+    public String getGrammarFileName() { return "/Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g"; }
 
 
     public static class request_return extends ParserRuleReturnScope {
@@ -209,7 +209,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "request"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:44:1: request : selectStatement ( SEMICOLON !)? EOF !;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:44:1: request : selectStatement ( SEMICOLON !)? EOF !;
     public final DrqlAntlrParser.request_return request() throws RecognitionException {
         DrqlAntlrParser.request_return retval = new DrqlAntlrParser.request_return();
         retval.start = input.LT(1);
@@ -226,8 +226,8 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree EOF3_tree=null;
 
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:44:8: ( selectStatement ( SEMICOLON !)? EOF !)
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:44:10: selectStatement ( SEMICOLON !)? EOF !
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:44:8: ( selectStatement ( SEMICOLON !)? EOF !)
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:44:10: selectStatement ( SEMICOLON !)? EOF !
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -239,7 +239,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             adaptor.addChild(root_0, selectStatement1.getTree());
 
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:44:26: ( SEMICOLON !)?
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:44:26: ( SEMICOLON !)?
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -248,7 +248,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt1) {
                 case 1 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:44:27: SEMICOLON !
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:44:27: SEMICOLON !
                     {
                     SEMICOLON2=(Token)match(input,SEMICOLON,FOLLOW_SEMICOLON_in_request207); 
 
@@ -291,7 +291,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "selectStatement"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:47:1: selectStatement : selectClause fromClause ( joinClause )? ( whereClause )? ( havingClause )? ( groupbyClause )? ( orderbyClause )? ( limitClause )? -> ^( N_SELECT_STATEMENT fromClause selectClause ( joinClause )? ( whereClause )? ( groupbyClause )? ( havingClause )? ( orderbyClause )? ( limitClause )? ) ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:47:1: selectStatement : selectClause fromClause ( joinClause )? ( whereClause )? ( havingClause )? ( groupbyClause )? ( orderbyClause )? ( limitClause )? -> ^( N_SELECT_STATEMENT fromClause selectClause ( joinClause )? ( whereClause )? ( groupbyClause )? ( havingClause )? ( orderbyClause )? ( limitClause )? ) ;
     public final DrqlAntlrParser.selectStatement_return selectStatement() throws RecognitionException {
         DrqlAntlrParser.selectStatement_return retval = new DrqlAntlrParser.selectStatement_return();
         retval.start = input.LT(1);
@@ -325,8 +325,8 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_fromClause=new RewriteRuleSubtreeStream(adaptor,"rule fromClause");
         RewriteRuleSubtreeStream stream_groupbyClause=new RewriteRuleSubtreeStream(adaptor,"rule groupbyClause");
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:47:16: ( selectClause fromClause ( joinClause )? ( whereClause )? ( havingClause )? ( groupbyClause )? ( orderbyClause )? ( limitClause )? -> ^( N_SELECT_STATEMENT fromClause selectClause ( joinClause )? ( whereClause )? ( groupbyClause )? ( havingClause )? ( orderbyClause )? ( limitClause )? ) )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:47:18: selectClause fromClause ( joinClause )? ( whereClause )? ( havingClause )? ( groupbyClause )? ( orderbyClause )? ( limitClause )?
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:47:16: ( selectClause fromClause ( joinClause )? ( whereClause )? ( havingClause )? ( groupbyClause )? ( orderbyClause )? ( limitClause )? -> ^( N_SELECT_STATEMENT fromClause selectClause ( joinClause )? ( whereClause )? ( groupbyClause )? ( havingClause )? ( orderbyClause )? ( limitClause )? ) )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:47:18: selectClause fromClause ( joinClause )? ( whereClause )? ( havingClause )? ( groupbyClause )? ( orderbyClause )? ( limitClause )?
             {
             pushFollow(FOLLOW_selectClause_in_selectStatement221);
             selectClause4=selectClause();
@@ -342,7 +342,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             stream_fromClause.add(fromClause5.getTree());
 
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:47:42: ( joinClause )?
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:47:42: ( joinClause )?
             int alt2=2;
             int LA2_0 = input.LA(1);
 
@@ -351,7 +351,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt2) {
                 case 1 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:47:42: joinClause
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:47:42: joinClause
                     {
                     pushFollow(FOLLOW_joinClause_in_selectStatement225);
                     joinClause6=joinClause();
@@ -366,7 +366,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:47:54: ( whereClause )?
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:47:54: ( whereClause )?
             int alt3=2;
             int LA3_0 = input.LA(1);
 
@@ -375,7 +375,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt3) {
                 case 1 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:47:54: whereClause
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:47:54: whereClause
                     {
                     pushFollow(FOLLOW_whereClause_in_selectStatement228);
                     whereClause7=whereClause();
@@ -390,7 +390,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:48:5: ( havingClause )?
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:48:5: ( havingClause )?
             int alt4=2;
             int LA4_0 = input.LA(1);
 
@@ -399,7 +399,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt4) {
                 case 1 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:48:5: havingClause
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:48:5: havingClause
                     {
                     pushFollow(FOLLOW_havingClause_in_selectStatement236);
                     havingClause8=havingClause();
@@ -414,7 +414,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:48:19: ( groupbyClause )?
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:48:19: ( groupbyClause )?
             int alt5=2;
             int LA5_0 = input.LA(1);
 
@@ -423,7 +423,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt5) {
                 case 1 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:48:19: groupbyClause
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:48:19: groupbyClause
                     {
                     pushFollow(FOLLOW_groupbyClause_in_selectStatement239);
                     groupbyClause9=groupbyClause();
@@ -438,7 +438,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:48:34: ( orderbyClause )?
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:48:34: ( orderbyClause )?
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -447,7 +447,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt6) {
                 case 1 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:48:34: orderbyClause
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:48:34: orderbyClause
                     {
                     pushFollow(FOLLOW_orderbyClause_in_selectStatement242);
                     orderbyClause10=orderbyClause();
@@ -462,7 +462,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:48:49: ( limitClause )?
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:48:49: ( limitClause )?
             int alt7=2;
             int LA7_0 = input.LA(1);
 
@@ -471,7 +471,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt7) {
                 case 1 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:48:49: limitClause
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:48:49: limitClause
                     {
                     pushFollow(FOLLOW_limitClause_in_selectStatement245);
                     limitClause11=limitClause();
@@ -487,7 +487,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             // AST REWRITE
-            // elements: havingClause, orderbyClause, limitClause, whereClause, selectClause, fromClause, joinClause, groupbyClause
+            // elements: limitClause, fromClause, joinClause, groupbyClause, selectClause, whereClause, orderbyClause, havingClause
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -499,7 +499,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (CommonTree)adaptor.nil();
             // 48:61: -> ^( N_SELECT_STATEMENT fromClause selectClause ( joinClause )? ( whereClause )? ( groupbyClause )? ( havingClause )? ( orderbyClause )? ( limitClause )? )
             {
-                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:49:9: ^( N_SELECT_STATEMENT fromClause selectClause ( joinClause )? ( whereClause )? ( groupbyClause )? ( havingClause )? ( orderbyClause )? ( limitClause )? )
+                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:49:9: ^( N_SELECT_STATEMENT fromClause selectClause ( joinClause )? ( whereClause )? ( groupbyClause )? ( havingClause )? ( orderbyClause )? ( limitClause )? )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
@@ -510,42 +510,42 @@ public TreeAdaptor getTreeAdaptor() {
 
                 adaptor.addChild(root_1, stream_selectClause.nextTree());
 
-                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:49:54: ( joinClause )?
+                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:49:54: ( joinClause )?
                 if ( stream_joinClause.hasNext() ) {
                     adaptor.addChild(root_1, stream_joinClause.nextTree());
 
                 }
                 stream_joinClause.reset();
 
-                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:49:66: ( whereClause )?
+                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:49:66: ( whereClause )?
                 if ( stream_whereClause.hasNext() ) {
                     adaptor.addChild(root_1, stream_whereClause.nextTree());
 
                 }
                 stream_whereClause.reset();
 
-                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:50:9: ( groupbyClause )?
+                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:50:9: ( groupbyClause )?
                 if ( stream_groupbyClause.hasNext() ) {
                     adaptor.addChild(root_1, stream_groupbyClause.nextTree());
 
                 }
                 stream_groupbyClause.reset();
 
-                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:50:24: ( havingClause )?
+                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:50:24: ( havingClause )?
                 if ( stream_havingClause.hasNext() ) {
                     adaptor.addChild(root_1, stream_havingClause.nextTree());
 
                 }
                 stream_havingClause.reset();
 
-                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:50:38: ( orderbyClause )?
+                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:50:38: ( orderbyClause )?
                 if ( stream_orderbyClause.hasNext() ) {
                     adaptor.addChild(root_1, stream_orderbyClause.nextTree());
 
                 }
                 stream_orderbyClause.reset();
 
-                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:50:53: ( limitClause )?
+                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:50:53: ( limitClause )?
                 if ( stream_limitClause.hasNext() ) {
                     adaptor.addChild(root_1, stream_limitClause.nextTree());
 
@@ -591,7 +591,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "selectClause"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:53:1: selectClause : SELECT columnExpr ( COMMA columnExpr )* -> ^( N_SELECT ( columnExpr )+ ) ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:53:1: selectClause : SELECT columnExpr ( COMMA columnExpr )* -> ^( N_SELECT ( columnExpr )+ ) ;
     public final DrqlAntlrParser.selectClause_return selectClause() throws RecognitionException {
         DrqlAntlrParser.selectClause_return retval = new DrqlAntlrParser.selectClause_return();
         retval.start = input.LT(1);
@@ -612,8 +612,8 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_SELECT=new RewriteRuleTokenStream(adaptor,"token SELECT");
         RewriteRuleSubtreeStream stream_columnExpr=new RewriteRuleSubtreeStream(adaptor,"rule columnExpr");
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:53:13: ( SELECT columnExpr ( COMMA columnExpr )* -> ^( N_SELECT ( columnExpr )+ ) )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:53:15: SELECT columnExpr ( COMMA columnExpr )*
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:53:13: ( SELECT columnExpr ( COMMA columnExpr )* -> ^( N_SELECT ( columnExpr )+ ) )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:53:15: SELECT columnExpr ( COMMA columnExpr )*
             {
             SELECT12=(Token)match(input,SELECT,FOLLOW_SELECT_in_selectClause299);  
             stream_SELECT.add(SELECT12);
@@ -626,7 +626,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             stream_columnExpr.add(columnExpr13.getTree());
 
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:53:33: ( COMMA columnExpr )*
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:53:33: ( COMMA columnExpr )*
             loop8:
             do {
                 int alt8=2;
@@ -639,7 +639,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt8) {
             	case 1 :
-            	    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:53:34: COMMA columnExpr
+            	    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:53:34: COMMA columnExpr
             	    {
             	    COMMA14=(Token)match(input,COMMA,FOLLOW_COMMA_in_selectClause304);  
             	    stream_COMMA.add(COMMA14);
@@ -674,7 +674,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (CommonTree)adaptor.nil();
             // 53:53: -> ^( N_SELECT ( columnExpr )+ )
             {
-                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:54:5: ^( N_SELECT ( columnExpr )+ )
+                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:54:5: ^( N_SELECT ( columnExpr )+ )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
@@ -729,7 +729,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "columnExpr"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:57:1: columnExpr : expr ( withinClause )? ( AS ID )? -> ^( N_COLUMN expr ( ^( N_ALIAS ID ) )? ( withinClause )? ) ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:57:1: columnExpr : expr ( withinClause )? ( AS ID )? -> ^( N_COLUMN expr ( ^( N_ALIAS ID ) )? ( withinClause )? ) ;
     public final DrqlAntlrParser.columnExpr_return columnExpr() throws RecognitionException {
         DrqlAntlrParser.columnExpr_return retval = new DrqlAntlrParser.columnExpr_return();
         retval.start = input.LT(1);
@@ -751,8 +751,8 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_withinClause=new RewriteRuleSubtreeStream(adaptor,"rule withinClause");
         RewriteRuleSubtreeStream stream_expr=new RewriteRuleSubtreeStream(adaptor,"rule expr");
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:57:11: ( expr ( withinClause )? ( AS ID )? -> ^( N_COLUMN expr ( ^( N_ALIAS ID ) )? ( withinClause )? ) )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:57:13: expr ( withinClause )? ( AS ID )?
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:57:11: ( expr ( withinClause )? ( AS ID )? -> ^( N_COLUMN expr ( ^( N_ALIAS ID ) )? ( withinClause )? ) )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:57:13: expr ( withinClause )? ( AS ID )?
             {
             pushFollow(FOLLOW_expr_in_columnExpr333);
             expr16=expr();
@@ -761,7 +761,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             stream_expr.add(expr16.getTree());
 
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:57:18: ( withinClause )?
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:57:18: ( withinClause )?
             int alt9=2;
             int LA9_0 = input.LA(1);
 
@@ -770,7 +770,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt9) {
                 case 1 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:57:18: withinClause
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:57:18: withinClause
                     {
                     pushFollow(FOLLOW_withinClause_in_columnExpr335);
                     withinClause17=withinClause();
@@ -785,7 +785,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:57:32: ( AS ID )?
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:57:32: ( AS ID )?
             int alt10=2;
             int LA10_0 = input.LA(1);
 
@@ -794,7 +794,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt10) {
                 case 1 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:57:33: AS ID
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:57:33: AS ID
                     {
                     AS18=(Token)match(input,AS,FOLLOW_AS_in_columnExpr339);  
                     stream_AS.add(AS18);
@@ -823,7 +823,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (CommonTree)adaptor.nil();
             // 57:41: -> ^( N_COLUMN expr ( ^( N_ALIAS ID ) )? ( withinClause )? )
             {
-                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:58:5: ^( N_COLUMN expr ( ^( N_ALIAS ID ) )? ( withinClause )? )
+                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:58:5: ^( N_COLUMN expr ( ^( N_ALIAS ID ) )? ( withinClause )? )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
@@ -832,9 +832,9 @@ public TreeAdaptor getTreeAdaptor() {
 
                 adaptor.addChild(root_1, stream_expr.nextTree());
 
-                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:58:21: ( ^( N_ALIAS ID ) )?
+                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:58:21: ( ^( N_ALIAS ID ) )?
                 if ( stream_ID.hasNext() ) {
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:58:21: ^( N_ALIAS ID )
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:58:21: ^( N_ALIAS ID )
                     {
                     CommonTree root_2 = (CommonTree)adaptor.nil();
                     root_2 = (CommonTree)adaptor.becomeRoot(
@@ -851,7 +851,7 @@ public TreeAdaptor getTreeAdaptor() {
                 }
                 stream_ID.reset();
 
-                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:58:36: ( withinClause )?
+                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:58:36: ( withinClause )?
                 if ( stream_withinClause.hasNext() ) {
                     adaptor.addChild(root_1, stream_withinClause.nextTree());
 
@@ -897,7 +897,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "withinClause"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:59:1: withinClause : ( WITHIN ( RECORD -> ^( N_WITHIN_RECORD ) | columnPath -> ^( N_WITHIN columnPath ) ) ) ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:59:1: withinClause : ( WITHIN ( RECORD -> ^( N_WITHIN_RECORD ) | columnPath -> ^( N_WITHIN columnPath ) ) ) ;
     public final DrqlAntlrParser.withinClause_return withinClause() throws RecognitionException {
         DrqlAntlrParser.withinClause_return retval = new DrqlAntlrParser.withinClause_return();
         retval.start = input.LT(1);
@@ -916,17 +916,17 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_RECORD=new RewriteRuleTokenStream(adaptor,"token RECORD");
         RewriteRuleSubtreeStream stream_columnPath=new RewriteRuleSubtreeStream(adaptor,"rule columnPath");
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:59:13: ( ( WITHIN ( RECORD -> ^( N_WITHIN_RECORD ) | columnPath -> ^( N_WITHIN columnPath ) ) ) )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:59:15: ( WITHIN ( RECORD -> ^( N_WITHIN_RECORD ) | columnPath -> ^( N_WITHIN columnPath ) ) )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:59:13: ( ( WITHIN ( RECORD -> ^( N_WITHIN_RECORD ) | columnPath -> ^( N_WITHIN columnPath ) ) ) )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:59:15: ( WITHIN ( RECORD -> ^( N_WITHIN_RECORD ) | columnPath -> ^( N_WITHIN columnPath ) ) )
             {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:59:15: ( WITHIN ( RECORD -> ^( N_WITHIN_RECORD ) | columnPath -> ^( N_WITHIN columnPath ) ) )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:59:16: WITHIN ( RECORD -> ^( N_WITHIN_RECORD ) | columnPath -> ^( N_WITHIN columnPath ) )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:59:15: ( WITHIN ( RECORD -> ^( N_WITHIN_RECORD ) | columnPath -> ^( N_WITHIN columnPath ) ) )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:59:16: WITHIN ( RECORD -> ^( N_WITHIN_RECORD ) | columnPath -> ^( N_WITHIN columnPath ) )
             {
             WITHIN20=(Token)match(input,WITHIN,FOLLOW_WITHIN_in_withinClause374);  
             stream_WITHIN.add(WITHIN20);
 
 
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:59:23: ( RECORD -> ^( N_WITHIN_RECORD ) | columnPath -> ^( N_WITHIN columnPath ) )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:59:23: ( RECORD -> ^( N_WITHIN_RECORD ) | columnPath -> ^( N_WITHIN columnPath ) )
             int alt11=2;
             int LA11_0 = input.LA(1);
 
@@ -945,7 +945,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt11) {
                 case 1 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:59:24: RECORD
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:59:24: RECORD
                     {
                     RECORD21=(Token)match(input,RECORD,FOLLOW_RECORD_in_withinClause377);  
                     stream_RECORD.add(RECORD21);
@@ -964,7 +964,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (CommonTree)adaptor.nil();
                     // 59:31: -> ^( N_WITHIN_RECORD )
                     {
-                        // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:59:34: ^( N_WITHIN_RECORD )
+                        // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:59:34: ^( N_WITHIN_RECORD )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(
@@ -982,7 +982,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:59:55: columnPath
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:59:55: columnPath
                     {
                     pushFollow(FOLLOW_columnPath_in_withinClause387);
                     columnPath22=columnPath();
@@ -1004,7 +1004,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (CommonTree)adaptor.nil();
                     // 59:66: -> ^( N_WITHIN columnPath )
                     {
-                        // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:60:2: ^( N_WITHIN columnPath )
+                        // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:60:2: ^( N_WITHIN columnPath )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(
@@ -1061,7 +1061,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "fromClause"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:63:1: fromClause : FROM subSelectStatement ( COMMA subSelectStatement )* -> ^( N_FROM ( subSelectStatement )+ ) ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:63:1: fromClause : FROM subSelectStatement ( COMMA subSelectStatement )* -> ^( N_FROM ( subSelectStatement )+ ) ;
     public final DrqlAntlrParser.fromClause_return fromClause() throws RecognitionException {
         DrqlAntlrParser.fromClause_return retval = new DrqlAntlrParser.fromClause_return();
         retval.start = input.LT(1);
@@ -1082,8 +1082,8 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_COMMA=new RewriteRuleTokenStream(adaptor,"token COMMA");
         RewriteRuleSubtreeStream stream_subSelectStatement=new RewriteRuleSubtreeStream(adaptor,"rule subSelectStatement");
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:63:11: ( FROM subSelectStatement ( COMMA subSelectStatement )* -> ^( N_FROM ( subSelectStatement )+ ) )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:63:13: FROM subSelectStatement ( COMMA subSelectStatement )*
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:63:11: ( FROM subSelectStatement ( COMMA subSelectStatement )* -> ^( N_FROM ( subSelectStatement )+ ) )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:63:13: FROM subSelectStatement ( COMMA subSelectStatement )*
             {
             FROM23=(Token)match(input,FROM,FOLLOW_FROM_in_fromClause407);  
             stream_FROM.add(FROM23);
@@ -1096,7 +1096,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             stream_subSelectStatement.add(subSelectStatement24.getTree());
 
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:63:37: ( COMMA subSelectStatement )*
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:63:37: ( COMMA subSelectStatement )*
             loop12:
             do {
                 int alt12=2;
@@ -1109,7 +1109,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt12) {
             	case 1 :
-            	    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:63:38: COMMA subSelectStatement
+            	    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:63:38: COMMA subSelectStatement
             	    {
             	    COMMA25=(Token)match(input,COMMA,FOLLOW_COMMA_in_fromClause412);  
             	    stream_COMMA.add(COMMA25);
@@ -1144,7 +1144,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (CommonTree)adaptor.nil();
             // 63:65: -> ^( N_FROM ( subSelectStatement )+ )
             {
-                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:64:5: ^( N_FROM ( subSelectStatement )+ )
+                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:64:5: ^( N_FROM ( subSelectStatement )+ )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
@@ -1199,7 +1199,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "subSelectStatement"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:65:1: subSelectStatement : ( tableName | ( LPAREN ! selectStatement RPAREN !) ) ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:65:1: subSelectStatement : ( tableName | ( LPAREN ! selectStatement RPAREN !) ) ;
     public final DrqlAntlrParser.subSelectStatement_return subSelectStatement() throws RecognitionException {
         DrqlAntlrParser.subSelectStatement_return retval = new DrqlAntlrParser.subSelectStatement_return();
         retval.start = input.LT(1);
@@ -1218,13 +1218,13 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree RPAREN30_tree=null;
 
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:65:20: ( ( tableName | ( LPAREN ! selectStatement RPAREN !) ) )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:65:22: ( tableName | ( LPAREN ! selectStatement RPAREN !) )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:65:20: ( ( tableName | ( LPAREN ! selectStatement RPAREN !) ) )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:65:22: ( tableName | ( LPAREN ! selectStatement RPAREN !) )
             {
             root_0 = (CommonTree)adaptor.nil();
 
 
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:65:22: ( tableName | ( LPAREN ! selectStatement RPAREN !) )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:65:22: ( tableName | ( LPAREN ! selectStatement RPAREN !) )
             int alt13=2;
             int LA13_0 = input.LA(1);
 
@@ -1243,7 +1243,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt13) {
                 case 1 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:65:23: tableName
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:65:23: tableName
                     {
                     pushFollow(FOLLOW_tableName_in_subSelectStatement437);
                     tableName27=tableName();
@@ -1255,10 +1255,10 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:65:35: ( LPAREN ! selectStatement RPAREN !)
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:65:35: ( LPAREN ! selectStatement RPAREN !)
                     {
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:65:35: ( LPAREN ! selectStatement RPAREN !)
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:65:36: LPAREN ! selectStatement RPAREN !
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:65:35: ( LPAREN ! selectStatement RPAREN !)
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:65:36: LPAREN ! selectStatement RPAREN !
                     {
                     LPAREN28=(Token)match(input,LPAREN,FOLLOW_LPAREN_in_subSelectStatement442); 
 
@@ -1311,7 +1311,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "joinClause"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:68:1: joinClause : joinClauseDesc JOIN joinClauseFrom ON joinConditionList -> ^( N_JOIN joinClauseDesc joinConditionList ) ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:68:1: joinClause : joinClauseDesc JOIN joinClauseFrom ON joinConditionList -> ^( N_JOIN joinClauseDesc joinClauseFrom joinConditionList ) ;
     public final DrqlAntlrParser.joinClause_return joinClause() throws RecognitionException {
         DrqlAntlrParser.joinClause_return retval = new DrqlAntlrParser.joinClause_return();
         retval.start = input.LT(1);
@@ -1336,8 +1336,8 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_joinConditionList=new RewriteRuleSubtreeStream(adaptor,"rule joinConditionList");
         RewriteRuleSubtreeStream stream_joinClauseFrom=new RewriteRuleSubtreeStream(adaptor,"rule joinClauseFrom");
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:68:11: ( joinClauseDesc JOIN joinClauseFrom ON joinConditionList -> ^( N_JOIN joinClauseDesc joinConditionList ) )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:68:13: joinClauseDesc JOIN joinClauseFrom ON joinConditionList
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:68:11: ( joinClauseDesc JOIN joinClauseFrom ON joinConditionList -> ^( N_JOIN joinClauseDesc joinClauseFrom joinConditionList ) )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:68:13: joinClauseDesc JOIN joinClauseFrom ON joinConditionList
             {
             pushFollow(FOLLOW_joinClauseDesc_in_joinClause458);
             joinClauseDesc31=joinClauseDesc();
@@ -1369,7 +1369,7 @@ public TreeAdaptor getTreeAdaptor() {
             stream_joinConditionList.add(joinConditionList35.getTree());
 
             // AST REWRITE
-            // elements: joinClauseDesc, joinConditionList
+            // elements: joinClauseFrom, joinConditionList, joinClauseDesc
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -1379,9 +1379,9 @@ public TreeAdaptor getTreeAdaptor() {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 68:69: -> ^( N_JOIN joinClauseDesc joinConditionList )
+            // 68:69: -> ^( N_JOIN joinClauseDesc joinClauseFrom joinConditionList )
             {
-                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:69:5: ^( N_JOIN joinClauseDesc joinConditionList )
+                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:69:5: ^( N_JOIN joinClauseDesc joinClauseFrom joinConditionList )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
@@ -1389,6 +1389,8 @@ public TreeAdaptor getTreeAdaptor() {
                 , root_1);
 
                 adaptor.addChild(root_1, stream_joinClauseDesc.nextTree());
+
+                adaptor.addChild(root_1, stream_joinClauseFrom.nextTree());
 
                 adaptor.addChild(root_1, stream_joinConditionList.nextTree());
 
@@ -1431,7 +1433,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "joinClauseDesc"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:70:1: joinClauseDesc : ( ( ( INNER )? ) -> ^( N_INNER ) | ( LEFT OUTER ) -> ^( N_LEFTOUTER ) );
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:70:1: joinClauseDesc : ( ( ( INNER )? ) -> ^( N_INNER ) | ( LEFT OUTER ) -> ^( N_LEFTOUTER ) );
     public final DrqlAntlrParser.joinClauseDesc_return joinClauseDesc() throws RecognitionException {
         DrqlAntlrParser.joinClauseDesc_return retval = new DrqlAntlrParser.joinClauseDesc_return();
         retval.start = input.LT(1);
@@ -1451,7 +1453,7 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_LEFT=new RewriteRuleTokenStream(adaptor,"token LEFT");
 
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:70:15: ( ( ( INNER )? ) -> ^( N_INNER ) | ( LEFT OUTER ) -> ^( N_LEFTOUTER ) )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:70:15: ( ( ( INNER )? ) -> ^( N_INNER ) | ( LEFT OUTER ) -> ^( N_LEFTOUTER ) )
             int alt15=2;
             int LA15_0 = input.LA(1);
 
@@ -1470,12 +1472,12 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt15) {
                 case 1 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:70:17: ( ( INNER )? )
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:70:17: ( ( INNER )? )
                     {
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:70:17: ( ( INNER )? )
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:70:18: ( INNER )?
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:70:17: ( ( INNER )? )
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:70:18: ( INNER )?
                     {
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:70:18: ( INNER )?
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:70:18: ( INNER )?
                     int alt14=2;
                     int LA14_0 = input.LA(1);
 
@@ -1484,9 +1486,9 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     switch (alt14) {
                         case 1 :
-                            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:70:18: INNER
+                            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:70:18: INNER
                             {
-                            INNER36=(Token)match(input,INNER,FOLLOW_INNER_in_joinClauseDesc487);  
+                            INNER36=(Token)match(input,INNER,FOLLOW_INNER_in_joinClauseDesc489);  
                             stream_INNER.add(INNER36);
 
 
@@ -1512,7 +1514,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (CommonTree)adaptor.nil();
                     // 70:26: -> ^( N_INNER )
                     {
-                        // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:70:29: ^( N_INNER )
+                        // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:70:29: ^( N_INNER )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(
@@ -1530,16 +1532,16 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:70:42: ( LEFT OUTER )
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:70:42: ( LEFT OUTER )
                     {
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:70:42: ( LEFT OUTER )
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:70:43: LEFT OUTER
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:70:42: ( LEFT OUTER )
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:70:43: LEFT OUTER
                     {
-                    LEFT37=(Token)match(input,LEFT,FOLLOW_LEFT_in_joinClauseDesc500);  
+                    LEFT37=(Token)match(input,LEFT,FOLLOW_LEFT_in_joinClauseDesc502);  
                     stream_LEFT.add(LEFT37);
 
 
-                    OUTER38=(Token)match(input,OUTER,FOLLOW_OUTER_in_joinClauseDesc502);  
+                    OUTER38=(Token)match(input,OUTER,FOLLOW_OUTER_in_joinClauseDesc504);  
                     stream_OUTER.add(OUTER38);
 
 
@@ -1559,7 +1561,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (CommonTree)adaptor.nil();
                     // 70:55: -> ^( N_LEFTOUTER )
                     {
-                        // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:70:58: ^( N_LEFTOUTER )
+                        // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:70:58: ^( N_LEFTOUTER )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(
@@ -1607,7 +1609,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "joinClauseFrom"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:71:1: joinClauseFrom : ( optionallyAliasedTable -> ^( N_TABLE optionallyAliasedTable ) | aliasedSubSelectStatement -> ^( N_TABLE aliasedSubSelectStatement ) );
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:71:1: joinClauseFrom : ( optionallyAliasedTable -> ^( N_TABLE optionallyAliasedTable ) | aliasedSubSelectStatement -> ^( N_TABLE aliasedSubSelectStatement ) );
     public final DrqlAntlrParser.joinClauseFrom_return joinClauseFrom() throws RecognitionException {
         DrqlAntlrParser.joinClauseFrom_return retval = new DrqlAntlrParser.joinClauseFrom_return();
         retval.start = input.LT(1);
@@ -1623,7 +1625,7 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_optionallyAliasedTable=new RewriteRuleSubtreeStream(adaptor,"rule optionallyAliasedTable");
         RewriteRuleSubtreeStream stream_aliasedSubSelectStatement=new RewriteRuleSubtreeStream(adaptor,"rule aliasedSubSelectStatement");
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:71:15: ( optionallyAliasedTable -> ^( N_TABLE optionallyAliasedTable ) | aliasedSubSelectStatement -> ^( N_TABLE aliasedSubSelectStatement ) )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:71:15: ( optionallyAliasedTable -> ^( N_TABLE optionallyAliasedTable ) | aliasedSubSelectStatement -> ^( N_TABLE aliasedSubSelectStatement ) )
             int alt16=2;
             int LA16_0 = input.LA(1);
 
@@ -1642,9 +1644,9 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt16) {
                 case 1 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:71:17: optionallyAliasedTable
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:71:17: optionallyAliasedTable
                     {
-                    pushFollow(FOLLOW_optionallyAliasedTable_in_joinClauseFrom515);
+                    pushFollow(FOLLOW_optionallyAliasedTable_in_joinClauseFrom517);
                     optionallyAliasedTable39=optionallyAliasedTable();
 
                     state._fsp--;
@@ -1664,7 +1666,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (CommonTree)adaptor.nil();
                     // 71:40: -> ^( N_TABLE optionallyAliasedTable )
                     {
-                        // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:71:43: ^( N_TABLE optionallyAliasedTable )
+                        // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:71:43: ^( N_TABLE optionallyAliasedTable )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(
@@ -1684,9 +1686,9 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:72:5: aliasedSubSelectStatement
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:72:5: aliasedSubSelectStatement
                     {
-                    pushFollow(FOLLOW_aliasedSubSelectStatement_in_joinClauseFrom532);
+                    pushFollow(FOLLOW_aliasedSubSelectStatement_in_joinClauseFrom534);
                     aliasedSubSelectStatement40=aliasedSubSelectStatement();
 
                     state._fsp--;
@@ -1706,7 +1708,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (CommonTree)adaptor.nil();
                     // 72:31: -> ^( N_TABLE aliasedSubSelectStatement )
                     {
-                        // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:72:34: ^( N_TABLE aliasedSubSelectStatement )
+                        // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:72:34: ^( N_TABLE aliasedSubSelectStatement )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(
@@ -1756,7 +1758,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "optionallyAliasedTable"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:73:1: optionallyAliasedTable : tableName ( AS ID )? -> ^( N_TABLE tableName ID ) ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:73:1: optionallyAliasedTable : tableName ( AS ID )? -> ^( N_TABLE tableName ( ID )? ) ;
     public final DrqlAntlrParser.optionallyAliasedTable_return optionallyAliasedTable() throws RecognitionException {
         DrqlAntlrParser.optionallyAliasedTable_return retval = new DrqlAntlrParser.optionallyAliasedTable_return();
         retval.start = input.LT(1);
@@ -1775,17 +1777,17 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_ID=new RewriteRuleTokenStream(adaptor,"token ID");
         RewriteRuleSubtreeStream stream_tableName=new RewriteRuleSubtreeStream(adaptor,"rule tableName");
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:73:23: ( tableName ( AS ID )? -> ^( N_TABLE tableName ID ) )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:73:25: tableName ( AS ID )?
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:73:23: ( tableName ( AS ID )? -> ^( N_TABLE tableName ( ID )? ) )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:73:25: tableName ( AS ID )?
             {
-            pushFollow(FOLLOW_tableName_in_optionallyAliasedTable546);
+            pushFollow(FOLLOW_tableName_in_optionallyAliasedTable548);
             tableName41=tableName();
 
             state._fsp--;
 
             stream_tableName.add(tableName41.getTree());
 
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:73:35: ( AS ID )?
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:73:35: ( AS ID )?
             int alt17=2;
             int LA17_0 = input.LA(1);
 
@@ -1794,13 +1796,13 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt17) {
                 case 1 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:73:36: AS ID
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:73:36: AS ID
                     {
-                    AS42=(Token)match(input,AS,FOLLOW_AS_in_optionallyAliasedTable549);  
+                    AS42=(Token)match(input,AS,FOLLOW_AS_in_optionallyAliasedTable551);  
                     stream_AS.add(AS42);
 
 
-                    ID43=(Token)match(input,ID,FOLLOW_ID_in_optionallyAliasedTable551);  
+                    ID43=(Token)match(input,ID,FOLLOW_ID_in_optionallyAliasedTable553);  
                     stream_ID.add(ID43);
 
 
@@ -1821,9 +1823,9 @@ public TreeAdaptor getTreeAdaptor() {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 73:44: -> ^( N_TABLE tableName ID )
+            // 73:44: -> ^( N_TABLE tableName ( ID )? )
             {
-                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:73:47: ^( N_TABLE tableName ID )
+                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:73:47: ^( N_TABLE tableName ( ID )? )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
@@ -1832,9 +1834,14 @@ public TreeAdaptor getTreeAdaptor() {
 
                 adaptor.addChild(root_1, stream_tableName.nextTree());
 
-                adaptor.addChild(root_1, 
-                stream_ID.nextNode()
-                );
+                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:73:67: ( ID )?
+                if ( stream_ID.hasNext() ) {
+                    adaptor.addChild(root_1, 
+                    stream_ID.nextNode()
+                    );
+
+                }
+                stream_ID.reset();
 
                 adaptor.addChild(root_0, root_1);
                 }
@@ -1875,7 +1882,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "aliasedSubSelectStatement"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:74:1: aliasedSubSelectStatement : LPAREN selectStatement RPAREN AS tableName -> ^( N_TABLE selectStatement tableName ) ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:74:1: aliasedSubSelectStatement : LPAREN selectStatement RPAREN AS tableName -> ^( N_TABLE selectStatement tableName ) ;
     public final DrqlAntlrParser.aliasedSubSelectStatement_return aliasedSubSelectStatement() throws RecognitionException {
         DrqlAntlrParser.aliasedSubSelectStatement_return retval = new DrqlAntlrParser.aliasedSubSelectStatement_return();
         retval.start = input.LT(1);
@@ -1900,29 +1907,29 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_selectStatement=new RewriteRuleSubtreeStream(adaptor,"rule selectStatement");
         RewriteRuleSubtreeStream stream_tableName=new RewriteRuleSubtreeStream(adaptor,"rule tableName");
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:74:26: ( LPAREN selectStatement RPAREN AS tableName -> ^( N_TABLE selectStatement tableName ) )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:74:28: LPAREN selectStatement RPAREN AS tableName
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:74:26: ( LPAREN selectStatement RPAREN AS tableName -> ^( N_TABLE selectStatement tableName ) )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:74:28: LPAREN selectStatement RPAREN AS tableName
             {
-            LPAREN44=(Token)match(input,LPAREN,FOLLOW_LPAREN_in_aliasedSubSelectStatement569);  
+            LPAREN44=(Token)match(input,LPAREN,FOLLOW_LPAREN_in_aliasedSubSelectStatement572);  
             stream_LPAREN.add(LPAREN44);
 
 
-            pushFollow(FOLLOW_selectStatement_in_aliasedSubSelectStatement571);
+            pushFollow(FOLLOW_selectStatement_in_aliasedSubSelectStatement574);
             selectStatement45=selectStatement();
 
             state._fsp--;
 
             stream_selectStatement.add(selectStatement45.getTree());
 
-            RPAREN46=(Token)match(input,RPAREN,FOLLOW_RPAREN_in_aliasedSubSelectStatement573);  
+            RPAREN46=(Token)match(input,RPAREN,FOLLOW_RPAREN_in_aliasedSubSelectStatement576);  
             stream_RPAREN.add(RPAREN46);
 
 
-            AS47=(Token)match(input,AS,FOLLOW_AS_in_aliasedSubSelectStatement575);  
+            AS47=(Token)match(input,AS,FOLLOW_AS_in_aliasedSubSelectStatement578);  
             stream_AS.add(AS47);
 
 
-            pushFollow(FOLLOW_tableName_in_aliasedSubSelectStatement577);
+            pushFollow(FOLLOW_tableName_in_aliasedSubSelectStatement580);
             tableName48=tableName();
 
             state._fsp--;
@@ -1942,7 +1949,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (CommonTree)adaptor.nil();
             // 74:71: -> ^( N_TABLE selectStatement tableName )
             {
-                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:75:5: ^( N_TABLE selectStatement tableName )
+                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:75:5: ^( N_TABLE selectStatement tableName )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
@@ -1992,7 +1999,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "joinConditionList"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:76:1: joinConditionList : joinCondition ( LOGICAL_AND joinCondition )* -> ^( N_JOIN_ON_LIST ( joinCondition )+ ) ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:76:1: joinConditionList : joinCondition ( LOGICAL_AND joinCondition )* -> ^( N_JOIN_ON_LIST ( joinCondition )+ ) ;
     public final DrqlAntlrParser.joinConditionList_return joinConditionList() throws RecognitionException {
         DrqlAntlrParser.joinConditionList_return retval = new DrqlAntlrParser.joinConditionList_return();
         retval.start = input.LT(1);
@@ -2010,17 +2017,17 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_LOGICAL_AND=new RewriteRuleTokenStream(adaptor,"token LOGICAL_AND");
         RewriteRuleSubtreeStream stream_joinCondition=new RewriteRuleSubtreeStream(adaptor,"rule joinCondition");
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:76:18: ( joinCondition ( LOGICAL_AND joinCondition )* -> ^( N_JOIN_ON_LIST ( joinCondition )+ ) )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:76:20: joinCondition ( LOGICAL_AND joinCondition )*
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:76:18: ( joinCondition ( LOGICAL_AND joinCondition )* -> ^( N_JOIN_ON_LIST ( joinCondition )+ ) )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:76:20: joinCondition ( LOGICAL_AND joinCondition )*
             {
-            pushFollow(FOLLOW_joinCondition_in_joinConditionList597);
+            pushFollow(FOLLOW_joinCondition_in_joinConditionList600);
             joinCondition49=joinCondition();
 
             state._fsp--;
 
             stream_joinCondition.add(joinCondition49.getTree());
 
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:76:34: ( LOGICAL_AND joinCondition )*
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:76:34: ( LOGICAL_AND joinCondition )*
             loop18:
             do {
                 int alt18=2;
@@ -2033,13 +2040,13 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt18) {
             	case 1 :
-            	    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:76:35: LOGICAL_AND joinCondition
+            	    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:76:35: LOGICAL_AND joinCondition
             	    {
-            	    LOGICAL_AND50=(Token)match(input,LOGICAL_AND,FOLLOW_LOGICAL_AND_in_joinConditionList600);  
+            	    LOGICAL_AND50=(Token)match(input,LOGICAL_AND,FOLLOW_LOGICAL_AND_in_joinConditionList603);  
             	    stream_LOGICAL_AND.add(LOGICAL_AND50);
 
 
-            	    pushFollow(FOLLOW_joinCondition_in_joinConditionList602);
+            	    pushFollow(FOLLOW_joinCondition_in_joinConditionList605);
             	    joinCondition51=joinCondition();
 
             	    state._fsp--;
@@ -2068,7 +2075,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (CommonTree)adaptor.nil();
             // 76:63: -> ^( N_JOIN_ON_LIST ( joinCondition )+ )
             {
-                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:77:5: ^( N_JOIN_ON_LIST ( joinCondition )+ )
+                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:77:5: ^( N_JOIN_ON_LIST ( joinCondition )+ )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
@@ -2123,7 +2130,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "joinCondition"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:78:1: joinCondition : a= columnName EQUAL b= columnName -> ^( N_JOIN_ON $a $b) ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:78:1: joinCondition : a= columnPath EQUAL b= columnPath -> ^( N_JOIN_ON $a $b) ;
     public final DrqlAntlrParser.joinCondition_return joinCondition() throws RecognitionException {
         DrqlAntlrParser.joinCondition_return retval = new DrqlAntlrParser.joinCondition_return();
         retval.start = input.LT(1);
@@ -2132,38 +2139,38 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree root_0 = null;
 
         Token EQUAL52=null;
-        DrqlAntlrParser.columnName_return a =null;
+        DrqlAntlrParser.columnPath_return a =null;
 
-        DrqlAntlrParser.columnName_return b =null;
+        DrqlAntlrParser.columnPath_return b =null;
 
 
         CommonTree EQUAL52_tree=null;
         RewriteRuleTokenStream stream_EQUAL=new RewriteRuleTokenStream(adaptor,"token EQUAL");
-        RewriteRuleSubtreeStream stream_columnName=new RewriteRuleSubtreeStream(adaptor,"rule columnName");
+        RewriteRuleSubtreeStream stream_columnPath=new RewriteRuleSubtreeStream(adaptor,"rule columnPath");
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:78:14: (a= columnName EQUAL b= columnName -> ^( N_JOIN_ON $a $b) )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:78:16: a= columnName EQUAL b= columnName
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:78:14: (a= columnPath EQUAL b= columnPath -> ^( N_JOIN_ON $a $b) )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:78:16: a= columnPath EQUAL b= columnPath
             {
-            pushFollow(FOLLOW_columnName_in_joinCondition625);
-            a=columnName();
+            pushFollow(FOLLOW_columnPath_in_joinCondition628);
+            a=columnPath();
 
             state._fsp--;
 
-            stream_columnName.add(a.getTree());
+            stream_columnPath.add(a.getTree());
 
-            EQUAL52=(Token)match(input,EQUAL,FOLLOW_EQUAL_in_joinCondition627);  
+            EQUAL52=(Token)match(input,EQUAL,FOLLOW_EQUAL_in_joinCondition630);  
             stream_EQUAL.add(EQUAL52);
 
 
-            pushFollow(FOLLOW_columnName_in_joinCondition631);
-            b=columnName();
+            pushFollow(FOLLOW_columnPath_in_joinCondition634);
+            b=columnPath();
 
             state._fsp--;
 
-            stream_columnName.add(b.getTree());
+            stream_columnPath.add(b.getTree());
 
             // AST REWRITE
-            // elements: b, a
+            // elements: a, b
             // token labels: 
             // rule labels: retval, b, a
             // token list labels: 
@@ -2177,7 +2184,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (CommonTree)adaptor.nil();
             // 78:48: -> ^( N_JOIN_ON $a $b)
             {
-                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:78:51: ^( N_JOIN_ON $a $b)
+                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:78:51: ^( N_JOIN_ON $a $b)
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
@@ -2227,7 +2234,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "whereClause"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:81:1: whereClause : WHERE expr -> ^( N_WHERE expr ) ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:81:1: whereClause : WHERE expr -> ^( N_WHERE expr ) ;
     public final DrqlAntlrParser.whereClause_return whereClause() throws RecognitionException {
         DrqlAntlrParser.whereClause_return retval = new DrqlAntlrParser.whereClause_return();
         retval.start = input.LT(1);
@@ -2243,14 +2250,14 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_WHERE=new RewriteRuleTokenStream(adaptor,"token WHERE");
         RewriteRuleSubtreeStream stream_expr=new RewriteRuleSubtreeStream(adaptor,"rule expr");
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:81:12: ( WHERE expr -> ^( N_WHERE expr ) )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:81:14: WHERE expr
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:81:12: ( WHERE expr -> ^( N_WHERE expr ) )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:81:14: WHERE expr
             {
-            WHERE53=(Token)match(input,WHERE,FOLLOW_WHERE_in_whereClause651);  
+            WHERE53=(Token)match(input,WHERE,FOLLOW_WHERE_in_whereClause654);  
             stream_WHERE.add(WHERE53);
 
 
-            pushFollow(FOLLOW_expr_in_whereClause653);
+            pushFollow(FOLLOW_expr_in_whereClause656);
             expr54=expr();
 
             state._fsp--;
@@ -2270,7 +2277,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (CommonTree)adaptor.nil();
             // 81:25: -> ^( N_WHERE expr )
             {
-                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:81:28: ^( N_WHERE expr )
+                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:81:28: ^( N_WHERE expr )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
@@ -2318,7 +2325,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "groupbyClause"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:84:1: groupbyClause : GROUPBY columnName ( COMMA columnName )* -> ^( N_GROUPBY ( columnName )+ ) ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:84:1: groupbyClause : GROUPBY columnName ( COMMA columnName )* -> ^( N_GROUPBY ( columnName )+ ) ;
     public final DrqlAntlrParser.groupbyClause_return groupbyClause() throws RecognitionException {
         DrqlAntlrParser.groupbyClause_return retval = new DrqlAntlrParser.groupbyClause_return();
         retval.start = input.LT(1);
@@ -2339,21 +2346,21 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_GROUPBY=new RewriteRuleTokenStream(adaptor,"token GROUPBY");
         RewriteRuleSubtreeStream stream_columnName=new RewriteRuleSubtreeStream(adaptor,"rule columnName");
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:84:14: ( GROUPBY columnName ( COMMA columnName )* -> ^( N_GROUPBY ( columnName )+ ) )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:84:16: GROUPBY columnName ( COMMA columnName )*
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:84:14: ( GROUPBY columnName ( COMMA columnName )* -> ^( N_GROUPBY ( columnName )+ ) )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:84:16: GROUPBY columnName ( COMMA columnName )*
             {
-            GROUPBY55=(Token)match(input,GROUPBY,FOLLOW_GROUPBY_in_groupbyClause669);  
+            GROUPBY55=(Token)match(input,GROUPBY,FOLLOW_GROUPBY_in_groupbyClause672);  
             stream_GROUPBY.add(GROUPBY55);
 
 
-            pushFollow(FOLLOW_columnName_in_groupbyClause671);
+            pushFollow(FOLLOW_columnName_in_groupbyClause674);
             columnName56=columnName();
 
             state._fsp--;
 
             stream_columnName.add(columnName56.getTree());
 
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:84:35: ( COMMA columnName )*
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:84:35: ( COMMA columnName )*
             loop19:
             do {
                 int alt19=2;
@@ -2366,13 +2373,13 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt19) {
             	case 1 :
-            	    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:84:36: COMMA columnName
+            	    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:84:36: COMMA columnName
             	    {
-            	    COMMA57=(Token)match(input,COMMA,FOLLOW_COMMA_in_groupbyClause674);  
+            	    COMMA57=(Token)match(input,COMMA,FOLLOW_COMMA_in_groupbyClause677);  
             	    stream_COMMA.add(COMMA57);
 
 
-            	    pushFollow(FOLLOW_columnName_in_groupbyClause676);
+            	    pushFollow(FOLLOW_columnName_in_groupbyClause679);
             	    columnName58=columnName();
 
             	    state._fsp--;
@@ -2401,7 +2408,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (CommonTree)adaptor.nil();
             // 84:55: -> ^( N_GROUPBY ( columnName )+ )
             {
-                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:85:5: ^( N_GROUPBY ( columnName )+ )
+                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:85:5: ^( N_GROUPBY ( columnName )+ )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
@@ -2456,7 +2463,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "havingClause"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:88:1: havingClause : HAVING expr -> ^( N_HAVING expr ) ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:88:1: havingClause : HAVING expr -> ^( N_HAVING expr ) ;
     public final DrqlAntlrParser.havingClause_return havingClause() throws RecognitionException {
         DrqlAntlrParser.havingClause_return retval = new DrqlAntlrParser.havingClause_return();
         retval.start = input.LT(1);
@@ -2472,14 +2479,14 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_HAVING=new RewriteRuleTokenStream(adaptor,"token HAVING");
         RewriteRuleSubtreeStream stream_expr=new RewriteRuleSubtreeStream(adaptor,"rule expr");
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:88:13: ( HAVING expr -> ^( N_HAVING expr ) )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:88:15: HAVING expr
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:88:13: ( HAVING expr -> ^( N_HAVING expr ) )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:88:15: HAVING expr
             {
-            HAVING59=(Token)match(input,HAVING,FOLLOW_HAVING_in_havingClause700);  
+            HAVING59=(Token)match(input,HAVING,FOLLOW_HAVING_in_havingClause703);  
             stream_HAVING.add(HAVING59);
 
 
-            pushFollow(FOLLOW_expr_in_havingClause702);
+            pushFollow(FOLLOW_expr_in_havingClause705);
             expr60=expr();
 
             state._fsp--;
@@ -2499,7 +2506,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (CommonTree)adaptor.nil();
             // 88:27: -> ^( N_HAVING expr )
             {
-                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:88:30: ^( N_HAVING expr )
+                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:88:30: ^( N_HAVING expr )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
@@ -2547,7 +2554,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "orderbyClause"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:91:1: orderbyClause : ( ORDERBY orderbyColumnName ( COMMA orderbyColumnName )* ) -> ^( N_ORDERBY ( orderbyColumnName )+ ) ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:91:1: orderbyClause : ( ORDERBY orderbyColumnName ( COMMA orderbyColumnName )* ) -> ^( N_ORDERBY ( orderbyColumnName )+ ) ;
     public final DrqlAntlrParser.orderbyClause_return orderbyClause() throws RecognitionException {
         DrqlAntlrParser.orderbyClause_return retval = new DrqlAntlrParser.orderbyClause_return();
         retval.start = input.LT(1);
@@ -2568,24 +2575,24 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_COMMA=new RewriteRuleTokenStream(adaptor,"token COMMA");
         RewriteRuleSubtreeStream stream_orderbyColumnName=new RewriteRuleSubtreeStream(adaptor,"rule orderbyColumnName");
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:91:14: ( ( ORDERBY orderbyColumnName ( COMMA orderbyColumnName )* ) -> ^( N_ORDERBY ( orderbyColumnName )+ ) )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:91:16: ( ORDERBY orderbyColumnName ( COMMA orderbyColumnName )* )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:91:14: ( ( ORDERBY orderbyColumnName ( COMMA orderbyColumnName )* ) -> ^( N_ORDERBY ( orderbyColumnName )+ ) )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:91:16: ( ORDERBY orderbyColumnName ( COMMA orderbyColumnName )* )
             {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:91:16: ( ORDERBY orderbyColumnName ( COMMA orderbyColumnName )* )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:91:18: ORDERBY orderbyColumnName ( COMMA orderbyColumnName )*
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:91:16: ( ORDERBY orderbyColumnName ( COMMA orderbyColumnName )* )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:91:18: ORDERBY orderbyColumnName ( COMMA orderbyColumnName )*
             {
-            ORDERBY61=(Token)match(input,ORDERBY,FOLLOW_ORDERBY_in_orderbyClause720);  
+            ORDERBY61=(Token)match(input,ORDERBY,FOLLOW_ORDERBY_in_orderbyClause723);  
             stream_ORDERBY.add(ORDERBY61);
 
 
-            pushFollow(FOLLOW_orderbyColumnName_in_orderbyClause722);
+            pushFollow(FOLLOW_orderbyColumnName_in_orderbyClause725);
             orderbyColumnName62=orderbyColumnName();
 
             state._fsp--;
 
             stream_orderbyColumnName.add(orderbyColumnName62.getTree());
 
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:91:44: ( COMMA orderbyColumnName )*
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:91:44: ( COMMA orderbyColumnName )*
             loop20:
             do {
                 int alt20=2;
@@ -2598,13 +2605,13 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt20) {
             	case 1 :
-            	    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:91:45: COMMA orderbyColumnName
+            	    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:91:45: COMMA orderbyColumnName
             	    {
-            	    COMMA63=(Token)match(input,COMMA,FOLLOW_COMMA_in_orderbyClause725);  
+            	    COMMA63=(Token)match(input,COMMA,FOLLOW_COMMA_in_orderbyClause728);  
             	    stream_COMMA.add(COMMA63);
 
 
-            	    pushFollow(FOLLOW_orderbyColumnName_in_orderbyClause727);
+            	    pushFollow(FOLLOW_orderbyColumnName_in_orderbyClause730);
             	    orderbyColumnName64=orderbyColumnName();
 
             	    state._fsp--;
@@ -2636,7 +2643,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (CommonTree)adaptor.nil();
             // 91:72: -> ^( N_ORDERBY ( orderbyColumnName )+ )
             {
-                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:92:5: ^( N_ORDERBY ( orderbyColumnName )+ )
+                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:92:5: ^( N_ORDERBY ( orderbyColumnName )+ )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
@@ -2691,7 +2698,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "orderbyColumnName"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:93:1: orderbyColumnName : columnName ( ASC -> ^( N_ASC columnName ) | DESC -> ^( N_DESC columnName ) | -> ^( N_ASC columnName ) ) ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:93:1: orderbyColumnName : columnName ( ASC -> ^( N_ASC columnName ) | DESC -> ^( N_DESC columnName ) | -> ^( N_ASC columnName ) ) ;
     public final DrqlAntlrParser.orderbyColumnName_return orderbyColumnName() throws RecognitionException {
         DrqlAntlrParser.orderbyColumnName_return retval = new DrqlAntlrParser.orderbyColumnName_return();
         retval.start = input.LT(1);
@@ -2710,17 +2717,17 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_DESC=new RewriteRuleTokenStream(adaptor,"token DESC");
         RewriteRuleSubtreeStream stream_columnName=new RewriteRuleSubtreeStream(adaptor,"rule columnName");
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:93:18: ( columnName ( ASC -> ^( N_ASC columnName ) | DESC -> ^( N_DESC columnName ) | -> ^( N_ASC columnName ) ) )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:93:20: columnName ( ASC -> ^( N_ASC columnName ) | DESC -> ^( N_DESC columnName ) | -> ^( N_ASC columnName ) )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:93:18: ( columnName ( ASC -> ^( N_ASC columnName ) | DESC -> ^( N_DESC columnName ) | -> ^( N_ASC columnName ) ) )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:93:20: columnName ( ASC -> ^( N_ASC columnName ) | DESC -> ^( N_DESC columnName ) | -> ^( N_ASC columnName ) )
             {
-            pushFollow(FOLLOW_columnName_in_orderbyColumnName749);
+            pushFollow(FOLLOW_columnName_in_orderbyColumnName752);
             columnName65=columnName();
 
             state._fsp--;
 
             stream_columnName.add(columnName65.getTree());
 
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:93:31: ( ASC -> ^( N_ASC columnName ) | DESC -> ^( N_DESC columnName ) | -> ^( N_ASC columnName ) )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:93:31: ( ASC -> ^( N_ASC columnName ) | DESC -> ^( N_DESC columnName ) | -> ^( N_ASC columnName ) )
             int alt21=3;
             switch ( input.LA(1) ) {
             case ASC:
@@ -2752,9 +2759,9 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt21) {
                 case 1 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:93:32: ASC
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:93:32: ASC
                     {
-                    ASC66=(Token)match(input,ASC,FOLLOW_ASC_in_orderbyColumnName752);  
+                    ASC66=(Token)match(input,ASC,FOLLOW_ASC_in_orderbyColumnName755);  
                     stream_ASC.add(ASC66);
 
 
@@ -2771,7 +2778,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (CommonTree)adaptor.nil();
                     // 93:36: -> ^( N_ASC columnName )
                     {
-                        // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:93:39: ^( N_ASC columnName )
+                        // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:93:39: ^( N_ASC columnName )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(
@@ -2791,9 +2798,9 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:93:61: DESC
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:93:61: DESC
                     {
-                    DESC67=(Token)match(input,DESC,FOLLOW_DESC_in_orderbyColumnName764);  
+                    DESC67=(Token)match(input,DESC,FOLLOW_DESC_in_orderbyColumnName767);  
                     stream_DESC.add(DESC67);
 
 
@@ -2810,7 +2817,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (CommonTree)adaptor.nil();
                     // 93:66: -> ^( N_DESC columnName )
                     {
-                        // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:94:5: ^( N_DESC columnName )
+                        // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:94:5: ^( N_DESC columnName )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(
@@ -2830,7 +2837,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:94:53: 
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:94:53: 
                     {
                     // AST REWRITE
                     // elements: columnName
@@ -2845,7 +2852,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (CommonTree)adaptor.nil();
                     // 94:53: -> ^( N_ASC columnName )
                     {
-                        // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:94:56: ^( N_ASC columnName )
+                        // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:94:56: ^( N_ASC columnName )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(
@@ -2899,7 +2906,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "limitClause"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:97:1: limitClause : ( LIMIT INT ) -> ^( N_LIMIT INT ) ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:97:1: limitClause : ( LIMIT INT ) -> ^( N_LIMIT INT ) ;
     public final DrqlAntlrParser.limitClause_return limitClause() throws RecognitionException {
         DrqlAntlrParser.limitClause_return retval = new DrqlAntlrParser.limitClause_return();
         retval.start = input.LT(1);
@@ -2916,17 +2923,17 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_LIMIT=new RewriteRuleTokenStream(adaptor,"token LIMIT");
 
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:97:12: ( ( LIMIT INT ) -> ^( N_LIMIT INT ) )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:97:14: ( LIMIT INT )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:97:12: ( ( LIMIT INT ) -> ^( N_LIMIT INT ) )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:97:14: ( LIMIT INT )
             {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:97:14: ( LIMIT INT )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:97:16: LIMIT INT
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:97:14: ( LIMIT INT )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:97:16: LIMIT INT
             {
-            LIMIT68=(Token)match(input,LIMIT,FOLLOW_LIMIT_in_limitClause805);  
+            LIMIT68=(Token)match(input,LIMIT,FOLLOW_LIMIT_in_limitClause808);  
             stream_LIMIT.add(LIMIT68);
 
 
-            INT69=(Token)match(input,INT,FOLLOW_INT_in_limitClause807);  
+            INT69=(Token)match(input,INT,FOLLOW_INT_in_limitClause810);  
             stream_INT.add(INT69);
 
 
@@ -2946,7 +2953,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (CommonTree)adaptor.nil();
             // 97:28: -> ^( N_LIMIT INT )
             {
-                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:97:31: ^( N_LIMIT INT )
+                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:97:31: ^( N_LIMIT INT )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
@@ -2996,7 +3003,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "columnPath"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:100:1: columnPath : columnPath2 -> ^( N_ID columnPath2 ) ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:100:1: columnPath : columnPath2 -> ^( N_ID columnPath2 ) ;
     public final DrqlAntlrParser.columnPath_return columnPath() throws RecognitionException {
         DrqlAntlrParser.columnPath_return retval = new DrqlAntlrParser.columnPath_return();
         retval.start = input.LT(1);
@@ -3009,10 +3016,10 @@ public TreeAdaptor getTreeAdaptor() {
 
         RewriteRuleSubtreeStream stream_columnPath2=new RewriteRuleSubtreeStream(adaptor,"rule columnPath2");
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:100:11: ( columnPath2 -> ^( N_ID columnPath2 ) )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:100:13: columnPath2
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:100:11: ( columnPath2 -> ^( N_ID columnPath2 ) )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:100:13: columnPath2
             {
-            pushFollow(FOLLOW_columnPath2_in_columnPath825);
+            pushFollow(FOLLOW_columnPath2_in_columnPath828);
             columnPath270=columnPath2();
 
             state._fsp--;
@@ -3032,7 +3039,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (CommonTree)adaptor.nil();
             // 100:25: -> ^( N_ID columnPath2 )
             {
-                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:100:28: ^( N_ID columnPath2 )
+                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:100:28: ^( N_ID columnPath2 )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
@@ -3080,7 +3087,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "columnPath2"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:101:1: columnPath2 : columnName ( DOT ! columnName )* ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:101:1: columnPath2 : columnName ( DOT ! columnName )* ;
     public final DrqlAntlrParser.columnPath2_return columnPath2() throws RecognitionException {
         DrqlAntlrParser.columnPath2_return retval = new DrqlAntlrParser.columnPath2_return();
         retval.start = input.LT(1);
@@ -3097,20 +3104,20 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree DOT72_tree=null;
 
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:101:12: ( columnName ( DOT ! columnName )* )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:101:14: columnName ( DOT ! columnName )*
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:101:12: ( columnName ( DOT ! columnName )* )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:101:14: columnName ( DOT ! columnName )*
             {
             root_0 = (CommonTree)adaptor.nil();
 
 
-            pushFollow(FOLLOW_columnName_in_columnPath2839);
+            pushFollow(FOLLOW_columnName_in_columnPath2842);
             columnName71=columnName();
 
             state._fsp--;
 
             adaptor.addChild(root_0, columnName71.getTree());
 
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:101:25: ( DOT ! columnName )*
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:101:25: ( DOT ! columnName )*
             loop22:
             do {
                 int alt22=2;
@@ -3123,11 +3130,11 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt22) {
             	case 1 :
-            	    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:101:26: DOT ! columnName
+            	    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:101:26: DOT ! columnName
             	    {
-            	    DOT72=(Token)match(input,DOT,FOLLOW_DOT_in_columnPath2842); 
+            	    DOT72=(Token)match(input,DOT,FOLLOW_DOT_in_columnPath2845); 
 
-            	    pushFollow(FOLLOW_columnName_in_columnPath2845);
+            	    pushFollow(FOLLOW_columnName_in_columnPath2848);
             	    columnName73=columnName();
 
             	    state._fsp--;
@@ -3174,7 +3181,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "columnName"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:102:1: columnName : ( ID -> ^( N_NAME ID ) | STAR -> ^( N_NAME STAR ) );
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:102:1: columnName : ( ID -> ^( N_NAME ID ) | STAR -> ^( N_NAME STAR ) );
     public final DrqlAntlrParser.columnName_return columnName() throws RecognitionException {
         DrqlAntlrParser.columnName_return retval = new DrqlAntlrParser.columnName_return();
         retval.start = input.LT(1);
@@ -3191,7 +3198,7 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_ID=new RewriteRuleTokenStream(adaptor,"token ID");
 
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:102:11: ( ID -> ^( N_NAME ID ) | STAR -> ^( N_NAME STAR ) )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:102:11: ( ID -> ^( N_NAME ID ) | STAR -> ^( N_NAME STAR ) )
             int alt23=2;
             int LA23_0 = input.LA(1);
 
@@ -3210,9 +3217,9 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt23) {
                 case 1 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:102:13: ID
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:102:13: ID
                     {
-                    ID74=(Token)match(input,ID,FOLLOW_ID_in_columnName853);  
+                    ID74=(Token)match(input,ID,FOLLOW_ID_in_columnName856);  
                     stream_ID.add(ID74);
 
 
@@ -3229,7 +3236,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (CommonTree)adaptor.nil();
                     // 102:16: -> ^( N_NAME ID )
                     {
-                        // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:102:19: ^( N_NAME ID )
+                        // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:102:19: ^( N_NAME ID )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(
@@ -3251,9 +3258,9 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:102:34: STAR
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:102:34: STAR
                     {
-                    STAR75=(Token)match(input,STAR,FOLLOW_STAR_in_columnName865);  
+                    STAR75=(Token)match(input,STAR,FOLLOW_STAR_in_columnName868);  
                     stream_STAR.add(STAR75);
 
 
@@ -3270,7 +3277,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (CommonTree)adaptor.nil();
                     // 102:39: -> ^( N_NAME STAR )
                     {
-                        // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:102:42: ^( N_NAME STAR )
+                        // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:102:42: ^( N_NAME STAR )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(
@@ -3322,7 +3329,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "tablePath"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:105:1: tablePath : tablePath2 -> ^( N_TABLE tablePath2 ) ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:105:1: tablePath : tablePath2 -> ^( N_TABLE tablePath2 ) ;
     public final DrqlAntlrParser.tablePath_return tablePath() throws RecognitionException {
         DrqlAntlrParser.tablePath_return retval = new DrqlAntlrParser.tablePath_return();
         retval.start = input.LT(1);
@@ -3335,10 +3342,10 @@ public TreeAdaptor getTreeAdaptor() {
 
         RewriteRuleSubtreeStream stream_tablePath2=new RewriteRuleSubtreeStream(adaptor,"rule tablePath2");
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:105:10: ( tablePath2 -> ^( N_TABLE tablePath2 ) )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:105:12: tablePath2
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:105:10: ( tablePath2 -> ^( N_TABLE tablePath2 ) )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:105:12: tablePath2
             {
-            pushFollow(FOLLOW_tablePath2_in_tablePath881);
+            pushFollow(FOLLOW_tablePath2_in_tablePath884);
             tablePath276=tablePath2();
 
             state._fsp--;
@@ -3358,7 +3365,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (CommonTree)adaptor.nil();
             // 105:23: -> ^( N_TABLE tablePath2 )
             {
-                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:105:26: ^( N_TABLE tablePath2 )
+                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:105:26: ^( N_TABLE tablePath2 )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
@@ -3406,7 +3413,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "tablePath2"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:106:1: tablePath2 : tableName ( DOT ! tableName )* ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:106:1: tablePath2 : tableName ( DOT ! tableName )* ;
     public final DrqlAntlrParser.tablePath2_return tablePath2() throws RecognitionException {
         DrqlAntlrParser.tablePath2_return retval = new DrqlAntlrParser.tablePath2_return();
         retval.start = input.LT(1);
@@ -3423,20 +3430,20 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree DOT78_tree=null;
 
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:106:11: ( tableName ( DOT ! tableName )* )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:106:13: tableName ( DOT ! tableName )*
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:106:11: ( tableName ( DOT ! tableName )* )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:106:13: tableName ( DOT ! tableName )*
             {
             root_0 = (CommonTree)adaptor.nil();
 
 
-            pushFollow(FOLLOW_tableName_in_tablePath2895);
+            pushFollow(FOLLOW_tableName_in_tablePath2898);
             tableName77=tableName();
 
             state._fsp--;
 
             adaptor.addChild(root_0, tableName77.getTree());
 
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:106:23: ( DOT ! tableName )*
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:106:23: ( DOT ! tableName )*
             loop24:
             do {
                 int alt24=2;
@@ -3449,11 +3456,11 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt24) {
             	case 1 :
-            	    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:106:24: DOT ! tableName
+            	    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:106:24: DOT ! tableName
             	    {
-            	    DOT78=(Token)match(input,DOT,FOLLOW_DOT_in_tablePath2898); 
+            	    DOT78=(Token)match(input,DOT,FOLLOW_DOT_in_tablePath2901); 
 
-            	    pushFollow(FOLLOW_tableName_in_tablePath2901);
+            	    pushFollow(FOLLOW_tableName_in_tablePath2904);
             	    tableName79=tableName();
 
             	    state._fsp--;
@@ -3500,7 +3507,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "tableName"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:107:1: tableName : ID -> ^( N_TABLE_NAME ID ) ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:107:1: tableName : ID -> ^( N_TABLE_NAME ID ) ;
     public final DrqlAntlrParser.tableName_return tableName() throws RecognitionException {
         DrqlAntlrParser.tableName_return retval = new DrqlAntlrParser.tableName_return();
         retval.start = input.LT(1);
@@ -3514,10 +3521,10 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_ID=new RewriteRuleTokenStream(adaptor,"token ID");
 
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:107:10: ( ID -> ^( N_TABLE_NAME ID ) )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:107:12: ID
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:107:10: ( ID -> ^( N_TABLE_NAME ID ) )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:107:12: ID
             {
-            ID80=(Token)match(input,ID,FOLLOW_ID_in_tableName915);  
+            ID80=(Token)match(input,ID,FOLLOW_ID_in_tableName918);  
             stream_ID.add(ID80);
 
 
@@ -3534,7 +3541,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (CommonTree)adaptor.nil();
             // 107:15: -> ^( N_TABLE_NAME ID )
             {
-                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:107:18: ^( N_TABLE_NAME ID )
+                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:107:18: ^( N_TABLE_NAME ID )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
@@ -3584,7 +3591,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "expr"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:110:1: expr : expr2 -> ^( N_EXPRESSION expr2 ) ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:110:1: expr : expr2 -> ^( N_EXPRESSION expr2 ) ;
     public final DrqlAntlrParser.expr_return expr() throws RecognitionException {
         DrqlAntlrParser.expr_return retval = new DrqlAntlrParser.expr_return();
         retval.start = input.LT(1);
@@ -3597,10 +3604,10 @@ public TreeAdaptor getTreeAdaptor() {
 
         RewriteRuleSubtreeStream stream_expr2=new RewriteRuleSubtreeStream(adaptor,"rule expr2");
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:110:5: ( expr2 -> ^( N_EXPRESSION expr2 ) )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:110:7: expr2
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:110:5: ( expr2 -> ^( N_EXPRESSION expr2 ) )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:110:7: expr2
             {
-            pushFollow(FOLLOW_expr2_in_expr931);
+            pushFollow(FOLLOW_expr2_in_expr934);
             expr281=expr2();
 
             state._fsp--;
@@ -3620,7 +3627,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (CommonTree)adaptor.nil();
             // 110:13: -> ^( N_EXPRESSION expr2 )
             {
-                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:110:16: ^( N_EXPRESSION expr2 )
+                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:110:16: ^( N_EXPRESSION expr2 )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
@@ -3668,7 +3675,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "expr2"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:111:1: expr2 : (a= b10e -> $a) (o= b11o b= b10e -> ^( $o $expr2 $b) )* ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:111:1: expr2 : (a= b10e -> $a) (o= b11o b= b10e -> ^( $o $expr2 $b) )* ;
     public final DrqlAntlrParser.expr2_return expr2() throws RecognitionException {
         DrqlAntlrParser.expr2_return retval = new DrqlAntlrParser.expr2_return();
         retval.start = input.LT(1);
@@ -3686,13 +3693,13 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_b10e=new RewriteRuleSubtreeStream(adaptor,"rule b10e");
         RewriteRuleSubtreeStream stream_b11o=new RewriteRuleSubtreeStream(adaptor,"rule b11o");
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:111:6: ( (a= b10e -> $a) (o= b11o b= b10e -> ^( $o $expr2 $b) )* )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:111:7: (a= b10e -> $a) (o= b11o b= b10e -> ^( $o $expr2 $b) )*
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:111:6: ( (a= b10e -> $a) (o= b11o b= b10e -> ^( $o $expr2 $b) )* )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:111:7: (a= b10e -> $a) (o= b11o b= b10e -> ^( $o $expr2 $b) )*
             {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:111:7: (a= b10e -> $a)
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:111:8: a= b10e
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:111:7: (a= b10e -> $a)
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:111:8: a= b10e
             {
-            pushFollow(FOLLOW_b10e_in_expr2947);
+            pushFollow(FOLLOW_b10e_in_expr2950);
             a=b10e();
 
             state._fsp--;
@@ -3723,7 +3730,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:111:20: (o= b11o b= b10e -> ^( $o $expr2 $b) )*
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:111:20: (o= b11o b= b10e -> ^( $o $expr2 $b) )*
             loop25:
             do {
                 int alt25=2;
@@ -3736,16 +3743,16 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt25) {
             	case 1 :
-            	    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:111:21: o= b11o b= b10e
+            	    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:111:21: o= b11o b= b10e
             	    {
-            	    pushFollow(FOLLOW_b11o_in_expr2956);
+            	    pushFollow(FOLLOW_b11o_in_expr2959);
             	    o=b11o();
 
             	    state._fsp--;
 
             	    stream_b11o.add(o.getTree());
 
-            	    pushFollow(FOLLOW_b10e_in_expr2960);
+            	    pushFollow(FOLLOW_b10e_in_expr2963);
             	    b=b10e();
 
             	    state._fsp--;
@@ -3753,7 +3760,7 @@ public TreeAdaptor getTreeAdaptor() {
             	    stream_b10e.add(b.getTree());
 
             	    // AST REWRITE
-            	    // elements: b, expr2, o
+            	    // elements: o, b, expr2
             	    // token labels: 
             	    // rule labels: retval, b, o
             	    // token list labels: 
@@ -3767,7 +3774,7 @@ public TreeAdaptor getTreeAdaptor() {
             	    root_0 = (CommonTree)adaptor.nil();
             	    // 111:35: -> ^( $o $expr2 $b)
             	    {
-            	        // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:111:38: ^( $o $expr2 $b)
+            	        // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:111:38: ^( $o $expr2 $b)
             	        {
             	        CommonTree root_1 = (CommonTree)adaptor.nil();
             	        root_1 = (CommonTree)adaptor.becomeRoot(stream_o.nextNode(), root_1);
@@ -3824,7 +3831,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "b10e"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:112:1: b10e : (a= b9e -> $a) (o= b10o b= b9e -> ^( $o $b10e $b) )* ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:112:1: b10e : (a= b9e -> $a) (o= b10o b= b9e -> ^( $o $b10e $b) )* ;
     public final DrqlAntlrParser.b10e_return b10e() throws RecognitionException {
         DrqlAntlrParser.b10e_return retval = new DrqlAntlrParser.b10e_return();
         retval.start = input.LT(1);
@@ -3842,13 +3849,13 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_b9e=new RewriteRuleSubtreeStream(adaptor,"rule b9e");
         RewriteRuleSubtreeStream stream_b10o=new RewriteRuleSubtreeStream(adaptor,"rule b10o");
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:112:5: ( (a= b9e -> $a) (o= b10o b= b9e -> ^( $o $b10e $b) )* )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:112:7: (a= b9e -> $a) (o= b10o b= b9e -> ^( $o $b10e $b) )*
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:112:5: ( (a= b9e -> $a) (o= b10o b= b9e -> ^( $o $b10e $b) )* )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:112:7: (a= b9e -> $a) (o= b10o b= b9e -> ^( $o $b10e $b) )*
             {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:112:7: (a= b9e -> $a)
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:112:8: a= b9e
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:112:7: (a= b9e -> $a)
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:112:8: a= b9e
             {
-            pushFollow(FOLLOW_b9e_in_b10e984);
+            pushFollow(FOLLOW_b9e_in_b10e987);
             a=b9e();
 
             state._fsp--;
@@ -3879,7 +3886,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:112:19: (o= b10o b= b9e -> ^( $o $b10e $b) )*
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:112:19: (o= b10o b= b9e -> ^( $o $b10e $b) )*
             loop26:
             do {
                 int alt26=2;
@@ -3892,16 +3899,16 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt26) {
             	case 1 :
-            	    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:112:20: o= b10o b= b9e
+            	    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:112:20: o= b10o b= b9e
             	    {
-            	    pushFollow(FOLLOW_b10o_in_b10e993);
+            	    pushFollow(FOLLOW_b10o_in_b10e996);
             	    o=b10o();
 
             	    state._fsp--;
 
             	    stream_b10o.add(o.getTree());
 
-            	    pushFollow(FOLLOW_b9e_in_b10e997);
+            	    pushFollow(FOLLOW_b9e_in_b10e1000);
             	    b=b9e();
 
             	    state._fsp--;
@@ -3909,7 +3916,7 @@ public TreeAdaptor getTreeAdaptor() {
             	    stream_b9e.add(b.getTree());
 
             	    // AST REWRITE
-            	    // elements: b10e, b, o
+            	    // elements: b10e, o, b
             	    // token labels: 
             	    // rule labels: retval, b, o
             	    // token list labels: 
@@ -3923,7 +3930,7 @@ public TreeAdaptor getTreeAdaptor() {
             	    root_0 = (CommonTree)adaptor.nil();
             	    // 112:33: -> ^( $o $b10e $b)
             	    {
-            	        // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:112:36: ^( $o $b10e $b)
+            	        // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:112:36: ^( $o $b10e $b)
             	        {
             	        CommonTree root_1 = (CommonTree)adaptor.nil();
             	        root_1 = (CommonTree)adaptor.becomeRoot(stream_o.nextNode(), root_1);
@@ -3980,7 +3987,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "b9e"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:113:1: b9e : (a= b8e -> $a) (o= b9o b= b8e -> ^( $o $b9e $b) )* ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:113:1: b9e : (a= b8e -> $a) (o= b9o b= b8e -> ^( $o $b9e $b) )* ;
     public final DrqlAntlrParser.b9e_return b9e() throws RecognitionException {
         DrqlAntlrParser.b9e_return retval = new DrqlAntlrParser.b9e_return();
         retval.start = input.LT(1);
@@ -3998,13 +4005,13 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_b9o=new RewriteRuleSubtreeStream(adaptor,"rule b9o");
         RewriteRuleSubtreeStream stream_b8e=new RewriteRuleSubtreeStream(adaptor,"rule b8e");
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:113:4: ( (a= b8e -> $a) (o= b9o b= b8e -> ^( $o $b9e $b) )* )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:113:7: (a= b8e -> $a) (o= b9o b= b8e -> ^( $o $b9e $b) )*
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:113:4: ( (a= b8e -> $a) (o= b9o b= b8e -> ^( $o $b9e $b) )* )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:113:7: (a= b8e -> $a) (o= b9o b= b8e -> ^( $o $b9e $b) )*
             {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:113:7: (a= b8e -> $a)
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:113:8: a= b8e
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:113:7: (a= b8e -> $a)
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:113:8: a= b8e
             {
-            pushFollow(FOLLOW_b8e_in_b9e1022);
+            pushFollow(FOLLOW_b8e_in_b9e1025);
             a=b8e();
 
             state._fsp--;
@@ -4035,7 +4042,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:113:19: (o= b9o b= b8e -> ^( $o $b9e $b) )*
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:113:19: (o= b9o b= b8e -> ^( $o $b9e $b) )*
             loop27:
             do {
                 int alt27=2;
@@ -4048,16 +4055,16 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt27) {
             	case 1 :
-            	    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:113:20: o= b9o b= b8e
+            	    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:113:20: o= b9o b= b8e
             	    {
-            	    pushFollow(FOLLOW_b9o_in_b9e1031);
+            	    pushFollow(FOLLOW_b9o_in_b9e1034);
             	    o=b9o();
 
             	    state._fsp--;
 
             	    stream_b9o.add(o.getTree());
 
-            	    pushFollow(FOLLOW_b8e_in_b9e1035);
+            	    pushFollow(FOLLOW_b8e_in_b9e1038);
             	    b=b8e();
 
             	    state._fsp--;
@@ -4065,7 +4072,7 @@ public TreeAdaptor getTreeAdaptor() {
             	    stream_b8e.add(b.getTree());
 
             	    // AST REWRITE
-            	    // elements: b, b9e, o
+            	    // elements: b, o, b9e
             	    // token labels: 
             	    // rule labels: retval, b, o
             	    // token list labels: 
@@ -4079,7 +4086,7 @@ public TreeAdaptor getTreeAdaptor() {
             	    root_0 = (CommonTree)adaptor.nil();
             	    // 113:33: -> ^( $o $b9e $b)
             	    {
-            	        // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:113:36: ^( $o $b9e $b)
+            	        // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:113:36: ^( $o $b9e $b)
             	        {
             	        CommonTree root_1 = (CommonTree)adaptor.nil();
             	        root_1 = (CommonTree)adaptor.becomeRoot(stream_o.nextNode(), root_1);
@@ -4136,7 +4143,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "b8e"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:114:1: b8e : (a= b7e -> $a) (o= b8o b= b7e -> ^( $o $b8e $b) )* ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:114:1: b8e : (a= b7e -> $a) (o= b8o b= b7e -> ^( $o $b8e $b) )* ;
     public final DrqlAntlrParser.b8e_return b8e() throws RecognitionException {
         DrqlAntlrParser.b8e_return retval = new DrqlAntlrParser.b8e_return();
         retval.start = input.LT(1);
@@ -4154,13 +4161,13 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_b8o=new RewriteRuleSubtreeStream(adaptor,"rule b8o");
         RewriteRuleSubtreeStream stream_b7e=new RewriteRuleSubtreeStream(adaptor,"rule b7e");
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:114:4: ( (a= b7e -> $a) (o= b8o b= b7e -> ^( $o $b8e $b) )* )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:114:7: (a= b7e -> $a) (o= b8o b= b7e -> ^( $o $b8e $b) )*
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:114:4: ( (a= b7e -> $a) (o= b8o b= b7e -> ^( $o $b8e $b) )* )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:114:7: (a= b7e -> $a) (o= b8o b= b7e -> ^( $o $b8e $b) )*
             {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:114:7: (a= b7e -> $a)
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:114:8: a= b7e
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:114:7: (a= b7e -> $a)
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:114:8: a= b7e
             {
-            pushFollow(FOLLOW_b7e_in_b8e1061);
+            pushFollow(FOLLOW_b7e_in_b8e1064);
             a=b7e();
 
             state._fsp--;
@@ -4191,7 +4198,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:114:19: (o= b8o b= b7e -> ^( $o $b8e $b) )*
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:114:19: (o= b8o b= b7e -> ^( $o $b8e $b) )*
             loop28:
             do {
                 int alt28=2;
@@ -4204,16 +4211,16 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt28) {
             	case 1 :
-            	    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:114:20: o= b8o b= b7e
+            	    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:114:20: o= b8o b= b7e
             	    {
-            	    pushFollow(FOLLOW_b8o_in_b8e1070);
+            	    pushFollow(FOLLOW_b8o_in_b8e1073);
             	    o=b8o();
 
             	    state._fsp--;
 
             	    stream_b8o.add(o.getTree());
 
-            	    pushFollow(FOLLOW_b7e_in_b8e1074);
+            	    pushFollow(FOLLOW_b7e_in_b8e1077);
             	    b=b7e();
 
             	    state._fsp--;
@@ -4221,7 +4228,7 @@ public TreeAdaptor getTreeAdaptor() {
             	    stream_b7e.add(b.getTree());
 
             	    // AST REWRITE
-            	    // elements: b, b8e, o
+            	    // elements: b, o, b8e
             	    // token labels: 
             	    // rule labels: retval, b, o
             	    // token list labels: 
@@ -4235,7 +4242,7 @@ public TreeAdaptor getTreeAdaptor() {
             	    root_0 = (CommonTree)adaptor.nil();
             	    // 114:33: -> ^( $o $b8e $b)
             	    {
-            	        // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:114:36: ^( $o $b8e $b)
+            	        // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:114:36: ^( $o $b8e $b)
             	        {
             	        CommonTree root_1 = (CommonTree)adaptor.nil();
             	        root_1 = (CommonTree)adaptor.becomeRoot(stream_o.nextNode(), root_1);
@@ -4292,7 +4299,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "b7e"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:115:1: b7e : (a= b6e -> $a) (o= b7o b= b6e -> ^( $o $b7e $b) )* ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:115:1: b7e : (a= b6e -> $a) (o= b7o b= b6e -> ^( $o $b7e $b) )* ;
     public final DrqlAntlrParser.b7e_return b7e() throws RecognitionException {
         DrqlAntlrParser.b7e_return retval = new DrqlAntlrParser.b7e_return();
         retval.start = input.LT(1);
@@ -4310,13 +4317,13 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_b6e=new RewriteRuleSubtreeStream(adaptor,"rule b6e");
         RewriteRuleSubtreeStream stream_b7o=new RewriteRuleSubtreeStream(adaptor,"rule b7o");
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:115:4: ( (a= b6e -> $a) (o= b7o b= b6e -> ^( $o $b7e $b) )* )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:115:7: (a= b6e -> $a) (o= b7o b= b6e -> ^( $o $b7e $b) )*
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:115:4: ( (a= b6e -> $a) (o= b7o b= b6e -> ^( $o $b7e $b) )* )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:115:7: (a= b6e -> $a) (o= b7o b= b6e -> ^( $o $b7e $b) )*
             {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:115:7: (a= b6e -> $a)
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:115:8: a= b6e
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:115:7: (a= b6e -> $a)
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:115:8: a= b6e
             {
-            pushFollow(FOLLOW_b6e_in_b7e1100);
+            pushFollow(FOLLOW_b6e_in_b7e1103);
             a=b6e();
 
             state._fsp--;
@@ -4347,7 +4354,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:115:19: (o= b7o b= b6e -> ^( $o $b7e $b) )*
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:115:19: (o= b7o b= b6e -> ^( $o $b7e $b) )*
             loop29:
             do {
                 int alt29=2;
@@ -4360,16 +4367,16 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt29) {
             	case 1 :
-            	    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:115:20: o= b7o b= b6e
+            	    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:115:20: o= b7o b= b6e
             	    {
-            	    pushFollow(FOLLOW_b7o_in_b7e1109);
+            	    pushFollow(FOLLOW_b7o_in_b7e1112);
             	    o=b7o();
 
             	    state._fsp--;
 
             	    stream_b7o.add(o.getTree());
 
-            	    pushFollow(FOLLOW_b6e_in_b7e1113);
+            	    pushFollow(FOLLOW_b6e_in_b7e1116);
             	    b=b6e();
 
             	    state._fsp--;
@@ -4377,7 +4384,7 @@ public TreeAdaptor getTreeAdaptor() {
             	    stream_b6e.add(b.getTree());
 
             	    // AST REWRITE
-            	    // elements: o, b7e, b
+            	    // elements: o, b, b7e
             	    // token labels: 
             	    // rule labels: retval, b, o
             	    // token list labels: 
@@ -4391,7 +4398,7 @@ public TreeAdaptor getTreeAdaptor() {
             	    root_0 = (CommonTree)adaptor.nil();
             	    // 115:33: -> ^( $o $b7e $b)
             	    {
-            	        // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:115:36: ^( $o $b7e $b)
+            	        // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:115:36: ^( $o $b7e $b)
             	        {
             	        CommonTree root_1 = (CommonTree)adaptor.nil();
             	        root_1 = (CommonTree)adaptor.becomeRoot(stream_o.nextNode(), root_1);
@@ -4448,7 +4455,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "b6e"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:116:1: b6e : (a= b5e -> $a) (o= b6o b= b5e -> ^( $o $b6e $b) )* ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:116:1: b6e : (a= b5e -> $a) (o= b6o b= b5e -> ^( $o $b6e $b) )* ;
     public final DrqlAntlrParser.b6e_return b6e() throws RecognitionException {
         DrqlAntlrParser.b6e_return retval = new DrqlAntlrParser.b6e_return();
         retval.start = input.LT(1);
@@ -4466,13 +4473,13 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_b5e=new RewriteRuleSubtreeStream(adaptor,"rule b5e");
         RewriteRuleSubtreeStream stream_b6o=new RewriteRuleSubtreeStream(adaptor,"rule b6o");
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:116:4: ( (a= b5e -> $a) (o= b6o b= b5e -> ^( $o $b6e $b) )* )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:116:7: (a= b5e -> $a) (o= b6o b= b5e -> ^( $o $b6e $b) )*
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:116:4: ( (a= b5e -> $a) (o= b6o b= b5e -> ^( $o $b6e $b) )* )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:116:7: (a= b5e -> $a) (o= b6o b= b5e -> ^( $o $b6e $b) )*
             {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:116:7: (a= b5e -> $a)
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:116:8: a= b5e
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:116:7: (a= b5e -> $a)
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:116:8: a= b5e
             {
-            pushFollow(FOLLOW_b5e_in_b6e1139);
+            pushFollow(FOLLOW_b5e_in_b6e1142);
             a=b5e();
 
             state._fsp--;
@@ -4503,7 +4510,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:116:19: (o= b6o b= b5e -> ^( $o $b6e $b) )*
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:116:19: (o= b6o b= b5e -> ^( $o $b6e $b) )*
             loop30:
             do {
                 int alt30=2;
@@ -4516,16 +4523,16 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt30) {
             	case 1 :
-            	    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:116:20: o= b6o b= b5e
+            	    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:116:20: o= b6o b= b5e
             	    {
-            	    pushFollow(FOLLOW_b6o_in_b6e1148);
+            	    pushFollow(FOLLOW_b6o_in_b6e1151);
             	    o=b6o();
 
             	    state._fsp--;
 
             	    stream_b6o.add(o.getTree());
 
-            	    pushFollow(FOLLOW_b5e_in_b6e1152);
+            	    pushFollow(FOLLOW_b5e_in_b6e1155);
             	    b=b5e();
 
             	    state._fsp--;
@@ -4533,7 +4540,7 @@ public TreeAdaptor getTreeAdaptor() {
             	    stream_b5e.add(b.getTree());
 
             	    // AST REWRITE
-            	    // elements: b, o, b6e
+            	    // elements: o, b6e, b
             	    // token labels: 
             	    // rule labels: retval, b, o
             	    // token list labels: 
@@ -4547,7 +4554,7 @@ public TreeAdaptor getTreeAdaptor() {
             	    root_0 = (CommonTree)adaptor.nil();
             	    // 116:33: -> ^( $o $b6e $b)
             	    {
-            	        // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:116:36: ^( $o $b6e $b)
+            	        // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:116:36: ^( $o $b6e $b)
             	        {
             	        CommonTree root_1 = (CommonTree)adaptor.nil();
             	        root_1 = (CommonTree)adaptor.becomeRoot(stream_o.nextNode(), root_1);
@@ -4604,7 +4611,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "b5e"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:117:1: b5e : (a= b4e -> $a) (o= b5o b= b4e -> ^( $o $b5e $b) )* ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:117:1: b5e : (a= b4e -> $a) (o= b5o b= b4e -> ^( $o $b5e $b) )* ;
     public final DrqlAntlrParser.b5e_return b5e() throws RecognitionException {
         DrqlAntlrParser.b5e_return retval = new DrqlAntlrParser.b5e_return();
         retval.start = input.LT(1);
@@ -4622,13 +4629,13 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_b4e=new RewriteRuleSubtreeStream(adaptor,"rule b4e");
         RewriteRuleSubtreeStream stream_b5o=new RewriteRuleSubtreeStream(adaptor,"rule b5o");
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:117:4: ( (a= b4e -> $a) (o= b5o b= b4e -> ^( $o $b5e $b) )* )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:117:7: (a= b4e -> $a) (o= b5o b= b4e -> ^( $o $b5e $b) )*
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:117:4: ( (a= b4e -> $a) (o= b5o b= b4e -> ^( $o $b5e $b) )* )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:117:7: (a= b4e -> $a) (o= b5o b= b4e -> ^( $o $b5e $b) )*
             {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:117:7: (a= b4e -> $a)
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:117:8: a= b4e
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:117:7: (a= b4e -> $a)
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:117:8: a= b4e
             {
-            pushFollow(FOLLOW_b4e_in_b5e1178);
+            pushFollow(FOLLOW_b4e_in_b5e1181);
             a=b4e();
 
             state._fsp--;
@@ -4659,7 +4666,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:117:19: (o= b5o b= b4e -> ^( $o $b5e $b) )*
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:117:19: (o= b5o b= b4e -> ^( $o $b5e $b) )*
             loop31:
             do {
                 int alt31=2;
@@ -4672,16 +4679,16 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt31) {
             	case 1 :
-            	    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:117:20: o= b5o b= b4e
+            	    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:117:20: o= b5o b= b4e
             	    {
-            	    pushFollow(FOLLOW_b5o_in_b5e1187);
+            	    pushFollow(FOLLOW_b5o_in_b5e1190);
             	    o=b5o();
 
             	    state._fsp--;
 
             	    stream_b5o.add(o.getTree());
 
-            	    pushFollow(FOLLOW_b4e_in_b5e1191);
+            	    pushFollow(FOLLOW_b4e_in_b5e1194);
             	    b=b4e();
 
             	    state._fsp--;
@@ -4689,7 +4696,7 @@ public TreeAdaptor getTreeAdaptor() {
             	    stream_b4e.add(b.getTree());
 
             	    // AST REWRITE
-            	    // elements: b, o, b5e
+            	    // elements: o, b, b5e
             	    // token labels: 
             	    // rule labels: retval, b, o
             	    // token list labels: 
@@ -4703,7 +4710,7 @@ public TreeAdaptor getTreeAdaptor() {
             	    root_0 = (CommonTree)adaptor.nil();
             	    // 117:33: -> ^( $o $b5e $b)
             	    {
-            	        // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:117:36: ^( $o $b5e $b)
+            	        // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:117:36: ^( $o $b5e $b)
             	        {
             	        CommonTree root_1 = (CommonTree)adaptor.nil();
             	        root_1 = (CommonTree)adaptor.becomeRoot(stream_o.nextNode(), root_1);
@@ -4760,7 +4767,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "b4e"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:118:1: b4e : (a= b3e -> $a) (o= b4o b= b3e -> ^( $o $b4e $b) )* ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:118:1: b4e : (a= b3e -> $a) (o= b4o b= b3e -> ^( $o $b4e $b) )* ;
     public final DrqlAntlrParser.b4e_return b4e() throws RecognitionException {
         DrqlAntlrParser.b4e_return retval = new DrqlAntlrParser.b4e_return();
         retval.start = input.LT(1);
@@ -4778,13 +4785,13 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_b3e=new RewriteRuleSubtreeStream(adaptor,"rule b3e");
         RewriteRuleSubtreeStream stream_b4o=new RewriteRuleSubtreeStream(adaptor,"rule b4o");
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:118:4: ( (a= b3e -> $a) (o= b4o b= b3e -> ^( $o $b4e $b) )* )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:118:7: (a= b3e -> $a) (o= b4o b= b3e -> ^( $o $b4e $b) )*
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:118:4: ( (a= b3e -> $a) (o= b4o b= b3e -> ^( $o $b4e $b) )* )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:118:7: (a= b3e -> $a) (o= b4o b= b3e -> ^( $o $b4e $b) )*
             {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:118:7: (a= b3e -> $a)
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:118:8: a= b3e
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:118:7: (a= b3e -> $a)
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:118:8: a= b3e
             {
-            pushFollow(FOLLOW_b3e_in_b4e1217);
+            pushFollow(FOLLOW_b3e_in_b4e1220);
             a=b3e();
 
             state._fsp--;
@@ -4815,7 +4822,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:118:19: (o= b4o b= b3e -> ^( $o $b4e $b) )*
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:118:19: (o= b4o b= b3e -> ^( $o $b4e $b) )*
             loop32:
             do {
                 int alt32=2;
@@ -4828,16 +4835,16 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt32) {
             	case 1 :
-            	    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:118:20: o= b4o b= b3e
+            	    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:118:20: o= b4o b= b3e
             	    {
-            	    pushFollow(FOLLOW_b4o_in_b4e1226);
+            	    pushFollow(FOLLOW_b4o_in_b4e1229);
             	    o=b4o();
 
             	    state._fsp--;
 
             	    stream_b4o.add(o.getTree());
 
-            	    pushFollow(FOLLOW_b3e_in_b4e1230);
+            	    pushFollow(FOLLOW_b3e_in_b4e1233);
             	    b=b3e();
 
             	    state._fsp--;
@@ -4845,7 +4852,7 @@ public TreeAdaptor getTreeAdaptor() {
             	    stream_b3e.add(b.getTree());
 
             	    // AST REWRITE
-            	    // elements: b4e, b, o
+            	    // elements: o, b, b4e
             	    // token labels: 
             	    // rule labels: retval, b, o
             	    // token list labels: 
@@ -4859,7 +4866,7 @@ public TreeAdaptor getTreeAdaptor() {
             	    root_0 = (CommonTree)adaptor.nil();
             	    // 118:33: -> ^( $o $b4e $b)
             	    {
-            	        // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:118:36: ^( $o $b4e $b)
+            	        // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:118:36: ^( $o $b4e $b)
             	        {
             	        CommonTree root_1 = (CommonTree)adaptor.nil();
             	        root_1 = (CommonTree)adaptor.becomeRoot(stream_o.nextNode(), root_1);
@@ -4916,7 +4923,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "b3e"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:119:1: b3e : (a= b2e -> $a) (o= b3o b= b2e -> ^( $o $b3e $b) )* ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:119:1: b3e : (a= b2e -> $a) (o= b3o b= b2e -> ^( $o $b3e $b) )* ;
     public final DrqlAntlrParser.b3e_return b3e() throws RecognitionException {
         DrqlAntlrParser.b3e_return retval = new DrqlAntlrParser.b3e_return();
         retval.start = input.LT(1);
@@ -4934,13 +4941,13 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_b3o=new RewriteRuleSubtreeStream(adaptor,"rule b3o");
         RewriteRuleSubtreeStream stream_b2e=new RewriteRuleSubtreeStream(adaptor,"rule b2e");
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:119:4: ( (a= b2e -> $a) (o= b3o b= b2e -> ^( $o $b3e $b) )* )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:119:7: (a= b2e -> $a) (o= b3o b= b2e -> ^( $o $b3e $b) )*
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:119:4: ( (a= b2e -> $a) (o= b3o b= b2e -> ^( $o $b3e $b) )* )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:119:7: (a= b2e -> $a) (o= b3o b= b2e -> ^( $o $b3e $b) )*
             {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:119:7: (a= b2e -> $a)
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:119:8: a= b2e
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:119:7: (a= b2e -> $a)
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:119:8: a= b2e
             {
-            pushFollow(FOLLOW_b2e_in_b3e1256);
+            pushFollow(FOLLOW_b2e_in_b3e1259);
             a=b2e();
 
             state._fsp--;
@@ -4971,7 +4978,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:119:19: (o= b3o b= b2e -> ^( $o $b3e $b) )*
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:119:19: (o= b3o b= b2e -> ^( $o $b3e $b) )*
             loop33:
             do {
                 int alt33=2;
@@ -4984,16 +4991,16 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt33) {
             	case 1 :
-            	    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:119:20: o= b3o b= b2e
+            	    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:119:20: o= b3o b= b2e
             	    {
-            	    pushFollow(FOLLOW_b3o_in_b3e1265);
+            	    pushFollow(FOLLOW_b3o_in_b3e1268);
             	    o=b3o();
 
             	    state._fsp--;
 
             	    stream_b3o.add(o.getTree());
 
-            	    pushFollow(FOLLOW_b2e_in_b3e1269);
+            	    pushFollow(FOLLOW_b2e_in_b3e1272);
             	    b=b2e();
 
             	    state._fsp--;
@@ -5001,7 +5008,7 @@ public TreeAdaptor getTreeAdaptor() {
             	    stream_b2e.add(b.getTree());
 
             	    // AST REWRITE
-            	    // elements: b, o, b3e
+            	    // elements: o, b3e, b
             	    // token labels: 
             	    // rule labels: retval, b, o
             	    // token list labels: 
@@ -5015,7 +5022,7 @@ public TreeAdaptor getTreeAdaptor() {
             	    root_0 = (CommonTree)adaptor.nil();
             	    // 119:33: -> ^( $o $b3e $b)
             	    {
-            	        // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:119:36: ^( $o $b3e $b)
+            	        // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:119:36: ^( $o $b3e $b)
             	        {
             	        CommonTree root_1 = (CommonTree)adaptor.nil();
             	        root_1 = (CommonTree)adaptor.becomeRoot(stream_o.nextNode(), root_1);
@@ -5072,7 +5079,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "b2e"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:120:1: b2e : (a= b1e -> $a) (o= b2o b= b1e -> ^( $o $b2e $b) )* ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:120:1: b2e : (a= b1e -> $a) (o= b2o b= b1e -> ^( $o $b2e $b) )* ;
     public final DrqlAntlrParser.b2e_return b2e() throws RecognitionException {
         DrqlAntlrParser.b2e_return retval = new DrqlAntlrParser.b2e_return();
         retval.start = input.LT(1);
@@ -5090,13 +5097,13 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_b2o=new RewriteRuleSubtreeStream(adaptor,"rule b2o");
         RewriteRuleSubtreeStream stream_b1e=new RewriteRuleSubtreeStream(adaptor,"rule b1e");
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:120:4: ( (a= b1e -> $a) (o= b2o b= b1e -> ^( $o $b2e $b) )* )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:120:7: (a= b1e -> $a) (o= b2o b= b1e -> ^( $o $b2e $b) )*
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:120:4: ( (a= b1e -> $a) (o= b2o b= b1e -> ^( $o $b2e $b) )* )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:120:7: (a= b1e -> $a) (o= b2o b= b1e -> ^( $o $b2e $b) )*
             {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:120:7: (a= b1e -> $a)
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:120:8: a= b1e
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:120:7: (a= b1e -> $a)
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:120:8: a= b1e
             {
-            pushFollow(FOLLOW_b1e_in_b2e1295);
+            pushFollow(FOLLOW_b1e_in_b2e1298);
             a=b1e();
 
             state._fsp--;
@@ -5127,7 +5134,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:120:19: (o= b2o b= b1e -> ^( $o $b2e $b) )*
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:120:19: (o= b2o b= b1e -> ^( $o $b2e $b) )*
             loop34:
             do {
                 int alt34=2;
@@ -5140,16 +5147,16 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt34) {
             	case 1 :
-            	    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:120:20: o= b2o b= b1e
+            	    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:120:20: o= b2o b= b1e
             	    {
-            	    pushFollow(FOLLOW_b2o_in_b2e1304);
+            	    pushFollow(FOLLOW_b2o_in_b2e1307);
             	    o=b2o();
 
             	    state._fsp--;
 
             	    stream_b2o.add(o.getTree());
 
-            	    pushFollow(FOLLOW_b1e_in_b2e1308);
+            	    pushFollow(FOLLOW_b1e_in_b2e1311);
             	    b=b1e();
 
             	    state._fsp--;
@@ -5171,7 +5178,7 @@ public TreeAdaptor getTreeAdaptor() {
             	    root_0 = (CommonTree)adaptor.nil();
             	    // 120:33: -> ^( $o $b2e $b)
             	    {
-            	        // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:120:36: ^( $o $b2e $b)
+            	        // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:120:36: ^( $o $b2e $b)
             	        {
             	        CommonTree root_1 = (CommonTree)adaptor.nil();
             	        root_1 = (CommonTree)adaptor.becomeRoot(stream_o.nextNode(), root_1);
@@ -5228,7 +5235,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "b1e"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:121:1: b1e : (a= uPrefixExpr -> $a) (o= b1o b= uPrefixExpr -> ^( $o $b1e $b) )* ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:121:1: b1e : (a= uPrefixExpr -> $a) (o= b1o b= uPrefixExpr -> ^( $o $b1e $b) )* ;
     public final DrqlAntlrParser.b1e_return b1e() throws RecognitionException {
         DrqlAntlrParser.b1e_return retval = new DrqlAntlrParser.b1e_return();
         retval.start = input.LT(1);
@@ -5246,13 +5253,13 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_uPrefixExpr=new RewriteRuleSubtreeStream(adaptor,"rule uPrefixExpr");
         RewriteRuleSubtreeStream stream_b1o=new RewriteRuleSubtreeStream(adaptor,"rule b1o");
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:121:4: ( (a= uPrefixExpr -> $a) (o= b1o b= uPrefixExpr -> ^( $o $b1e $b) )* )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:121:7: (a= uPrefixExpr -> $a) (o= b1o b= uPrefixExpr -> ^( $o $b1e $b) )*
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:121:4: ( (a= uPrefixExpr -> $a) (o= b1o b= uPrefixExpr -> ^( $o $b1e $b) )* )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:121:7: (a= uPrefixExpr -> $a) (o= b1o b= uPrefixExpr -> ^( $o $b1e $b) )*
             {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:121:7: (a= uPrefixExpr -> $a)
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:121:8: a= uPrefixExpr
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:121:7: (a= uPrefixExpr -> $a)
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:121:8: a= uPrefixExpr
             {
-            pushFollow(FOLLOW_uPrefixExpr_in_b1e1334);
+            pushFollow(FOLLOW_uPrefixExpr_in_b1e1337);
             a=uPrefixExpr();
 
             state._fsp--;
@@ -5283,7 +5290,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:121:29: (o= b1o b= uPrefixExpr -> ^( $o $b1e $b) )*
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:121:29: (o= b1o b= uPrefixExpr -> ^( $o $b1e $b) )*
             loop35:
             do {
                 int alt35=2;
@@ -5296,16 +5303,16 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt35) {
             	case 1 :
-            	    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:121:30: o= b1o b= uPrefixExpr
+            	    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:121:30: o= b1o b= uPrefixExpr
             	    {
-            	    pushFollow(FOLLOW_b1o_in_b1e1345);
+            	    pushFollow(FOLLOW_b1o_in_b1e1348);
             	    o=b1o();
 
             	    state._fsp--;
 
             	    stream_b1o.add(o.getTree());
 
-            	    pushFollow(FOLLOW_uPrefixExpr_in_b1e1349);
+            	    pushFollow(FOLLOW_uPrefixExpr_in_b1e1352);
             	    b=uPrefixExpr();
 
             	    state._fsp--;
@@ -5313,7 +5320,7 @@ public TreeAdaptor getTreeAdaptor() {
             	    stream_uPrefixExpr.add(b.getTree());
 
             	    // AST REWRITE
-            	    // elements: o, b1e, b
+            	    // elements: o, b, b1e
             	    // token labels: 
             	    // rule labels: retval, b, o
             	    // token list labels: 
@@ -5327,7 +5334,7 @@ public TreeAdaptor getTreeAdaptor() {
             	    root_0 = (CommonTree)adaptor.nil();
             	    // 121:50: -> ^( $o $b1e $b)
             	    {
-            	        // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:121:53: ^( $o $b1e $b)
+            	        // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:121:53: ^( $o $b1e $b)
             	        {
             	        CommonTree root_1 = (CommonTree)adaptor.nil();
             	        root_1 = (CommonTree)adaptor.becomeRoot(stream_o.nextNode(), root_1);
@@ -5384,7 +5391,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "uPrefixExpr"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:122:1: uPrefixExpr : (o= uPrefixOp -> ^( $o $uPrefixExpr) )* (a= uPostfixExpr -> $a) ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:122:1: uPrefixExpr : (o= uPrefixOp -> ^( $o $uPrefixExpr) )* (a= uPostfixExpr -> $a) ;
     public final DrqlAntlrParser.uPrefixExpr_return uPrefixExpr() throws RecognitionException {
         DrqlAntlrParser.uPrefixExpr_return retval = new DrqlAntlrParser.uPrefixExpr_return();
         retval.start = input.LT(1);
@@ -5400,10 +5407,10 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_uPrefixOp=new RewriteRuleSubtreeStream(adaptor,"rule uPrefixOp");
         RewriteRuleSubtreeStream stream_uPostfixExpr=new RewriteRuleSubtreeStream(adaptor,"rule uPostfixExpr");
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:122:12: ( (o= uPrefixOp -> ^( $o $uPrefixExpr) )* (a= uPostfixExpr -> $a) )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:122:14: (o= uPrefixOp -> ^( $o $uPrefixExpr) )* (a= uPostfixExpr -> $a)
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:122:12: ( (o= uPrefixOp -> ^( $o $uPrefixExpr) )* (a= uPostfixExpr -> $a) )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:122:14: (o= uPrefixOp -> ^( $o $uPrefixExpr) )* (a= uPostfixExpr -> $a)
             {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:122:14: (o= uPrefixOp -> ^( $o $uPrefixExpr) )*
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:122:14: (o= uPrefixOp -> ^( $o $uPrefixExpr) )*
             loop36:
             do {
                 int alt36=2;
@@ -5416,9 +5423,9 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt36) {
             	case 1 :
-            	    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:122:15: o= uPrefixOp
+            	    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:122:15: o= uPrefixOp
             	    {
-            	    pushFollow(FOLLOW_uPrefixOp_in_uPrefixExpr1373);
+            	    pushFollow(FOLLOW_uPrefixOp_in_uPrefixExpr1376);
             	    o=uPrefixOp();
 
             	    state._fsp--;
@@ -5439,7 +5446,7 @@ public TreeAdaptor getTreeAdaptor() {
             	    root_0 = (CommonTree)adaptor.nil();
             	    // 122:26: -> ^( $o $uPrefixExpr)
             	    {
-            	        // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:122:28: ^( $o $uPrefixExpr)
+            	        // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:122:28: ^( $o $uPrefixExpr)
             	        {
             	        CommonTree root_1 = (CommonTree)adaptor.nil();
             	        root_1 = (CommonTree)adaptor.becomeRoot(stream_o.nextNode(), root_1);
@@ -5463,10 +5470,10 @@ public TreeAdaptor getTreeAdaptor() {
             } while (true);
 
 
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:122:49: (a= uPostfixExpr -> $a)
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:122:50: a= uPostfixExpr
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:122:49: (a= uPostfixExpr -> $a)
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:122:50: a= uPostfixExpr
             {
-            pushFollow(FOLLOW_uPostfixExpr_in_uPrefixExpr1388);
+            pushFollow(FOLLOW_uPostfixExpr_in_uPrefixExpr1391);
             a=uPostfixExpr();
 
             state._fsp--;
@@ -5528,7 +5535,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "uPostfixExpr"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:123:1: uPostfixExpr : (a= atomExpr -> $a) (o= uPostfixOp -> ^( $o $uPostfixExpr) )* ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:123:1: uPostfixExpr : (a= atomExpr -> $a) (o= uPostfixOp -> ^( $o $uPostfixExpr) )* ;
     public final DrqlAntlrParser.uPostfixExpr_return uPostfixExpr() throws RecognitionException {
         DrqlAntlrParser.uPostfixExpr_return retval = new DrqlAntlrParser.uPostfixExpr_return();
         retval.start = input.LT(1);
@@ -5544,13 +5551,13 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_atomExpr=new RewriteRuleSubtreeStream(adaptor,"rule atomExpr");
         RewriteRuleSubtreeStream stream_uPostfixOp=new RewriteRuleSubtreeStream(adaptor,"rule uPostfixOp");
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:123:13: ( (a= atomExpr -> $a) (o= uPostfixOp -> ^( $o $uPostfixExpr) )* )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:123:15: (a= atomExpr -> $a) (o= uPostfixOp -> ^( $o $uPostfixExpr) )*
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:123:13: ( (a= atomExpr -> $a) (o= uPostfixOp -> ^( $o $uPostfixExpr) )* )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:123:15: (a= atomExpr -> $a) (o= uPostfixOp -> ^( $o $uPostfixExpr) )*
             {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:123:15: (a= atomExpr -> $a)
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:123:16: a= atomExpr
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:123:15: (a= atomExpr -> $a)
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:123:16: a= atomExpr
             {
-            pushFollow(FOLLOW_atomExpr_in_uPostfixExpr1404);
+            pushFollow(FOLLOW_atomExpr_in_uPostfixExpr1407);
             a=atomExpr();
 
             state._fsp--;
@@ -5581,7 +5588,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:123:32: (o= uPostfixOp -> ^( $o $uPostfixExpr) )*
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:123:32: (o= uPostfixOp -> ^( $o $uPostfixExpr) )*
             loop37:
             do {
                 int alt37=2;
@@ -5594,9 +5601,9 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt37) {
             	case 1 :
-            	    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:123:33: o= uPostfixOp
+            	    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:123:33: o= uPostfixOp
             	    {
-            	    pushFollow(FOLLOW_uPostfixOp_in_uPostfixExpr1413);
+            	    pushFollow(FOLLOW_uPostfixOp_in_uPostfixExpr1416);
             	    o=uPostfixOp();
 
             	    state._fsp--;
@@ -5617,7 +5624,7 @@ public TreeAdaptor getTreeAdaptor() {
             	    root_0 = (CommonTree)adaptor.nil();
             	    // 123:46: -> ^( $o $uPostfixExpr)
             	    {
-            	        // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:123:49: ^( $o $uPostfixExpr)
+            	        // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:123:49: ^( $o $uPostfixExpr)
             	        {
             	        CommonTree root_1 = (CommonTree)adaptor.nil();
             	        root_1 = (CommonTree)adaptor.becomeRoot(stream_o.nextNode(), root_1);
@@ -5672,7 +5679,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "atomExpr"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:124:1: atomExpr : ( INT -> ^( N_INT INT ) | FLOAT -> ^( N_FLOAT FLOAT ) | STRING -> ^( N_STRING STRING ) | ( LPAREN expr RPAREN ) -> expr | columnPath );
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:124:1: atomExpr : ( INT -> ^( N_INT INT ) | FLOAT -> ^( N_FLOAT FLOAT ) | STRING -> ^( N_STRING STRING ) | ( LPAREN expr RPAREN ) -> expr | columnPath );
     public final DrqlAntlrParser.atomExpr_return atomExpr() throws RecognitionException {
         DrqlAntlrParser.atomExpr_return retval = new DrqlAntlrParser.atomExpr_return();
         retval.start = input.LT(1);
@@ -5702,7 +5709,7 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_STRING=new RewriteRuleTokenStream(adaptor,"token STRING");
         RewriteRuleSubtreeStream stream_expr=new RewriteRuleSubtreeStream(adaptor,"rule expr");
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:124:9: ( INT -> ^( N_INT INT ) | FLOAT -> ^( N_FLOAT FLOAT ) | STRING -> ^( N_STRING STRING ) | ( LPAREN expr RPAREN ) -> expr | columnPath )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:124:9: ( INT -> ^( N_INT INT ) | FLOAT -> ^( N_FLOAT FLOAT ) | STRING -> ^( N_STRING STRING ) | ( LPAREN expr RPAREN ) -> expr | columnPath )
             int alt38=5;
             switch ( input.LA(1) ) {
             case INT:
@@ -5741,9 +5748,9 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt38) {
                 case 1 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:124:11: INT
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:124:11: INT
                     {
-                    INT82=(Token)match(input,INT,FOLLOW_INT_in_atomExpr1431);  
+                    INT82=(Token)match(input,INT,FOLLOW_INT_in_atomExpr1434);  
                     stream_INT.add(INT82);
 
 
@@ -5760,7 +5767,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (CommonTree)adaptor.nil();
                     // 124:15: -> ^( N_INT INT )
                     {
-                        // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:124:18: ^( N_INT INT )
+                        // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:124:18: ^( N_INT INT )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(
@@ -5782,9 +5789,9 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:125:7: FLOAT
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:125:7: FLOAT
                     {
-                    FLOAT83=(Token)match(input,FLOAT,FOLLOW_FLOAT_in_atomExpr1447);  
+                    FLOAT83=(Token)match(input,FLOAT,FOLLOW_FLOAT_in_atomExpr1450);  
                     stream_FLOAT.add(FLOAT83);
 
 
@@ -5801,7 +5808,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (CommonTree)adaptor.nil();
                     // 125:13: -> ^( N_FLOAT FLOAT )
                     {
-                        // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:125:16: ^( N_FLOAT FLOAT )
+                        // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:125:16: ^( N_FLOAT FLOAT )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(
@@ -5823,9 +5830,9 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:126:7: STRING
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:126:7: STRING
                     {
-                    STRING84=(Token)match(input,STRING,FOLLOW_STRING_in_atomExpr1463);  
+                    STRING84=(Token)match(input,STRING,FOLLOW_STRING_in_atomExpr1466);  
                     stream_STRING.add(STRING84);
 
 
@@ -5842,7 +5849,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (CommonTree)adaptor.nil();
                     // 126:14: -> ^( N_STRING STRING )
                     {
-                        // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:126:17: ^( N_STRING STRING )
+                        // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:126:17: ^( N_STRING STRING )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(
@@ -5864,23 +5871,23 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 4 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:127:7: ( LPAREN expr RPAREN )
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:127:7: ( LPAREN expr RPAREN )
                     {
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:127:7: ( LPAREN expr RPAREN )
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:127:8: LPAREN expr RPAREN
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:127:7: ( LPAREN expr RPAREN )
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:127:8: LPAREN expr RPAREN
                     {
-                    LPAREN85=(Token)match(input,LPAREN,FOLLOW_LPAREN_in_atomExpr1482);  
+                    LPAREN85=(Token)match(input,LPAREN,FOLLOW_LPAREN_in_atomExpr1485);  
                     stream_LPAREN.add(LPAREN85);
 
 
-                    pushFollow(FOLLOW_expr_in_atomExpr1484);
+                    pushFollow(FOLLOW_expr_in_atomExpr1487);
                     expr86=expr();
 
                     state._fsp--;
 
                     stream_expr.add(expr86.getTree());
 
-                    RPAREN87=(Token)match(input,RPAREN,FOLLOW_RPAREN_in_atomExpr1486);  
+                    RPAREN87=(Token)match(input,RPAREN,FOLLOW_RPAREN_in_atomExpr1489);  
                     stream_RPAREN.add(RPAREN87);
 
 
@@ -5910,12 +5917,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 5 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:128:7: columnPath
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:128:7: columnPath
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
 
-                    pushFollow(FOLLOW_columnPath_in_atomExpr1499);
+                    pushFollow(FOLLOW_columnPath_in_atomExpr1502);
                     columnPath88=columnPath();
 
                     state._fsp--;
@@ -5955,7 +5962,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "b11o"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:131:1: b11o : LOGICAL_OR -> N_LOGICAL_OR ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:131:1: b11o : LOGICAL_OR -> N_LOGICAL_OR ;
     public final DrqlAntlrParser.b11o_return b11o() throws RecognitionException {
         DrqlAntlrParser.b11o_return retval = new DrqlAntlrParser.b11o_return();
         retval.start = input.LT(1);
@@ -5969,10 +5976,10 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_LOGICAL_OR=new RewriteRuleTokenStream(adaptor,"token LOGICAL_OR");
 
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:131:5: ( LOGICAL_OR -> N_LOGICAL_OR )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:131:7: LOGICAL_OR
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:131:5: ( LOGICAL_OR -> N_LOGICAL_OR )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:131:7: LOGICAL_OR
             {
-            LOGICAL_OR89=(Token)match(input,LOGICAL_OR,FOLLOW_LOGICAL_OR_in_b11o1507);  
+            LOGICAL_OR89=(Token)match(input,LOGICAL_OR,FOLLOW_LOGICAL_OR_in_b11o1510);  
             stream_LOGICAL_OR.add(LOGICAL_OR89);
 
 
@@ -6029,7 +6036,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "b10o"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:132:1: b10o : LOGICAL_AND -> N_LOGICAL_AND ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:132:1: b10o : LOGICAL_AND -> N_LOGICAL_AND ;
     public final DrqlAntlrParser.b10o_return b10o() throws RecognitionException {
         DrqlAntlrParser.b10o_return retval = new DrqlAntlrParser.b10o_return();
         retval.start = input.LT(1);
@@ -6043,10 +6050,10 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_LOGICAL_AND=new RewriteRuleTokenStream(adaptor,"token LOGICAL_AND");
 
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:132:5: ( LOGICAL_AND -> N_LOGICAL_AND )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:132:7: LOGICAL_AND
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:132:5: ( LOGICAL_AND -> N_LOGICAL_AND )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:132:7: LOGICAL_AND
             {
-            LOGICAL_AND90=(Token)match(input,LOGICAL_AND,FOLLOW_LOGICAL_AND_in_b10o1518);  
+            LOGICAL_AND90=(Token)match(input,LOGICAL_AND,FOLLOW_LOGICAL_AND_in_b10o1521);  
             stream_LOGICAL_AND.add(LOGICAL_AND90);
 
 
@@ -6103,7 +6110,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "b9o"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:133:1: b9o : BITWISE_OR -> N_BITWISE_OR ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:133:1: b9o : BITWISE_OR -> N_BITWISE_OR ;
     public final DrqlAntlrParser.b9o_return b9o() throws RecognitionException {
         DrqlAntlrParser.b9o_return retval = new DrqlAntlrParser.b9o_return();
         retval.start = input.LT(1);
@@ -6117,10 +6124,10 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_BITWISE_OR=new RewriteRuleTokenStream(adaptor,"token BITWISE_OR");
 
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:133:4: ( BITWISE_OR -> N_BITWISE_OR )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:133:7: BITWISE_OR
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:133:4: ( BITWISE_OR -> N_BITWISE_OR )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:133:7: BITWISE_OR
             {
-            BITWISE_OR91=(Token)match(input,BITWISE_OR,FOLLOW_BITWISE_OR_in_b9o1528);  
+            BITWISE_OR91=(Token)match(input,BITWISE_OR,FOLLOW_BITWISE_OR_in_b9o1531);  
             stream_BITWISE_OR.add(BITWISE_OR91);
 
 
@@ -6177,7 +6184,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "b8o"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:134:1: b8o : BITWISE_XOR -> N_BITWISE_XOR ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:134:1: b8o : BITWISE_XOR -> N_BITWISE_XOR ;
     public final DrqlAntlrParser.b8o_return b8o() throws RecognitionException {
         DrqlAntlrParser.b8o_return retval = new DrqlAntlrParser.b8o_return();
         retval.start = input.LT(1);
@@ -6191,10 +6198,10 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_BITWISE_XOR=new RewriteRuleTokenStream(adaptor,"token BITWISE_XOR");
 
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:134:4: ( BITWISE_XOR -> N_BITWISE_XOR )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:134:7: BITWISE_XOR
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:134:4: ( BITWISE_XOR -> N_BITWISE_XOR )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:134:7: BITWISE_XOR
             {
-            BITWISE_XOR92=(Token)match(input,BITWISE_XOR,FOLLOW_BITWISE_XOR_in_b8o1539);  
+            BITWISE_XOR92=(Token)match(input,BITWISE_XOR,FOLLOW_BITWISE_XOR_in_b8o1542);  
             stream_BITWISE_XOR.add(BITWISE_XOR92);
 
 
@@ -6251,7 +6258,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "b7o"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:135:1: b7o : BITWISE_AND -> N_BITWISE_AND ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:135:1: b7o : BITWISE_AND -> N_BITWISE_AND ;
     public final DrqlAntlrParser.b7o_return b7o() throws RecognitionException {
         DrqlAntlrParser.b7o_return retval = new DrqlAntlrParser.b7o_return();
         retval.start = input.LT(1);
@@ -6265,10 +6272,10 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_BITWISE_AND=new RewriteRuleTokenStream(adaptor,"token BITWISE_AND");
 
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:135:4: ( BITWISE_AND -> N_BITWISE_AND )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:135:7: BITWISE_AND
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:135:4: ( BITWISE_AND -> N_BITWISE_AND )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:135:7: BITWISE_AND
             {
-            BITWISE_AND93=(Token)match(input,BITWISE_AND,FOLLOW_BITWISE_AND_in_b7o1549);  
+            BITWISE_AND93=(Token)match(input,BITWISE_AND,FOLLOW_BITWISE_AND_in_b7o1552);  
             stream_BITWISE_AND.add(BITWISE_AND93);
 
 
@@ -6325,7 +6332,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "b6o"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:136:1: b6o : ( EQUAL -> N_EQUAL | NOT_EQUAL -> N_NOT_EQUAL );
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:136:1: b6o : ( EQUAL -> N_EQUAL | NOT_EQUAL -> N_NOT_EQUAL );
     public final DrqlAntlrParser.b6o_return b6o() throws RecognitionException {
         DrqlAntlrParser.b6o_return retval = new DrqlAntlrParser.b6o_return();
         retval.start = input.LT(1);
@@ -6342,7 +6349,7 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_EQUAL=new RewriteRuleTokenStream(adaptor,"token EQUAL");
 
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:136:4: ( EQUAL -> N_EQUAL | NOT_EQUAL -> N_NOT_EQUAL )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:136:4: ( EQUAL -> N_EQUAL | NOT_EQUAL -> N_NOT_EQUAL )
             int alt39=2;
             int LA39_0 = input.LA(1);
 
@@ -6361,9 +6368,9 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt39) {
                 case 1 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:136:7: EQUAL
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:136:7: EQUAL
                     {
-                    EQUAL94=(Token)match(input,EQUAL,FOLLOW_EQUAL_in_b6o1559);  
+                    EQUAL94=(Token)match(input,EQUAL,FOLLOW_EQUAL_in_b6o1562);  
                     stream_EQUAL.add(EQUAL94);
 
 
@@ -6392,9 +6399,9 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:136:26: NOT_EQUAL
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:136:26: NOT_EQUAL
                     {
-                    NOT_EQUAL95=(Token)match(input,NOT_EQUAL,FOLLOW_NOT_EQUAL_in_b6o1567);  
+                    NOT_EQUAL95=(Token)match(input,NOT_EQUAL,FOLLOW_NOT_EQUAL_in_b6o1570);  
                     stream_NOT_EQUAL.add(NOT_EQUAL95);
 
 
@@ -6453,7 +6460,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "b5o"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:137:1: b5o : ( LESS_THAN -> N_LESS_THAN | LESS_THAN_OR_EQUAL -> N_LESS_THAN_OR_EQUAL | GREATER_THAN -> N_GREATER_THAN | GREATER_THAN_OR_EQUAL -> N_GREATER_THAN_OR_EQUAL );
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:137:1: b5o : ( LESS_THAN -> N_LESS_THAN | LESS_THAN_OR_EQUAL -> N_LESS_THAN_OR_EQUAL | GREATER_THAN -> N_GREATER_THAN | GREATER_THAN_OR_EQUAL -> N_GREATER_THAN_OR_EQUAL );
     public final DrqlAntlrParser.b5o_return b5o() throws RecognitionException {
         DrqlAntlrParser.b5o_return retval = new DrqlAntlrParser.b5o_return();
         retval.start = input.LT(1);
@@ -6476,7 +6483,7 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_LESS_THAN=new RewriteRuleTokenStream(adaptor,"token LESS_THAN");
 
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:137:4: ( LESS_THAN -> N_LESS_THAN | LESS_THAN_OR_EQUAL -> N_LESS_THAN_OR_EQUAL | GREATER_THAN -> N_GREATER_THAN | GREATER_THAN_OR_EQUAL -> N_GREATER_THAN_OR_EQUAL )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:137:4: ( LESS_THAN -> N_LESS_THAN | LESS_THAN_OR_EQUAL -> N_LESS_THAN_OR_EQUAL | GREATER_THAN -> N_GREATER_THAN | GREATER_THAN_OR_EQUAL -> N_GREATER_THAN_OR_EQUAL )
             int alt40=4;
             switch ( input.LA(1) ) {
             case LESS_THAN:
@@ -6509,9 +6516,9 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt40) {
                 case 1 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:137:7: LESS_THAN
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:137:7: LESS_THAN
                     {
-                    LESS_THAN96=(Token)match(input,LESS_THAN,FOLLOW_LESS_THAN_in_b5o1578);  
+                    LESS_THAN96=(Token)match(input,LESS_THAN,FOLLOW_LESS_THAN_in_b5o1581);  
                     stream_LESS_THAN.add(LESS_THAN96);
 
 
@@ -6540,9 +6547,9 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:137:34: LESS_THAN_OR_EQUAL
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:137:34: LESS_THAN_OR_EQUAL
                     {
-                    LESS_THAN_OR_EQUAL97=(Token)match(input,LESS_THAN_OR_EQUAL,FOLLOW_LESS_THAN_OR_EQUAL_in_b5o1586);  
+                    LESS_THAN_OR_EQUAL97=(Token)match(input,LESS_THAN_OR_EQUAL,FOLLOW_LESS_THAN_OR_EQUAL_in_b5o1589);  
                     stream_LESS_THAN_OR_EQUAL.add(LESS_THAN_OR_EQUAL97);
 
 
@@ -6571,9 +6578,9 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:138:5: GREATER_THAN
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:138:5: GREATER_THAN
                     {
-                    GREATER_THAN98=(Token)match(input,GREATER_THAN,FOLLOW_GREATER_THAN_in_b5o1599);  
+                    GREATER_THAN98=(Token)match(input,GREATER_THAN,FOLLOW_GREATER_THAN_in_b5o1602);  
                     stream_GREATER_THAN.add(GREATER_THAN98);
 
 
@@ -6602,9 +6609,9 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 4 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:139:5: GREATER_THAN_OR_EQUAL
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:139:5: GREATER_THAN_OR_EQUAL
                     {
-                    GREATER_THAN_OR_EQUAL99=(Token)match(input,GREATER_THAN_OR_EQUAL,FOLLOW_GREATER_THAN_OR_EQUAL_in_b5o1612);  
+                    GREATER_THAN_OR_EQUAL99=(Token)match(input,GREATER_THAN_OR_EQUAL,FOLLOW_GREATER_THAN_OR_EQUAL_in_b5o1615);  
                     stream_GREATER_THAN_OR_EQUAL.add(GREATER_THAN_OR_EQUAL99);
 
 
@@ -6663,7 +6670,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "b4o"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:140:1: b4o : ( BITWISE_LEFT_SHIFT -> N_BITWISE_LEFT_SHIFT | BITWISE_RIGHT_SHIFT -> N_BITWISE_RIGHT_SHIFT );
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:140:1: b4o : ( BITWISE_LEFT_SHIFT -> N_BITWISE_LEFT_SHIFT | BITWISE_RIGHT_SHIFT -> N_BITWISE_RIGHT_SHIFT );
     public final DrqlAntlrParser.b4o_return b4o() throws RecognitionException {
         DrqlAntlrParser.b4o_return retval = new DrqlAntlrParser.b4o_return();
         retval.start = input.LT(1);
@@ -6680,7 +6687,7 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_BITWISE_RIGHT_SHIFT=new RewriteRuleTokenStream(adaptor,"token BITWISE_RIGHT_SHIFT");
 
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:140:4: ( BITWISE_LEFT_SHIFT -> N_BITWISE_LEFT_SHIFT | BITWISE_RIGHT_SHIFT -> N_BITWISE_RIGHT_SHIFT )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:140:4: ( BITWISE_LEFT_SHIFT -> N_BITWISE_LEFT_SHIFT | BITWISE_RIGHT_SHIFT -> N_BITWISE_RIGHT_SHIFT )
             int alt41=2;
             int LA41_0 = input.LA(1);
 
@@ -6699,9 +6706,9 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt41) {
                 case 1 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:140:6: BITWISE_LEFT_SHIFT
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:140:6: BITWISE_LEFT_SHIFT
                     {
-                    BITWISE_LEFT_SHIFT100=(Token)match(input,BITWISE_LEFT_SHIFT,FOLLOW_BITWISE_LEFT_SHIFT_in_b4o1622);  
+                    BITWISE_LEFT_SHIFT100=(Token)match(input,BITWISE_LEFT_SHIFT,FOLLOW_BITWISE_LEFT_SHIFT_in_b4o1625);  
                     stream_BITWISE_LEFT_SHIFT.add(BITWISE_LEFT_SHIFT100);
 
 
@@ -6730,9 +6737,9 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:141:5: BITWISE_RIGHT_SHIFT
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:141:5: BITWISE_RIGHT_SHIFT
                     {
-                    BITWISE_RIGHT_SHIFT101=(Token)match(input,BITWISE_RIGHT_SHIFT,FOLLOW_BITWISE_RIGHT_SHIFT_in_b4o1635);  
+                    BITWISE_RIGHT_SHIFT101=(Token)match(input,BITWISE_RIGHT_SHIFT,FOLLOW_BITWISE_RIGHT_SHIFT_in_b4o1638);  
                     stream_BITWISE_RIGHT_SHIFT.add(BITWISE_RIGHT_SHIFT101);
 
 
@@ -6791,7 +6798,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "b3o"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:142:1: b3o : ( ADD -> N_ADD | SUBSTRUCT -> N_SUBSTRUCT );
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:142:1: b3o : ( ADD -> N_ADD | SUBSTRUCT -> N_SUBSTRUCT );
     public final DrqlAntlrParser.b3o_return b3o() throws RecognitionException {
         DrqlAntlrParser.b3o_return retval = new DrqlAntlrParser.b3o_return();
         retval.start = input.LT(1);
@@ -6808,7 +6815,7 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_ADD=new RewriteRuleTokenStream(adaptor,"token ADD");
 
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:142:4: ( ADD -> N_ADD | SUBSTRUCT -> N_SUBSTRUCT )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:142:4: ( ADD -> N_ADD | SUBSTRUCT -> N_SUBSTRUCT )
             int alt42=2;
             int LA42_0 = input.LA(1);
 
@@ -6827,9 +6834,9 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt42) {
                 case 1 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:142:6: ADD
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:142:6: ADD
                     {
-                    ADD102=(Token)match(input,ADD,FOLLOW_ADD_in_b3o1645);  
+                    ADD102=(Token)match(input,ADD,FOLLOW_ADD_in_b3o1648);  
                     stream_ADD.add(ADD102);
 
 
@@ -6858,9 +6865,9 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:142:21: SUBSTRUCT
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:142:21: SUBSTRUCT
                     {
-                    SUBSTRUCT103=(Token)match(input,SUBSTRUCT,FOLLOW_SUBSTRUCT_in_b3o1653);  
+                    SUBSTRUCT103=(Token)match(input,SUBSTRUCT,FOLLOW_SUBSTRUCT_in_b3o1656);  
                     stream_SUBSTRUCT.add(SUBSTRUCT103);
 
 
@@ -6919,7 +6926,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "b2o"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:143:1: b2o : ( multiplyOp -> N_MULTIPLY | divideOp -> N_DIVIDE | REMAINDER -> N_REMAINDER );
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:143:1: b2o : ( multiplyOp -> N_MULTIPLY | divideOp -> N_DIVIDE | REMAINDER -> N_REMAINDER );
     public final DrqlAntlrParser.b2o_return b2o() throws RecognitionException {
         DrqlAntlrParser.b2o_return retval = new DrqlAntlrParser.b2o_return();
         retval.start = input.LT(1);
@@ -6938,7 +6945,7 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_divideOp=new RewriteRuleSubtreeStream(adaptor,"rule divideOp");
         RewriteRuleSubtreeStream stream_multiplyOp=new RewriteRuleSubtreeStream(adaptor,"rule multiplyOp");
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:143:4: ( multiplyOp -> N_MULTIPLY | divideOp -> N_DIVIDE | REMAINDER -> N_REMAINDER )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:143:4: ( multiplyOp -> N_MULTIPLY | divideOp -> N_DIVIDE | REMAINDER -> N_REMAINDER )
             int alt43=3;
             switch ( input.LA(1) ) {
             case STAR:
@@ -6967,9 +6974,9 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt43) {
                 case 1 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:143:6: multiplyOp
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:143:6: multiplyOp
                     {
-                    pushFollow(FOLLOW_multiplyOp_in_b2o1663);
+                    pushFollow(FOLLOW_multiplyOp_in_b2o1666);
                     multiplyOp104=multiplyOp();
 
                     state._fsp--;
@@ -7001,9 +7008,9 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:144:5: divideOp
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:144:5: divideOp
                     {
-                    pushFollow(FOLLOW_divideOp_in_b2o1676);
+                    pushFollow(FOLLOW_divideOp_in_b2o1679);
                     divideOp105=divideOp();
 
                     state._fsp--;
@@ -7035,9 +7042,9 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:144:28: REMAINDER
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:144:28: REMAINDER
                     {
-                    REMAINDER106=(Token)match(input,REMAINDER,FOLLOW_REMAINDER_in_b2o1684);  
+                    REMAINDER106=(Token)match(input,REMAINDER,FOLLOW_REMAINDER_in_b2o1687);  
                     stream_REMAINDER.add(REMAINDER106);
 
 
@@ -7096,7 +7103,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "b1o"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:145:1: b1o : CONTAINS -> N_CONTAINS ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:145:1: b1o : CONTAINS -> N_CONTAINS ;
     public final DrqlAntlrParser.b1o_return b1o() throws RecognitionException {
         DrqlAntlrParser.b1o_return retval = new DrqlAntlrParser.b1o_return();
         retval.start = input.LT(1);
@@ -7110,10 +7117,10 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_CONTAINS=new RewriteRuleTokenStream(adaptor,"token CONTAINS");
 
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:145:4: ( CONTAINS -> N_CONTAINS )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:145:6: CONTAINS
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:145:4: ( CONTAINS -> N_CONTAINS )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:145:6: CONTAINS
             {
-            CONTAINS107=(Token)match(input,CONTAINS,FOLLOW_CONTAINS_in_b1o1694);  
+            CONTAINS107=(Token)match(input,CONTAINS,FOLLOW_CONTAINS_in_b1o1697);  
             stream_CONTAINS.add(CONTAINS107);
 
 
@@ -7170,7 +7177,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "uPrefixOp"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:146:1: uPrefixOp : ( BITWISE_NOT -> N_BITWISE_NOT | LOGICAL_NOT -> N_LOGICAL_NOT );
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:146:1: uPrefixOp : ( BITWISE_NOT -> N_BITWISE_NOT | LOGICAL_NOT -> N_LOGICAL_NOT );
     public final DrqlAntlrParser.uPrefixOp_return uPrefixOp() throws RecognitionException {
         DrqlAntlrParser.uPrefixOp_return retval = new DrqlAntlrParser.uPrefixOp_return();
         retval.start = input.LT(1);
@@ -7187,7 +7194,7 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_BITWISE_NOT=new RewriteRuleTokenStream(adaptor,"token BITWISE_NOT");
 
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:146:10: ( BITWISE_NOT -> N_BITWISE_NOT | LOGICAL_NOT -> N_LOGICAL_NOT )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:146:10: ( BITWISE_NOT -> N_BITWISE_NOT | LOGICAL_NOT -> N_LOGICAL_NOT )
             int alt44=2;
             int LA44_0 = input.LA(1);
 
@@ -7206,9 +7213,9 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt44) {
                 case 1 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:146:12: BITWISE_NOT
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:146:12: BITWISE_NOT
                     {
-                    BITWISE_NOT108=(Token)match(input,BITWISE_NOT,FOLLOW_BITWISE_NOT_in_uPrefixOp1705);  
+                    BITWISE_NOT108=(Token)match(input,BITWISE_NOT,FOLLOW_BITWISE_NOT_in_uPrefixOp1708);  
                     stream_BITWISE_NOT.add(BITWISE_NOT108);
 
 
@@ -7237,9 +7244,9 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:146:43: LOGICAL_NOT
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:146:43: LOGICAL_NOT
                     {
-                    LOGICAL_NOT109=(Token)match(input,LOGICAL_NOT,FOLLOW_LOGICAL_NOT_in_uPrefixOp1713);  
+                    LOGICAL_NOT109=(Token)match(input,LOGICAL_NOT,FOLLOW_LOGICAL_NOT_in_uPrefixOp1716);  
                     stream_LOGICAL_NOT.add(LOGICAL_NOT109);
 
 
@@ -7298,7 +7305,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "uPostfixOp"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:147:1: uPostfixOp : ( uPostfixOpIn | uPostfixOpCall );
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:147:1: uPostfixOp : ( uPostfixOpIn | uPostfixOpCall );
     public final DrqlAntlrParser.uPostfixOp_return uPostfixOp() throws RecognitionException {
         DrqlAntlrParser.uPostfixOp_return retval = new DrqlAntlrParser.uPostfixOp_return();
         retval.start = input.LT(1);
@@ -7313,7 +7320,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:147:11: ( uPostfixOpIn | uPostfixOpCall )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:147:11: ( uPostfixOpIn | uPostfixOpCall )
             int alt45=2;
             int LA45_0 = input.LA(1);
 
@@ -7332,12 +7339,12 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt45) {
                 case 1 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:147:13: uPostfixOpIn
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:147:13: uPostfixOpIn
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
 
-                    pushFollow(FOLLOW_uPostfixOpIn_in_uPostfixOp1723);
+                    pushFollow(FOLLOW_uPostfixOpIn_in_uPostfixOp1726);
                     uPostfixOpIn110=uPostfixOpIn();
 
                     state._fsp--;
@@ -7347,12 +7354,12 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:147:28: uPostfixOpCall
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:147:28: uPostfixOpCall
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
 
-                    pushFollow(FOLLOW_uPostfixOpCall_in_uPostfixOp1727);
+                    pushFollow(FOLLOW_uPostfixOpCall_in_uPostfixOp1730);
                     uPostfixOpCall111=uPostfixOpCall();
 
                     state._fsp--;
@@ -7392,7 +7399,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "uPostfixOpIn"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:148:1: uPostfixOpIn : IN LPAREN ( expr ( COMMA expr )* )? RPAREN -> ^( N_IN_PARAMS ( expr )* ) ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:148:1: uPostfixOpIn : IN LPAREN ( expr ( COMMA expr )* )? RPAREN -> ^( N_IN_PARAMS ( expr )* ) ;
     public final DrqlAntlrParser.uPostfixOpIn_return uPostfixOpIn() throws RecognitionException {
         DrqlAntlrParser.uPostfixOpIn_return retval = new DrqlAntlrParser.uPostfixOpIn_return();
         retval.start = input.LT(1);
@@ -7419,18 +7426,18 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_LPAREN=new RewriteRuleTokenStream(adaptor,"token LPAREN");
         RewriteRuleSubtreeStream stream_expr=new RewriteRuleSubtreeStream(adaptor,"rule expr");
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:148:13: ( IN LPAREN ( expr ( COMMA expr )* )? RPAREN -> ^( N_IN_PARAMS ( expr )* ) )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:148:15: IN LPAREN ( expr ( COMMA expr )* )? RPAREN
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:148:13: ( IN LPAREN ( expr ( COMMA expr )* )? RPAREN -> ^( N_IN_PARAMS ( expr )* ) )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:148:15: IN LPAREN ( expr ( COMMA expr )* )? RPAREN
             {
-            IN112=(Token)match(input,IN,FOLLOW_IN_in_uPostfixOpIn1733);  
+            IN112=(Token)match(input,IN,FOLLOW_IN_in_uPostfixOpIn1736);  
             stream_IN.add(IN112);
 
 
-            LPAREN113=(Token)match(input,LPAREN,FOLLOW_LPAREN_in_uPostfixOpIn1735);  
+            LPAREN113=(Token)match(input,LPAREN,FOLLOW_LPAREN_in_uPostfixOpIn1738);  
             stream_LPAREN.add(LPAREN113);
 
 
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:148:25: ( expr ( COMMA expr )* )?
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:148:25: ( expr ( COMMA expr )* )?
             int alt47=2;
             int LA47_0 = input.LA(1);
 
@@ -7439,16 +7446,16 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt47) {
                 case 1 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:148:26: expr ( COMMA expr )*
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:148:26: expr ( COMMA expr )*
                     {
-                    pushFollow(FOLLOW_expr_in_uPostfixOpIn1738);
+                    pushFollow(FOLLOW_expr_in_uPostfixOpIn1741);
                     expr114=expr();
 
                     state._fsp--;
 
                     stream_expr.add(expr114.getTree());
 
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:148:31: ( COMMA expr )*
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:148:31: ( COMMA expr )*
                     loop46:
                     do {
                         int alt46=2;
@@ -7461,13 +7468,13 @@ public TreeAdaptor getTreeAdaptor() {
 
                         switch (alt46) {
                     	case 1 :
-                    	    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:148:32: COMMA expr
+                    	    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:148:32: COMMA expr
                     	    {
-                    	    COMMA115=(Token)match(input,COMMA,FOLLOW_COMMA_in_uPostfixOpIn1741);  
+                    	    COMMA115=(Token)match(input,COMMA,FOLLOW_COMMA_in_uPostfixOpIn1744);  
                     	    stream_COMMA.add(COMMA115);
 
 
-                    	    pushFollow(FOLLOW_expr_in_uPostfixOpIn1743);
+                    	    pushFollow(FOLLOW_expr_in_uPostfixOpIn1746);
                     	    expr116=expr();
 
                     	    state._fsp--;
@@ -7489,7 +7496,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            RPAREN117=(Token)match(input,RPAREN,FOLLOW_RPAREN_in_uPostfixOpIn1749);  
+            RPAREN117=(Token)match(input,RPAREN,FOLLOW_RPAREN_in_uPostfixOpIn1752);  
             stream_RPAREN.add(RPAREN117);
 
 
@@ -7506,14 +7513,14 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (CommonTree)adaptor.nil();
             // 148:54: -> ^( N_IN_PARAMS ( expr )* )
             {
-                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:148:57: ^( N_IN_PARAMS ( expr )* )
+                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:148:57: ^( N_IN_PARAMS ( expr )* )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
                 (CommonTree)adaptor.create(N_IN_PARAMS, "N_IN_PARAMS")
                 , root_1);
 
-                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:148:71: ( expr )*
+                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:148:71: ( expr )*
                 while ( stream_expr.hasNext() ) {
                     adaptor.addChild(root_1, stream_expr.nextTree());
 
@@ -7559,7 +7566,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "uPostfixOpCall"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:149:1: uPostfixOpCall : LPAREN ( expr ( COMMA expr )* )? RPAREN -> ^( N_CALL_PARAMS ( expr )* ) ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:149:1: uPostfixOpCall : LPAREN ( expr ( COMMA expr )* )? RPAREN -> ^( N_CALL_PARAMS ( expr )* ) ;
     public final DrqlAntlrParser.uPostfixOpCall_return uPostfixOpCall() throws RecognitionException {
         DrqlAntlrParser.uPostfixOpCall_return retval = new DrqlAntlrParser.uPostfixOpCall_return();
         retval.start = input.LT(1);
@@ -7583,14 +7590,14 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_LPAREN=new RewriteRuleTokenStream(adaptor,"token LPAREN");
         RewriteRuleSubtreeStream stream_expr=new RewriteRuleSubtreeStream(adaptor,"rule expr");
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:149:15: ( LPAREN ( expr ( COMMA expr )* )? RPAREN -> ^( N_CALL_PARAMS ( expr )* ) )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:149:17: LPAREN ( expr ( COMMA expr )* )? RPAREN
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:149:15: ( LPAREN ( expr ( COMMA expr )* )? RPAREN -> ^( N_CALL_PARAMS ( expr )* ) )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:149:17: LPAREN ( expr ( COMMA expr )* )? RPAREN
             {
-            LPAREN118=(Token)match(input,LPAREN,FOLLOW_LPAREN_in_uPostfixOpCall1764);  
+            LPAREN118=(Token)match(input,LPAREN,FOLLOW_LPAREN_in_uPostfixOpCall1767);  
             stream_LPAREN.add(LPAREN118);
 
 
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:149:24: ( expr ( COMMA expr )* )?
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:149:24: ( expr ( COMMA expr )* )?
             int alt49=2;
             int LA49_0 = input.LA(1);
 
@@ -7599,16 +7606,16 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt49) {
                 case 1 :
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:149:25: expr ( COMMA expr )*
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:149:25: expr ( COMMA expr )*
                     {
-                    pushFollow(FOLLOW_expr_in_uPostfixOpCall1767);
+                    pushFollow(FOLLOW_expr_in_uPostfixOpCall1770);
                     expr119=expr();
 
                     state._fsp--;
 
                     stream_expr.add(expr119.getTree());
 
-                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:149:30: ( COMMA expr )*
+                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:149:30: ( COMMA expr )*
                     loop48:
                     do {
                         int alt48=2;
@@ -7621,13 +7628,13 @@ public TreeAdaptor getTreeAdaptor() {
 
                         switch (alt48) {
                     	case 1 :
-                    	    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:149:31: COMMA expr
+                    	    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:149:31: COMMA expr
                     	    {
-                    	    COMMA120=(Token)match(input,COMMA,FOLLOW_COMMA_in_uPostfixOpCall1770);  
+                    	    COMMA120=(Token)match(input,COMMA,FOLLOW_COMMA_in_uPostfixOpCall1773);  
                     	    stream_COMMA.add(COMMA120);
 
 
-                    	    pushFollow(FOLLOW_expr_in_uPostfixOpCall1772);
+                    	    pushFollow(FOLLOW_expr_in_uPostfixOpCall1775);
                     	    expr121=expr();
 
                     	    state._fsp--;
@@ -7649,7 +7656,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            RPAREN122=(Token)match(input,RPAREN,FOLLOW_RPAREN_in_uPostfixOpCall1778);  
+            RPAREN122=(Token)match(input,RPAREN,FOLLOW_RPAREN_in_uPostfixOpCall1781);  
             stream_RPAREN.add(RPAREN122);
 
 
@@ -7666,14 +7673,14 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (CommonTree)adaptor.nil();
             // 149:53: -> ^( N_CALL_PARAMS ( expr )* )
             {
-                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:149:56: ^( N_CALL_PARAMS ( expr )* )
+                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:149:56: ^( N_CALL_PARAMS ( expr )* )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(
                 (CommonTree)adaptor.create(N_CALL_PARAMS, "N_CALL_PARAMS")
                 , root_1);
 
-                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:149:72: ( expr )*
+                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:149:72: ( expr )*
                 while ( stream_expr.hasNext() ) {
                     adaptor.addChild(root_1, stream_expr.nextTree());
 
@@ -7719,7 +7726,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "divideOp"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:152:1: divideOp : ( SLASH | DIV );
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:152:1: divideOp : ( SLASH | DIV );
     public final DrqlAntlrParser.divideOp_return divideOp() throws RecognitionException {
         DrqlAntlrParser.divideOp_return retval = new DrqlAntlrParser.divideOp_return();
         retval.start = input.LT(1);
@@ -7732,8 +7739,8 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree set123_tree=null;
 
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:152:9: ( SLASH | DIV )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:152:9: ( SLASH | DIV )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -7784,7 +7791,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "multiplyOp"
-    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:153:1: multiplyOp : STAR ;
+    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:153:1: multiplyOp : STAR ;
     public final DrqlAntlrParser.multiplyOp_return multiplyOp() throws RecognitionException {
         DrqlAntlrParser.multiplyOp_return retval = new DrqlAntlrParser.multiplyOp_return();
         retval.start = input.LT(1);
@@ -7797,13 +7804,13 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree STAR124_tree=null;
 
         try {
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:153:11: ( STAR )
-            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:153:13: STAR
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:153:11: ( STAR )
+            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:153:13: STAR
             {
             root_0 = (CommonTree)adaptor.nil();
 
 
-            STAR124=(Token)match(input,STAR,FOLLOW_STAR_in_multiplyOp1805); 
+            STAR124=(Token)match(input,STAR,FOLLOW_STAR_in_multiplyOp1808); 
             STAR124_tree = 
             (CommonTree)adaptor.create(STAR124)
             ;
@@ -7873,132 +7880,132 @@ public TreeAdaptor getTreeAdaptor() {
     public static final BitSet FOLLOW_joinClauseFrom_in_joinClause462 = new BitSet(new long[]{0x0000000000000000L,0x0040000000000000L});
     public static final BitSet FOLLOW_ON_in_joinClause464 = new BitSet(new long[]{0x0000020000000000L,0x0000000000000000L,0x0000000000000020L});
     public static final BitSet FOLLOW_joinConditionList_in_joinClause466 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_INNER_in_joinClauseDesc487 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_LEFT_in_joinClauseDesc500 = new BitSet(new long[]{0x0000000000000000L,0x0100000000000000L});
-    public static final BitSet FOLLOW_OUTER_in_joinClauseDesc502 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_optionallyAliasedTable_in_joinClauseFrom515 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_aliasedSubSelectStatement_in_joinClauseFrom532 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_tableName_in_optionallyAliasedTable546 = new BitSet(new long[]{0x0000000000000042L});
-    public static final BitSet FOLLOW_AS_in_optionallyAliasedTable549 = new BitSet(new long[]{0x0000020000000000L});
-    public static final BitSet FOLLOW_ID_in_optionallyAliasedTable551 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_LPAREN_in_aliasedSubSelectStatement569 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000004L});
-    public static final BitSet FOLLOW_selectStatement_in_aliasedSubSelectStatement571 = new BitSet(new long[]{0x0000000000000000L,0x8000000000000000L});
-    public static final BitSet FOLLOW_RPAREN_in_aliasedSubSelectStatement573 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_AS_in_aliasedSubSelectStatement575 = new BitSet(new long[]{0x0000020000000000L});
-    public static final BitSet FOLLOW_tableName_in_aliasedSubSelectStatement577 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_joinCondition_in_joinConditionList597 = new BitSet(new long[]{0x0040000000000002L});
-    public static final BitSet FOLLOW_LOGICAL_AND_in_joinConditionList600 = new BitSet(new long[]{0x0000020000000000L,0x0000000000000000L,0x0000000000000020L});
-    public static final BitSet FOLLOW_joinCondition_in_joinConditionList602 = new BitSet(new long[]{0x0040000000000002L});
-    public static final BitSet FOLLOW_columnName_in_joinCondition625 = new BitSet(new long[]{0x0000000002000000L});
-    public static final BitSet FOLLOW_EQUAL_in_joinCondition627 = new BitSet(new long[]{0x0000020000000000L,0x0000000000000000L,0x0000000000000020L});
-    public static final BitSet FOLLOW_columnName_in_joinCondition631 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_WHERE_in_whereClause651 = new BitSet(new long[]{0x0280120020000800L,0x0000000000000000L,0x0000000000000060L});
-    public static final BitSet FOLLOW_expr_in_whereClause653 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_GROUPBY_in_groupbyClause669 = new BitSet(new long[]{0x0000020000000000L,0x0000000000000000L,0x0000000000000020L});
-    public static final BitSet FOLLOW_columnName_in_groupbyClause671 = new BitSet(new long[]{0x0000000000020002L});
-    public static final BitSet FOLLOW_COMMA_in_groupbyClause674 = new BitSet(new long[]{0x0000020000000000L,0x0000000000000000L,0x0000000000000020L});
-    public static final BitSet FOLLOW_columnName_in_groupbyClause676 = new BitSet(new long[]{0x0000000000020002L});
-    public static final BitSet FOLLOW_HAVING_in_havingClause700 = new BitSet(new long[]{0x0280120020000800L,0x0000000000000000L,0x0000000000000060L});
-    public static final BitSet FOLLOW_expr_in_havingClause702 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ORDERBY_in_orderbyClause720 = new BitSet(new long[]{0x0000020000000000L,0x0000000000000000L,0x0000000000000020L});
-    public static final BitSet FOLLOW_orderbyColumnName_in_orderbyClause722 = new BitSet(new long[]{0x0000000000020002L});
-    public static final BitSet FOLLOW_COMMA_in_orderbyClause725 = new BitSet(new long[]{0x0000020000000000L,0x0000000000000000L,0x0000000000000020L});
-    public static final BitSet FOLLOW_orderbyColumnName_in_orderbyClause727 = new BitSet(new long[]{0x0000000000020002L});
-    public static final BitSet FOLLOW_columnName_in_orderbyColumnName749 = new BitSet(new long[]{0x0000000000200082L});
-    public static final BitSet FOLLOW_ASC_in_orderbyColumnName752 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_DESC_in_orderbyColumnName764 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_LIMIT_in_limitClause805 = new BitSet(new long[]{0x0000100000000000L});
-    public static final BitSet FOLLOW_INT_in_limitClause807 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_columnPath2_in_columnPath825 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_columnName_in_columnPath2839 = new BitSet(new long[]{0x0000000000800002L});
-    public static final BitSet FOLLOW_DOT_in_columnPath2842 = new BitSet(new long[]{0x0000020000000000L,0x0000000000000000L,0x0000000000000020L});
-    public static final BitSet FOLLOW_columnName_in_columnPath2845 = new BitSet(new long[]{0x0000000000800002L});
-    public static final BitSet FOLLOW_ID_in_columnName853 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_STAR_in_columnName865 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_tablePath2_in_tablePath881 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_tableName_in_tablePath2895 = new BitSet(new long[]{0x0000000000800002L});
-    public static final BitSet FOLLOW_DOT_in_tablePath2898 = new BitSet(new long[]{0x0000020000000000L});
-    public static final BitSet FOLLOW_tableName_in_tablePath2901 = new BitSet(new long[]{0x0000000000800002L});
-    public static final BitSet FOLLOW_ID_in_tableName915 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_expr2_in_expr931 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_b10e_in_expr2947 = new BitSet(new long[]{0x0100000000000002L});
-    public static final BitSet FOLLOW_b11o_in_expr2956 = new BitSet(new long[]{0x0280120020000800L,0x0000000000000000L,0x0000000000000060L});
-    public static final BitSet FOLLOW_b10e_in_expr2960 = new BitSet(new long[]{0x0100000000000002L});
-    public static final BitSet FOLLOW_b9e_in_b10e984 = new BitSet(new long[]{0x0040000000000002L});
-    public static final BitSet FOLLOW_b10o_in_b10e993 = new BitSet(new long[]{0x0280120020000800L,0x0000000000000000L,0x0000000000000060L});
-    public static final BitSet FOLLOW_b9e_in_b10e997 = new BitSet(new long[]{0x0040000000000002L});
-    public static final BitSet FOLLOW_b8e_in_b9e1022 = new BitSet(new long[]{0x0000000000001002L});
-    public static final BitSet FOLLOW_b9o_in_b9e1031 = new BitSet(new long[]{0x0280120020000800L,0x0000000000000000L,0x0000000000000060L});
-    public static final BitSet FOLLOW_b8e_in_b9e1035 = new BitSet(new long[]{0x0000000000001002L});
-    public static final BitSet FOLLOW_b7e_in_b8e1061 = new BitSet(new long[]{0x0000000000004002L});
-    public static final BitSet FOLLOW_b8o_in_b8e1070 = new BitSet(new long[]{0x0280120020000800L,0x0000000000000000L,0x0000000000000060L});
-    public static final BitSet FOLLOW_b7e_in_b8e1074 = new BitSet(new long[]{0x0000000000004002L});
-    public static final BitSet FOLLOW_b6e_in_b7e1100 = new BitSet(new long[]{0x0000000000000202L});
-    public static final BitSet FOLLOW_b7o_in_b7e1109 = new BitSet(new long[]{0x0280120020000800L,0x0000000000000000L,0x0000000000000060L});
-    public static final BitSet FOLLOW_b6e_in_b7e1113 = new BitSet(new long[]{0x0000000000000202L});
-    public static final BitSet FOLLOW_b5e_in_b6e1139 = new BitSet(new long[]{0x2000000002000002L});
-    public static final BitSet FOLLOW_b6o_in_b6e1148 = new BitSet(new long[]{0x0280120020000800L,0x0000000000000000L,0x0000000000000060L});
-    public static final BitSet FOLLOW_b5e_in_b6e1152 = new BitSet(new long[]{0x2000000002000002L});
-    public static final BitSet FOLLOW_b4e_in_b5e1178 = new BitSet(new long[]{0x0018000C00000002L});
-    public static final BitSet FOLLOW_b5o_in_b5e1187 = new BitSet(new long[]{0x0280120020000800L,0x0000000000000000L,0x0000000000000060L});
-    public static final BitSet FOLLOW_b4e_in_b5e1191 = new BitSet(new long[]{0x0018000C00000002L});
-    public static final BitSet FOLLOW_b3e_in_b4e1217 = new BitSet(new long[]{0x0000000000002402L});
-    public static final BitSet FOLLOW_b4o_in_b4e1226 = new BitSet(new long[]{0x0280120020000800L,0x0000000000000000L,0x0000000000000060L});
-    public static final BitSet FOLLOW_b3e_in_b4e1230 = new BitSet(new long[]{0x0000000000002402L});
-    public static final BitSet FOLLOW_b2e_in_b3e1256 = new BitSet(new long[]{0x0000000000000022L,0x0000000000000000L,0x0000000000000080L});
-    public static final BitSet FOLLOW_b3o_in_b3e1265 = new BitSet(new long[]{0x0280120020000800L,0x0000000000000000L,0x0000000000000060L});
-    public static final BitSet FOLLOW_b2e_in_b3e1269 = new BitSet(new long[]{0x0000000000000022L,0x0000000000000000L,0x0000000000000080L});
-    public static final BitSet FOLLOW_b1e_in_b2e1295 = new BitSet(new long[]{0x0000000000400002L,0x4000000000000000L,0x0000000000000030L});
-    public static final BitSet FOLLOW_b2o_in_b2e1304 = new BitSet(new long[]{0x0280120020000800L,0x0000000000000000L,0x0000000000000060L});
-    public static final BitSet FOLLOW_b1e_in_b2e1308 = new BitSet(new long[]{0x0000000000400002L,0x4000000000000000L,0x0000000000000030L});
-    public static final BitSet FOLLOW_uPrefixExpr_in_b1e1334 = new BitSet(new long[]{0x0000000000080002L});
-    public static final BitSet FOLLOW_b1o_in_b1e1345 = new BitSet(new long[]{0x0280120020000800L,0x0000000000000000L,0x0000000000000060L});
-    public static final BitSet FOLLOW_uPrefixExpr_in_b1e1349 = new BitSet(new long[]{0x0000000000080002L});
-    public static final BitSet FOLLOW_uPrefixOp_in_uPrefixExpr1373 = new BitSet(new long[]{0x0280120020000800L,0x0000000000000000L,0x0000000000000060L});
-    public static final BitSet FOLLOW_uPostfixExpr_in_uPrefixExpr1388 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_atomExpr_in_uPostfixExpr1404 = new BitSet(new long[]{0x0200040000000002L});
-    public static final BitSet FOLLOW_uPostfixOp_in_uPostfixExpr1413 = new BitSet(new long[]{0x0200040000000002L});
-    public static final BitSet FOLLOW_INT_in_atomExpr1431 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_FLOAT_in_atomExpr1447 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_STRING_in_atomExpr1463 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_LPAREN_in_atomExpr1482 = new BitSet(new long[]{0x0280120020000800L,0x0000000000000000L,0x0000000000000060L});
-    public static final BitSet FOLLOW_expr_in_atomExpr1484 = new BitSet(new long[]{0x0000000000000000L,0x8000000000000000L});
-    public static final BitSet FOLLOW_RPAREN_in_atomExpr1486 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_columnPath_in_atomExpr1499 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_LOGICAL_OR_in_b11o1507 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_LOGICAL_AND_in_b10o1518 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_BITWISE_OR_in_b9o1528 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_BITWISE_XOR_in_b8o1539 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_BITWISE_AND_in_b7o1549 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_EQUAL_in_b6o1559 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_NOT_EQUAL_in_b6o1567 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_LESS_THAN_in_b5o1578 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_LESS_THAN_OR_EQUAL_in_b5o1586 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_GREATER_THAN_in_b5o1599 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_GREATER_THAN_OR_EQUAL_in_b5o1612 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_BITWISE_LEFT_SHIFT_in_b4o1622 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_BITWISE_RIGHT_SHIFT_in_b4o1635 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ADD_in_b3o1645 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_SUBSTRUCT_in_b3o1653 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_multiplyOp_in_b2o1663 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_divideOp_in_b2o1676 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_REMAINDER_in_b2o1684 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_CONTAINS_in_b1o1694 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_BITWISE_NOT_in_uPrefixOp1705 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_LOGICAL_NOT_in_uPrefixOp1713 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_uPostfixOpIn_in_uPostfixOp1723 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_uPostfixOpCall_in_uPostfixOp1727 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_IN_in_uPostfixOpIn1733 = new BitSet(new long[]{0x0200000000000000L});
-    public static final BitSet FOLLOW_LPAREN_in_uPostfixOpIn1735 = new BitSet(new long[]{0x0280120020000800L,0x8000000000000000L,0x0000000000000060L});
-    public static final BitSet FOLLOW_expr_in_uPostfixOpIn1738 = new BitSet(new long[]{0x0000000000020000L,0x8000000000000000L});
-    public static final BitSet FOLLOW_COMMA_in_uPostfixOpIn1741 = new BitSet(new long[]{0x0280120020000800L,0x0000000000000000L,0x0000000000000060L});
-    public static final BitSet FOLLOW_expr_in_uPostfixOpIn1743 = new BitSet(new long[]{0x0000000000020000L,0x8000000000000000L});
-    public static final BitSet FOLLOW_RPAREN_in_uPostfixOpIn1749 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_LPAREN_in_uPostfixOpCall1764 = new BitSet(new long[]{0x0280120020000800L,0x8000000000000000L,0x0000000000000060L});
-    public static final BitSet FOLLOW_expr_in_uPostfixOpCall1767 = new BitSet(new long[]{0x0000000000020000L,0x8000000000000000L});
-    public static final BitSet FOLLOW_COMMA_in_uPostfixOpCall1770 = new BitSet(new long[]{0x0280120020000800L,0x0000000000000000L,0x0000000000000060L});
-    public static final BitSet FOLLOW_expr_in_uPostfixOpCall1772 = new BitSet(new long[]{0x0000000000020000L,0x8000000000000000L});
-    public static final BitSet FOLLOW_RPAREN_in_uPostfixOpCall1778 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_STAR_in_multiplyOp1805 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_INNER_in_joinClauseDesc489 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_LEFT_in_joinClauseDesc502 = new BitSet(new long[]{0x0000000000000000L,0x0100000000000000L});
+    public static final BitSet FOLLOW_OUTER_in_joinClauseDesc504 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_optionallyAliasedTable_in_joinClauseFrom517 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_aliasedSubSelectStatement_in_joinClauseFrom534 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_tableName_in_optionallyAliasedTable548 = new BitSet(new long[]{0x0000000000000042L});
+    public static final BitSet FOLLOW_AS_in_optionallyAliasedTable551 = new BitSet(new long[]{0x0000020000000000L});
+    public static final BitSet FOLLOW_ID_in_optionallyAliasedTable553 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_LPAREN_in_aliasedSubSelectStatement572 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000000L,0x0000000000000004L});
+    public static final BitSet FOLLOW_selectStatement_in_aliasedSubSelectStatement574 = new BitSet(new long[]{0x0000000000000000L,0x8000000000000000L});
+    public static final BitSet FOLLOW_RPAREN_in_aliasedSubSelectStatement576 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_AS_in_aliasedSubSelectStatement578 = new BitSet(new long[]{0x0000020000000000L});
+    public static final BitSet FOLLOW_tableName_in_aliasedSubSelectStatement580 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_joinCondition_in_joinConditionList600 = new BitSet(new long[]{0x0040000000000002L});
+    public static final BitSet FOLLOW_LOGICAL_AND_in_joinConditionList603 = new BitSet(new long[]{0x0000020000000000L,0x0000000000000000L,0x0000000000000020L});
+    public static final BitSet FOLLOW_joinCondition_in_joinConditionList605 = new BitSet(new long[]{0x0040000000000002L});
+    public static final BitSet FOLLOW_columnPath_in_joinCondition628 = new BitSet(new long[]{0x0000000002000000L});
+    public static final BitSet FOLLOW_EQUAL_in_joinCondition630 = new BitSet(new long[]{0x0000020000000000L,0x0000000000000000L,0x0000000000000020L});
+    public static final BitSet FOLLOW_columnPath_in_joinCondition634 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_WHERE_in_whereClause654 = new BitSet(new long[]{0x0280120020000800L,0x0000000000000000L,0x0000000000000060L});
+    public static final BitSet FOLLOW_expr_in_whereClause656 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_GROUPBY_in_groupbyClause672 = new BitSet(new long[]{0x0000020000000000L,0x0000000000000000L,0x0000000000000020L});
+    public static final BitSet FOLLOW_columnName_in_groupbyClause674 = new BitSet(new long[]{0x0000000000020002L});
+    public static final BitSet FOLLOW_COMMA_in_groupbyClause677 = new BitSet(new long[]{0x0000020000000000L,0x0000000000000000L,0x0000000000000020L});
+    public static final BitSet FOLLOW_columnName_in_groupbyClause679 = new BitSet(new long[]{0x0000000000020002L});
+    public static final BitSet FOLLOW_HAVING_in_havingClause703 = new BitSet(new long[]{0x0280120020000800L,0x0000000000000000L,0x0000000000000060L});
+    public static final BitSet FOLLOW_expr_in_havingClause705 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ORDERBY_in_orderbyClause723 = new BitSet(new long[]{0x0000020000000000L,0x0000000000000000L,0x0000000000000020L});
+    public static final BitSet FOLLOW_orderbyColumnName_in_orderbyClause725 = new BitSet(new long[]{0x0000000000020002L});
+    public static final BitSet FOLLOW_COMMA_in_orderbyClause728 = new BitSet(new long[]{0x0000020000000000L,0x0000000000000000L,0x0000000000000020L});
+    public static final BitSet FOLLOW_orderbyColumnName_in_orderbyClause730 = new BitSet(new long[]{0x0000000000020002L});
+    public static final BitSet FOLLOW_columnName_in_orderbyColumnName752 = new BitSet(new long[]{0x0000000000200082L});
+    public static final BitSet FOLLOW_ASC_in_orderbyColumnName755 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_DESC_in_orderbyColumnName767 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_LIMIT_in_limitClause808 = new BitSet(new long[]{0x0000100000000000L});
+    public static final BitSet FOLLOW_INT_in_limitClause810 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_columnPath2_in_columnPath828 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_columnName_in_columnPath2842 = new BitSet(new long[]{0x0000000000800002L});
+    public static final BitSet FOLLOW_DOT_in_columnPath2845 = new BitSet(new long[]{0x0000020000000000L,0x0000000000000000L,0x0000000000000020L});
+    public static final BitSet FOLLOW_columnName_in_columnPath2848 = new BitSet(new long[]{0x0000000000800002L});
+    public static final BitSet FOLLOW_ID_in_columnName856 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_STAR_in_columnName868 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_tablePath2_in_tablePath884 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_tableName_in_tablePath2898 = new BitSet(new long[]{0x0000000000800002L});
+    public static final BitSet FOLLOW_DOT_in_tablePath2901 = new BitSet(new long[]{0x0000020000000000L});
+    public static final BitSet FOLLOW_tableName_in_tablePath2904 = new BitSet(new long[]{0x0000000000800002L});
+    public static final BitSet FOLLOW_ID_in_tableName918 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_expr2_in_expr934 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_b10e_in_expr2950 = new BitSet(new long[]{0x0100000000000002L});
+    public static final BitSet FOLLOW_b11o_in_expr2959 = new BitSet(new long[]{0x0280120020000800L,0x0000000000000000L,0x0000000000000060L});
+    public static final BitSet FOLLOW_b10e_in_expr2963 = new BitSet(new long[]{0x0100000000000002L});
+    public static final BitSet FOLLOW_b9e_in_b10e987 = new BitSet(new long[]{0x0040000000000002L});
+    public static final BitSet FOLLOW_b10o_in_b10e996 = new BitSet(new long[]{0x0280120020000800L,0x0000000000000000L,0x0000000000000060L});
+    public static final BitSet FOLLOW_b9e_in_b10e1000 = new BitSet(new long[]{0x0040000000000002L});
+    public static final BitSet FOLLOW_b8e_in_b9e1025 = new BitSet(new long[]{0x0000000000001002L});
+    public static final BitSet FOLLOW_b9o_in_b9e1034 = new BitSet(new long[]{0x0280120020000800L,0x0000000000000000L,0x0000000000000060L});
+    public static final BitSet FOLLOW_b8e_in_b9e1038 = new BitSet(new long[]{0x0000000000001002L});
+    public static final BitSet FOLLOW_b7e_in_b8e1064 = new BitSet(new long[]{0x0000000000004002L});
+    public static final BitSet FOLLOW_b8o_in_b8e1073 = new BitSet(new long[]{0x0280120020000800L,0x0000000000000000L,0x0000000000000060L});
+    public static final BitSet FOLLOW_b7e_in_b8e1077 = new BitSet(new long[]{0x0000000000004002L});
+    public static final BitSet FOLLOW_b6e_in_b7e1103 = new BitSet(new long[]{0x0000000000000202L});
+    public static final BitSet FOLLOW_b7o_in_b7e1112 = new BitSet(new long[]{0x0280120020000800L,0x0000000000000000L,0x0000000000000060L});
+    public static final BitSet FOLLOW_b6e_in_b7e1116 = new BitSet(new long[]{0x0000000000000202L});
+    public static final BitSet FOLLOW_b5e_in_b6e1142 = new BitSet(new long[]{0x2000000002000002L});
+    public static final BitSet FOLLOW_b6o_in_b6e1151 = new BitSet(new long[]{0x0280120020000800L,0x0000000000000000L,0x0000000000000060L});
+    public static final BitSet FOLLOW_b5e_in_b6e1155 = new BitSet(new long[]{0x2000000002000002L});
+    public static final BitSet FOLLOW_b4e_in_b5e1181 = new BitSet(new long[]{0x0018000C00000002L});
+    public static final BitSet FOLLOW_b5o_in_b5e1190 = new BitSet(new long[]{0x0280120020000800L,0x0000000000000000L,0x0000000000000060L});
+    public static final BitSet FOLLOW_b4e_in_b5e1194 = new BitSet(new long[]{0x0018000C00000002L});
+    public static final BitSet FOLLOW_b3e_in_b4e1220 = new BitSet(new long[]{0x0000000000002402L});
+    public static final BitSet FOLLOW_b4o_in_b4e1229 = new BitSet(new long[]{0x0280120020000800L,0x0000000000000000L,0x0000000000000060L});
+    public static final BitSet FOLLOW_b3e_in_b4e1233 = new BitSet(new long[]{0x0000000000002402L});
+    public static final BitSet FOLLOW_b2e_in_b3e1259 = new BitSet(new long[]{0x0000000000000022L,0x0000000000000000L,0x0000000000000080L});
+    public static final BitSet FOLLOW_b3o_in_b3e1268 = new BitSet(new long[]{0x0280120020000800L,0x0000000000000000L,0x0000000000000060L});
+    public static final BitSet FOLLOW_b2e_in_b3e1272 = new BitSet(new long[]{0x0000000000000022L,0x0000000000000000L,0x0000000000000080L});
+    public static final BitSet FOLLOW_b1e_in_b2e1298 = new BitSet(new long[]{0x0000000000400002L,0x4000000000000000L,0x0000000000000030L});
+    public static final BitSet FOLLOW_b2o_in_b2e1307 = new BitSet(new long[]{0x0280120020000800L,0x0000000000000000L,0x0000000000000060L});
+    public static final BitSet FOLLOW_b1e_in_b2e1311 = new BitSet(new long[]{0x0000000000400002L,0x4000000000000000L,0x0000000000000030L});
+    public static final BitSet FOLLOW_uPrefixExpr_in_b1e1337 = new BitSet(new long[]{0x0000000000080002L});
+    public static final BitSet FOLLOW_b1o_in_b1e1348 = new BitSet(new long[]{0x0280120020000800L,0x0000000000000000L,0x0000000000000060L});
+    public static final BitSet FOLLOW_uPrefixExpr_in_b1e1352 = new BitSet(new long[]{0x0000000000080002L});
+    public static final BitSet FOLLOW_uPrefixOp_in_uPrefixExpr1376 = new BitSet(new long[]{0x0280120020000800L,0x0000000000000000L,0x0000000000000060L});
+    public static final BitSet FOLLOW_uPostfixExpr_in_uPrefixExpr1391 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_atomExpr_in_uPostfixExpr1407 = new BitSet(new long[]{0x0200040000000002L});
+    public static final BitSet FOLLOW_uPostfixOp_in_uPostfixExpr1416 = new BitSet(new long[]{0x0200040000000002L});
+    public static final BitSet FOLLOW_INT_in_atomExpr1434 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_FLOAT_in_atomExpr1450 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_STRING_in_atomExpr1466 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_LPAREN_in_atomExpr1485 = new BitSet(new long[]{0x0280120020000800L,0x0000000000000000L,0x0000000000000060L});
+    public static final BitSet FOLLOW_expr_in_atomExpr1487 = new BitSet(new long[]{0x0000000000000000L,0x8000000000000000L});
+    public static final BitSet FOLLOW_RPAREN_in_atomExpr1489 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_columnPath_in_atomExpr1502 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_LOGICAL_OR_in_b11o1510 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_LOGICAL_AND_in_b10o1521 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_BITWISE_OR_in_b9o1531 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_BITWISE_XOR_in_b8o1542 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_BITWISE_AND_in_b7o1552 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_EQUAL_in_b6o1562 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_NOT_EQUAL_in_b6o1570 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_LESS_THAN_in_b5o1581 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_LESS_THAN_OR_EQUAL_in_b5o1589 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_GREATER_THAN_in_b5o1602 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_GREATER_THAN_OR_EQUAL_in_b5o1615 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_BITWISE_LEFT_SHIFT_in_b4o1625 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_BITWISE_RIGHT_SHIFT_in_b4o1638 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ADD_in_b3o1648 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_SUBSTRUCT_in_b3o1656 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_multiplyOp_in_b2o1666 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_divideOp_in_b2o1679 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_REMAINDER_in_b2o1687 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_CONTAINS_in_b1o1697 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_BITWISE_NOT_in_uPrefixOp1708 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_LOGICAL_NOT_in_uPrefixOp1716 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_uPostfixOpIn_in_uPostfixOp1726 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_uPostfixOpCall_in_uPostfixOp1730 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_IN_in_uPostfixOpIn1736 = new BitSet(new long[]{0x0200000000000000L});
+    public static final BitSet FOLLOW_LPAREN_in_uPostfixOpIn1738 = new BitSet(new long[]{0x0280120020000800L,0x8000000000000000L,0x0000000000000060L});
+    public static final BitSet FOLLOW_expr_in_uPostfixOpIn1741 = new BitSet(new long[]{0x0000000000020000L,0x8000000000000000L});
+    public static final BitSet FOLLOW_COMMA_in_uPostfixOpIn1744 = new BitSet(new long[]{0x0280120020000800L,0x0000000000000000L,0x0000000000000060L});
+    public static final BitSet FOLLOW_expr_in_uPostfixOpIn1746 = new BitSet(new long[]{0x0000000000020000L,0x8000000000000000L});
+    public static final BitSet FOLLOW_RPAREN_in_uPostfixOpIn1752 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_LPAREN_in_uPostfixOpCall1767 = new BitSet(new long[]{0x0280120020000800L,0x8000000000000000L,0x0000000000000060L});
+    public static final BitSet FOLLOW_expr_in_uPostfixOpCall1770 = new BitSet(new long[]{0x0000000000020000L,0x8000000000000000L});
+    public static final BitSet FOLLOW_COMMA_in_uPostfixOpCall1773 = new BitSet(new long[]{0x0280120020000800L,0x0000000000000000L,0x0000000000000060L});
+    public static final BitSet FOLLOW_expr_in_uPostfixOpCall1775 = new BitSet(new long[]{0x0000000000020000L,0x8000000000000000L});
+    public static final BitSet FOLLOW_RPAREN_in_uPostfixOpCall1781 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_STAR_in_multiplyOp1808 = new BitSet(new long[]{0x0000000000000002L});
 
 }

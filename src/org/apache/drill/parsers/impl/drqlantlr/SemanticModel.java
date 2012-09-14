@@ -3,6 +3,8 @@ package org.apache.drill.parsers.impl.drqlantlr;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
+
+import org.apache.drill.parsers.DrqlParser;
 import org.apache.drill.parsers.DrqlParser.SemanticModelReader;
 
 public class SemanticModel implements SemanticModelReader {
@@ -153,11 +155,23 @@ public class SemanticModel implements SemanticModelReader {
 	}
 	public static class JoinOnClause implements SemanticModelReader.JoinOnClause {
 
+        public static class JoinCondition implements SemanticModelReader.JoinOnClause.JoinCondition {
+            SemanticModelReader.Symbol leftSymbol, rightSymbol;
+
+            public SemanticModelReader.Symbol getLeftSymbol() {
+                return leftSymbol;
+            }
+
+            public SemanticModelReader.Symbol getRightSymbol() {
+                return rightSymbol;
+            }
+        }
+
 		SemanticModelReader.Symbol table;
-		List<JoinCondition> conditions;
+		List<SemanticModelReader.JoinOnClause.JoinCondition> conditions;
 
 		JoinOnClause() {
-			conditions = new LinkedList<JoinCondition>();
+			conditions = new LinkedList<SemanticModelReader.JoinOnClause.JoinCondition>();
 		}
 		
 		@Override
@@ -166,7 +180,7 @@ public class SemanticModel implements SemanticModelReader {
 		}
 
 		@Override
-		public List<JoinCondition> getJoinConditionClause() {
+		public List<SemanticModelReader.JoinOnClause.JoinCondition> getJoinConditionClause() {
 			return Collections.unmodifiableList(conditions);
 		}
 		

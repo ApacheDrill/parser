@@ -23,6 +23,7 @@ import org.antlr.runtime.CharStream;
 import org.antlr.runtime.Token;
 import org.antlr.runtime.TokenRewriteStream;
 import org.antlr.runtime.tree.CommonTreeAdaptor;
+import org.antlr.runtime.tree.Tree;
 import org.antlr.runtime.tree.TreeAdaptor;
 
 import org.apache.drill.parsers.DrqlParser;
@@ -456,9 +457,47 @@ public class Parser implements DrqlParser{
 		query.havingClause = createExpression(node3);
 	}
 	private static void parseJoinClause(AstNode node, SemanticModel query) {
-		// TODO: Complete writing the method.
-		assert (node.getType() == DrqlAntlrParser.N_LIMIT);
+		assert (node.getType() == DrqlAntlrParser.N_JOIN);
 		int count = node.getChildCount();
-		assert (count == 1);
+		assert (count == 3);
+
+        SemanticModel.Symbol table = new SemanticModel.Symbol();
+
+        Tree joinFrom = node.getChild(1);
+        if(joinFrom.getType() == DrqlAntlrParser.N_TABLE) {
+            table.name = joinFrom.getChild(0).getChild(0).getChild(0).getText();
+            table.type = DrqlParser.SemanticModelReader.Symbol.Type.TABLE;
+        }
+
+
+        Tree joinOnList = node.getChild(2);
+        ArrayList<SemanticModelReader.JoinOnClause.JoinCondition> joinConditions = new ArrayList<SemanticModelReader.JoinOnClause.JoinCondition>(joinOnList.getChildCount());
+
+        if(joinOnList.getType() == DrqlAntlrParser.N_JOIN_ON_LIST) {
+            for(int i=0; i<joinOnList.getChildCount(); i++) {
+
+                SemanticModel.JoinOnClause.JoinCondition joinCondition = new SemanticModel.JoinOnClause.JoinCondition();
+                assert(joinOnList.getChild(i).getChildCount() == 2);
+                Tree leftNode = joinOnList.getChild(i).getChild(0);
+                Tree rightNode = joinOnList.getChild(i).getChild(1);
+                SemanticModel.Symbol leftSymbol =  new SemanticModel.Symbol();
+                leftSymbol.name = idNode2String((AstNode) leftNode);
+                leftSymbol.type = Type.COLUMN;
+                SemanticModel.Symbol rightSymbol =  new Symbol();
+                rightSymbol.name = idNode2String((AstNode) rightNode);
+                rightSymbol.type = Type.COLUMN;
+
+                joinCondition.leftSymbol = leftSymbol;
+                joinCondition.rightSymbol = rightSymbol;
+
+                joinConditions.add(joinCondition);
+            }
+        }
+
+        SemanticModel.JoinOnClause joinOnClause = new SemanticModel.JoinOnClause();
+        joinOnClause.table = table;
+        joinOnClause.conditions = joinConditions;
+
+        query.joinOnClause = joinOnClause;
 	}
 }

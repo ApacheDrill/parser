@@ -66,16 +66,16 @@ subSelectStatement : (tableName | (LPAREN! selectStatement RPAREN!));
 
 //Join clause (TODO add productions)
 joinClause: joinClauseDesc JOIN joinClauseFrom ON joinConditionList ->
-    ^(N_JOIN joinClauseDesc joinConditionList);
+    ^(N_JOIN joinClauseDesc joinClauseFrom joinConditionList);
 joinClauseDesc: (INNER?) -> ^(N_INNER) | (LEFT OUTER) -> ^(N_LEFTOUTER);
 joinClauseFrom: optionallyAliasedTable -> ^(N_TABLE optionallyAliasedTable) | 
     aliasedSubSelectStatement -> ^(N_TABLE aliasedSubSelectStatement);
-optionallyAliasedTable: tableName (AS ID)? -> ^(N_TABLE tableName ID);
+optionallyAliasedTable: tableName (AS ID)? -> ^(N_TABLE tableName ID?);
 aliasedSubSelectStatement:	LPAREN selectStatement RPAREN AS tableName ->
     ^(N_TABLE selectStatement tableName);
 joinConditionList:	joinCondition (LOGICAL_AND joinCondition)* ->
     ^(N_JOIN_ON_LIST joinCondition+);
-joinCondition: a=columnName EQUAL b=columnName -> ^(N_JOIN_ON $a $b);
+joinCondition: a=columnPath EQUAL b=columnPath -> ^(N_JOIN_ON $a $b);
 
 //Where Clause 
 whereClause: WHERE expr -> ^(N_WHERE expr);

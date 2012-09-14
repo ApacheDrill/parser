@@ -142,11 +142,20 @@ public class DrqlParserTest {
 				"SELECT customersTable.id, customersTable.name, ordersTable.id " + 
 				"FROM customersTable " +
 				"INNER JOIN ordersTable ON customersTable.id = ordersTable.customerId";
+
 		DrqlParser parser = new Parser();
 		SemanticModelReader query = parser.parse(drqlQueryText);
-		
-		// TODO: Fix join in ANTLR grammar, and then write this test.
-	}
+
+        SemanticModelReader.JoinOnClause join = query.getJoinOnClause();
+        assertNotNull(join);
+        assertTrue(join.getTable().getName() == "customersTable");
+        assertTrue(join.getJoinConditionClause().size() == 1);
+        assertTrue(join.getJoinConditionClause().get(0).getLeftSymbol().getType() == Symbol.Type.COLUMN);
+        assertTrue(join.getJoinConditionClause().get(0).getLeftSymbol().getName() == "customersTable.id");
+        assertTrue(join.getJoinConditionClause().get(1).getRightSymbol().getType() == Symbol.Type.COLUMN);
+        assertTrue(join.getJoinConditionClause().get(1).getRightSymbol().getName() == "ordersTable.customerId");
+
+    }
 	
 	@Test
 	public void testQuery3() throws IOException {

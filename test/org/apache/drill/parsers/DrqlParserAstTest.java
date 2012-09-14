@@ -17,10 +17,10 @@ package org.apache.drill.parsers;
 
 import static org.junit.Assert.*;
 
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.drill.parsers.impl.drqlantlr.AstNode;
 import org.apache.drill.parsers.impl.drqlantlr.Parser;
 import org.apache.drill.parsers.impl.drqlantlr.SemanticModel;
 import org.junit.Test;
@@ -36,16 +36,16 @@ public class DrqlParserAstTest {
 	       for(int i = 1; i <= 15; i++) {
 
 	           File tempFile = getFile("q"+i+"_temp.drql.sm");
-	           File expectedFile = getFile("q"+i+".drql.sm");
+	           File expectedFile = getFile("q"+i+".drql.ast");
 	           File queryFile = getFile("q"+i+".drql");
 	           
 	           String query = FileUtils.readFileToString(queryFile);
-	           String ast = Parser.parseToAst(query).toString();
+	           String ast = Parser.parseToAst(query).toStringTree();
 	           
 	           FileUtils.writeStringToFile(tempFile, ast);
 
 	           assertTrue("sm files differs",
-	                   FileUtils.contentEquals(expectedFile,tempFile));
+                       FileUtils.contentEquals(expectedFile, tempFile));
 
 	           FileUtils.forceDelete(tempFile);
 	       }

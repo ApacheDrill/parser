@@ -1,4 +1,4 @@
-// $ANTLR 3.4 /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g 2012-09-14 11:52:52
+// $ANTLR 3.4 /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g 2012-09-21 16:36:01
 package org.apache.drill.parsers.impl.drqlantlr.autogen;
 
 import org.antlr.runtime.*;
@@ -166,15 +166,15 @@ public class DrqlAntlrLexer extends Lexer {
     public DrqlAntlrLexer(CharStream input, RecognizerSharedState state) {
         super(input,state);
     }
-    public String getGrammarFileName() { return "/Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g"; }
+    public String getGrammarFileName() { return "/home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g"; }
 
     // $ANTLR start "SELECT"
     public final void mSELECT() throws RecognitionException {
         try {
             int _type = SELECT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:157:9: ( S E L E C T )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:157:11: S E L E C T
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:157:9: ( S E L E C T )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:157:11: S E L E C T
             {
             mS(); 
 
@@ -210,8 +210,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = WITHIN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:158:9: ( W I T H I N )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:158:11: W I T H I N
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:158:9: ( W I T H I N )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:158:11: W I T H I N
             {
             mW(); 
 
@@ -247,8 +247,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = RECORD;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:159:9: ( R E C O R D )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:159:11: R E C O R D
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:159:9: ( R E C O R D )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:159:11: R E C O R D
             {
             mR(); 
 
@@ -284,8 +284,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = AS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:160:6: ( A S )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:160:7: A S
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:160:6: ( A S )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:160:7: A S
             {
             mA(); 
 
@@ -309,8 +309,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = FROM;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:161:7: ( F R O M )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:161:9: F R O M
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:161:7: ( F R O M )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:161:9: F R O M
             {
             mF(); 
 
@@ -340,8 +340,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = INNER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:162:8: ( I N N E R )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:162:10: I N N E R
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:162:8: ( I N N E R )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:162:10: I N N E R
             {
             mI(); 
 
@@ -374,8 +374,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = LEFT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:163:7: ( L E F T )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:163:9: L E F T
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:163:7: ( L E F T )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:163:9: L E F T
             {
             mL(); 
 
@@ -405,8 +405,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = OUTER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:164:8: ( O U T E R )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:164:10: O U T E R
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:164:8: ( O U T E R )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:164:10: O U T E R
             {
             mO(); 
 
@@ -439,8 +439,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = JOIN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:165:7: ( J O I N )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:165:9: J O I N
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:165:7: ( J O I N )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:165:9: J O I N
             {
             mJ(); 
 
@@ -470,8 +470,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = ON;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:166:6: ( O N )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:166:8: O N
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:166:6: ( O N )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:166:8: O N
             {
             mO(); 
 
@@ -495,8 +495,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = WHERE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:167:8: ( W H E R E )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:167:10: W H E R E
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:167:8: ( W H E R E )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:167:10: W H E R E
             {
             mW(); 
 
@@ -529,8 +529,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = GROUPBY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:168:10: ( G R O U P WS B Y )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:168:12: G R O U P WS B Y
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:168:10: ( G R O U P WS B Y )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:168:12: G R O U P WS B Y
             {
             mG(); 
 
@@ -572,8 +572,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = HAVING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:169:9: ( H A V I N G )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:169:11: H A V I N G
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:169:9: ( H A V I N G )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:169:11: H A V I N G
             {
             mH(); 
 
@@ -609,8 +609,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = ORDERBY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:170:10: ( O R D E R WS B Y )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:170:12: O R D E R WS B Y
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:170:10: ( O R D E R WS B Y )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:170:12: O R D E R WS B Y
             {
             mO(); 
 
@@ -652,8 +652,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = DESC;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:171:7: ( D E S C )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:171:9: D E S C
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:171:7: ( D E S C )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:171:9: D E S C
             {
             mD(); 
 
@@ -683,8 +683,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = ASC;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:172:7: ( A S C )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:172:9: A S C
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:172:7: ( A S C )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:172:9: A S C
             {
             mA(); 
 
@@ -711,8 +711,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = LIMIT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:173:8: ( L I M I T )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:173:10: L I M I T
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:173:8: ( L I M I T )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:173:10: L I M I T
             {
             mL(); 
 
@@ -745,8 +745,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = LOGICAL_OR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:174:13: ( O R )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:174:15: O R
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:174:13: ( O R )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:174:15: O R
             {
             mO(); 
 
@@ -770,8 +770,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = LOGICAL_AND;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:175:13: ( A N D )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:175:15: A N D
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:175:13: ( A N D )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:175:15: A N D
             {
             mA(); 
 
@@ -798,8 +798,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = LOGICAL_NOT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:176:13: ( N O T )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:176:15: N O T
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:176:13: ( N O T )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:176:15: N O T
             {
             mN(); 
 
@@ -826,8 +826,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = CONTAINS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:177:11: ( C O N T A I N S )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:177:13: C O N T A I N S
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:177:11: ( C O N T A I N S )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:177:13: C O N T A I N S
             {
             mC(); 
 
@@ -869,8 +869,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = IN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:178:5: ( I N )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:178:7: I N
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:178:5: ( I N )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:178:7: I N
             {
             mI(); 
 
@@ -894,8 +894,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = BITWISE_AND;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:181:13: ( '&' )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:181:16: '&'
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:181:13: ( '&' )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:181:16: '&'
             {
             match('&'); 
 
@@ -915,8 +915,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = BITWISE_NOT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:182:13: ( '~' )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:182:16: '~'
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:182:13: ( '~' )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:182:16: '~'
             {
             match('~'); 
 
@@ -936,8 +936,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = BITWISE_OR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:183:12: ( '|' )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:183:15: '|'
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:183:12: ( '|' )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:183:15: '|'
             {
             match('|'); 
 
@@ -957,8 +957,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = BITWISE_XOR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:184:13: ( '^' )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:184:16: '^'
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:184:13: ( '^' )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:184:16: '^'
             {
             match('^'); 
 
@@ -978,7 +978,7 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = EQUAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:185:9: ( '=' | '==' )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:185:9: ( '=' | '==' )
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -1001,14 +1001,14 @@ public class DrqlAntlrLexer extends Lexer {
             }
             switch (alt1) {
                 case 1 :
-                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:185:12: '='
+                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:185:12: '='
                     {
                     match('='); 
 
                     }
                     break;
                 case 2 :
-                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:185:18: '=='
+                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:185:18: '=='
                     {
                     match("=="); 
 
@@ -1032,7 +1032,7 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = NOT_EQUAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:186:12: ( '<>' | '!=' )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:186:12: ( '<>' | '!=' )
             int alt2=2;
             int LA2_0 = input.LA(1);
 
@@ -1051,7 +1051,7 @@ public class DrqlAntlrLexer extends Lexer {
             }
             switch (alt2) {
                 case 1 :
-                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:186:15: '<>'
+                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:186:15: '<>'
                     {
                     match("<>"); 
 
@@ -1060,7 +1060,7 @@ public class DrqlAntlrLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:186:22: '!='
+                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:186:22: '!='
                     {
                     match("!="); 
 
@@ -1084,8 +1084,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = LESS_THAN_OR_EQUAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:187:19: ( '<=' )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:187:21: '<='
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:187:19: ( '<=' )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:187:21: '<='
             {
             match("<="); 
 
@@ -1107,8 +1107,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = LESS_THAN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:188:12: ( '<' )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:188:15: '<'
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:188:12: ( '<' )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:188:15: '<'
             {
             match('<'); 
 
@@ -1128,8 +1128,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = GREATER_THAN_OR_EQUAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:189:22: ( '>=' )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:189:25: '>='
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:189:22: ( '>=' )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:189:25: '>='
             {
             match(">="); 
 
@@ -1151,8 +1151,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = GREATER_THAN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:190:13: ( '>' )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:190:16: '>'
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:190:13: ( '>' )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:190:16: '>'
             {
             match('>'); 
 
@@ -1172,8 +1172,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = SLASH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:191:9: ( '/' )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:191:12: '/'
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:191:9: ( '/' )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:191:12: '/'
             {
             match('/'); 
 
@@ -1193,8 +1193,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = DIV;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:192:7: ( ' D I V' )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:192:9: ' D I V'
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:192:7: ( ' D I V' )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:192:9: ' D I V'
             {
             match(" D I V"); 
 
@@ -1216,8 +1216,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = STAR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:193:7: ( '*' )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:193:10: '*'
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:193:7: ( '*' )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:193:10: '*'
             {
             match('*'); 
 
@@ -1237,8 +1237,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = ADD;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:194:7: ( '+' )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:194:10: '+'
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:194:7: ( '+' )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:194:10: '+'
             {
             match('+'); 
 
@@ -1258,8 +1258,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = SUBSTRUCT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:195:12: ( '-' )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:195:14: '-'
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:195:12: ( '-' )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:195:14: '-'
             {
             match('-'); 
 
@@ -1279,8 +1279,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = REMAINDER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:196:11: ( '%' )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:196:14: '%'
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:196:11: ( '%' )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:196:14: '%'
             {
             match('%'); 
 
@@ -1300,8 +1300,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = BITWISE_LEFT_SHIFT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:197:19: ( '<<' )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:197:22: '<<'
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:197:19: ( '<<' )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:197:22: '<<'
             {
             match("<<"); 
 
@@ -1323,8 +1323,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = BITWISE_RIGHT_SHIFT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:198:20: ( '>>' )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:198:23: '>>'
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:198:20: ( '>>' )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:198:23: '>>'
             {
             match(">>"); 
 
@@ -1346,8 +1346,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = DOT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:199:6: ( '.' )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:199:9: '.'
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:199:6: ( '.' )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:199:9: '.'
             {
             match('.'); 
 
@@ -1367,8 +1367,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = COLON;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:200:8: ( ':' )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:200:11: ':'
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:200:8: ( ':' )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:200:11: ':'
             {
             match(':'); 
 
@@ -1388,8 +1388,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = COMMA;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:201:8: ( ',' )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:201:11: ','
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:201:8: ( ',' )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:201:11: ','
             {
             match(','); 
 
@@ -1409,8 +1409,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = SEMICOLON;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:202:11: ( ';' )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:202:14: ';'
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:202:11: ( ';' )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:202:14: ';'
             {
             match(';'); 
 
@@ -1430,8 +1430,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = LPAREN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:203:10: ( '(' )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:203:13: '('
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:203:10: ( '(' )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:203:13: '('
             {
             match('('); 
 
@@ -1451,8 +1451,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = RPAREN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:204:10: ( ')' )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:204:13: ')'
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:204:10: ( ')' )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:204:13: ')'
             {
             match(')'); 
 
@@ -1472,8 +1472,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = LSQUARE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:205:10: ( '[' )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:205:13: '['
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:205:10: ( '[' )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:205:13: '['
             {
             match('['); 
 
@@ -1493,8 +1493,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = RSQUARE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:206:10: ( ']' )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:206:13: ']'
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:206:10: ( ']' )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:206:13: ']'
             {
             match(']'); 
 
@@ -1514,8 +1514,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = LCURLY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:207:10: ( '{' )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:207:13: '{'
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:207:10: ( '{' )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:207:13: '{'
             {
             match('{'); 
 
@@ -1535,8 +1535,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = RCURLY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:208:10: ( '}' )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:208:13: '}'
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:208:10: ( '}' )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:208:13: '}'
             {
             match('}'); 
 
@@ -1556,7 +1556,7 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:211:3: ( F_ID1 | F_ID2 )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:211:3: ( F_ID1 | F_ID2 )
             int alt3=2;
             int LA3_0 = input.LA(1);
 
@@ -1575,7 +1575,7 @@ public class DrqlAntlrLexer extends Lexer {
             }
             switch (alt3) {
                 case 1 :
-                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:211:5: F_ID1
+                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:211:5: F_ID1
                     {
                     mF_ID1(); 
 
@@ -1583,7 +1583,7 @@ public class DrqlAntlrLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:211:13: F_ID2
+                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:211:13: F_ID2
                     {
                     mF_ID2(); 
 
@@ -1604,8 +1604,8 @@ public class DrqlAntlrLexer extends Lexer {
     // $ANTLR start "F_ID1"
     public final void mF_ID1() throws RecognitionException {
         try {
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:212:15: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:212:17: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:212:15: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:212:17: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
             {
             if ( (input.LA(1) >= 'A' && input.LA(1) <= 'Z')||input.LA(1)=='_'||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
                 input.consume();
@@ -1617,7 +1617,7 @@ public class DrqlAntlrLexer extends Lexer {
             }
 
 
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:212:41: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:212:41: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
             loop4:
             do {
                 int alt4=2;
@@ -1630,7 +1630,7 @@ public class DrqlAntlrLexer extends Lexer {
 
                 switch (alt4) {
             	case 1 :
-            	    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
+            	    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
             	    {
             	    if ( (input.LA(1) >= '0' && input.LA(1) <= '9')||(input.LA(1) >= 'A' && input.LA(1) <= 'Z')||input.LA(1)=='_'||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
             	        input.consume();
@@ -1664,12 +1664,12 @@ public class DrqlAntlrLexer extends Lexer {
     // $ANTLR start "F_ID2"
     public final void mF_ID2() throws RecognitionException {
         try {
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:213:15: ( '[' ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' | ' ' | '\\\\' | '/' | '-' | '+' | '*' | '.' | ':' | '$' )* ']' )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:213:17: '[' ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' | ' ' | '\\\\' | '/' | '-' | '+' | '*' | '.' | ':' | '$' )* ']'
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:213:15: ( '[' ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' | ' ' | '\\\\' | '/' | '-' | '+' | '*' | '.' | ':' | '$' )* ']' )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:213:17: '[' ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' | ' ' | '\\\\' | '/' | '-' | '+' | '*' | '.' | ':' | '$' )* ']'
             {
             match('['); 
 
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:213:21: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' | ' ' | '\\\\' | '/' | '-' | '+' | '*' | '.' | ':' | '$' )*
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:213:21: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' | ' ' | '\\\\' | '/' | '-' | '+' | '*' | '.' | ':' | '$' )*
             loop5:
             do {
                 int alt5=2;
@@ -1682,7 +1682,7 @@ public class DrqlAntlrLexer extends Lexer {
 
                 switch (alt5) {
             	case 1 :
-            	    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
+            	    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
             	    {
             	    if ( input.LA(1)==' '||input.LA(1)=='$'||(input.LA(1) >= '*' && input.LA(1) <= '+')||(input.LA(1) >= '-' && input.LA(1) <= ':')||(input.LA(1) >= 'A' && input.LA(1) <= 'Z')||input.LA(1)=='\\'||input.LA(1)=='_'||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
             	        input.consume();
@@ -1720,10 +1720,10 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:215:5: ( ( '0' .. '9' )+ )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:215:7: ( '0' .. '9' )+
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:215:5: ( ( '0' .. '9' )+ )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:215:7: ( '0' .. '9' )+
             {
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:215:7: ( '0' .. '9' )+
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:215:7: ( '0' .. '9' )+
             int cnt6=0;
             loop6:
             do {
@@ -1737,7 +1737,7 @@ public class DrqlAntlrLexer extends Lexer {
 
                 switch (alt6) {
             	case 1 :
-            	    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
+            	    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
             	    {
             	    if ( (input.LA(1) >= '0' && input.LA(1) <= '9') ) {
             	        input.consume();
@@ -1778,14 +1778,14 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = FLOAT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:219:5: ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* ( EXPONENT )? | '.' ( '0' .. '9' )+ ( EXPONENT )? | ( '0' .. '9' )+ EXPONENT )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:219:5: ( ( '0' .. '9' )+ '.' ( '0' .. '9' )* ( EXPONENT )? | '.' ( '0' .. '9' )+ ( EXPONENT )? | ( '0' .. '9' )+ EXPONENT )
             int alt13=3;
             alt13 = dfa13.predict(input);
             switch (alt13) {
                 case 1 :
-                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:219:9: ( '0' .. '9' )+ '.' ( '0' .. '9' )* ( EXPONENT )?
+                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:219:9: ( '0' .. '9' )+ '.' ( '0' .. '9' )* ( EXPONENT )?
                     {
-                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:219:9: ( '0' .. '9' )+
+                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:219:9: ( '0' .. '9' )+
                     int cnt7=0;
                     loop7:
                     do {
@@ -1799,7 +1799,7 @@ public class DrqlAntlrLexer extends Lexer {
 
                         switch (alt7) {
                     	case 1 :
-                    	    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
+                    	    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
                     	    {
                     	    if ( (input.LA(1) >= '0' && input.LA(1) <= '9') ) {
                     	        input.consume();
@@ -1826,7 +1826,7 @@ public class DrqlAntlrLexer extends Lexer {
 
                     match('.'); 
 
-                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:219:25: ( '0' .. '9' )*
+                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:219:25: ( '0' .. '9' )*
                     loop8:
                     do {
                         int alt8=2;
@@ -1839,7 +1839,7 @@ public class DrqlAntlrLexer extends Lexer {
 
                         switch (alt8) {
                     	case 1 :
-                    	    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
+                    	    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
                     	    {
                     	    if ( (input.LA(1) >= '0' && input.LA(1) <= '9') ) {
                     	        input.consume();
@@ -1860,7 +1860,7 @@ public class DrqlAntlrLexer extends Lexer {
                     } while (true);
 
 
-                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:219:37: ( EXPONENT )?
+                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:219:37: ( EXPONENT )?
                     int alt9=2;
                     int LA9_0 = input.LA(1);
 
@@ -1869,7 +1869,7 @@ public class DrqlAntlrLexer extends Lexer {
                     }
                     switch (alt9) {
                         case 1 :
-                            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:219:37: EXPONENT
+                            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:219:37: EXPONENT
                             {
                             mEXPONENT(); 
 
@@ -1883,11 +1883,11 @@ public class DrqlAntlrLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:220:9: '.' ( '0' .. '9' )+ ( EXPONENT )?
+                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:220:9: '.' ( '0' .. '9' )+ ( EXPONENT )?
                     {
                     match('.'); 
 
-                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:220:13: ( '0' .. '9' )+
+                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:220:13: ( '0' .. '9' )+
                     int cnt10=0;
                     loop10:
                     do {
@@ -1901,7 +1901,7 @@ public class DrqlAntlrLexer extends Lexer {
 
                         switch (alt10) {
                     	case 1 :
-                    	    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
+                    	    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
                     	    {
                     	    if ( (input.LA(1) >= '0' && input.LA(1) <= '9') ) {
                     	        input.consume();
@@ -1926,7 +1926,7 @@ public class DrqlAntlrLexer extends Lexer {
                     } while (true);
 
 
-                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:220:25: ( EXPONENT )?
+                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:220:25: ( EXPONENT )?
                     int alt11=2;
                     int LA11_0 = input.LA(1);
 
@@ -1935,7 +1935,7 @@ public class DrqlAntlrLexer extends Lexer {
                     }
                     switch (alt11) {
                         case 1 :
-                            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:220:25: EXPONENT
+                            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:220:25: EXPONENT
                             {
                             mEXPONENT(); 
 
@@ -1949,9 +1949,9 @@ public class DrqlAntlrLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:221:9: ( '0' .. '9' )+ EXPONENT
+                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:221:9: ( '0' .. '9' )+ EXPONENT
                     {
-                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:221:9: ( '0' .. '9' )+
+                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:221:9: ( '0' .. '9' )+
                     int cnt12=0;
                     loop12:
                     do {
@@ -1965,7 +1965,7 @@ public class DrqlAntlrLexer extends Lexer {
 
                         switch (alt12) {
                     	case 1 :
-                    	    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
+                    	    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
                     	    {
                     	    if ( (input.LA(1) >= '0' && input.LA(1) <= '9') ) {
                     	        input.consume();
@@ -2011,14 +2011,14 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:225:5: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:225:9: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:225:5: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:225:9: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
             {
             match("//"); 
 
 
 
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:225:14: (~ ( '\\n' | '\\r' ) )*
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:225:14: (~ ( '\\n' | '\\r' ) )*
             loop14:
             do {
                 int alt14=2;
@@ -2031,7 +2031,7 @@ public class DrqlAntlrLexer extends Lexer {
 
                 switch (alt14) {
             	case 1 :
-            	    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
+            	    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
             	    {
             	    if ( (input.LA(1) >= '\u0000' && input.LA(1) <= '\t')||(input.LA(1) >= '\u000B' && input.LA(1) <= '\f')||(input.LA(1) >= '\u000E' && input.LA(1) <= '\uFFFF') ) {
             	        input.consume();
@@ -2052,7 +2052,7 @@ public class DrqlAntlrLexer extends Lexer {
             } while (true);
 
 
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:225:28: ( '\\r' )?
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:225:28: ( '\\r' )?
             int alt15=2;
             int LA15_0 = input.LA(1);
 
@@ -2061,7 +2061,7 @@ public class DrqlAntlrLexer extends Lexer {
             }
             switch (alt15) {
                 case 1 :
-                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:225:28: '\\r'
+                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:225:28: '\\r'
                     {
                     match('\r'); 
 
@@ -2091,8 +2091,8 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:227:5: ( ( ' ' | '\\t' | '\\r' | '\\n' ) )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:227:9: ( ' ' | '\\t' | '\\r' | '\\n' )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:227:5: ( ( ' ' | '\\t' | '\\r' | '\\n' ) )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:227:9: ( ' ' | '\\t' | '\\r' | '\\n' )
             {
             if ( (input.LA(1) >= '\t' && input.LA(1) <= '\n')||input.LA(1)=='\r'||input.LA(1)==' ' ) {
                 input.consume();
@@ -2122,12 +2122,12 @@ public class DrqlAntlrLexer extends Lexer {
         try {
             int _type = STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:235:5: ( '\\'' ( ESC_SEQ |~ ( '\\\\' | '\\'' ) )* '\\'' )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:235:8: '\\'' ( ESC_SEQ |~ ( '\\\\' | '\\'' ) )* '\\''
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:235:5: ( '\\'' ( ESC_SEQ |~ ( '\\\\' | '\\'' ) )* '\\'' )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:235:8: '\\'' ( ESC_SEQ |~ ( '\\\\' | '\\'' ) )* '\\''
             {
             match('\''); 
 
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:235:13: ( ESC_SEQ |~ ( '\\\\' | '\\'' ) )*
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:235:13: ( ESC_SEQ |~ ( '\\\\' | '\\'' ) )*
             loop16:
             do {
                 int alt16=3;
@@ -2143,7 +2143,7 @@ public class DrqlAntlrLexer extends Lexer {
 
                 switch (alt16) {
             	case 1 :
-            	    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:235:15: ESC_SEQ
+            	    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:235:15: ESC_SEQ
             	    {
             	    mESC_SEQ(); 
 
@@ -2151,7 +2151,7 @@ public class DrqlAntlrLexer extends Lexer {
             	    }
             	    break;
             	case 2 :
-            	    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:235:25: ~ ( '\\\\' | '\\'' )
+            	    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:235:25: ~ ( '\\\\' | '\\'' )
             	    {
             	    if ( (input.LA(1) >= '\u0000' && input.LA(1) <= '&')||(input.LA(1) >= '(' && input.LA(1) <= '[')||(input.LA(1) >= ']' && input.LA(1) <= '\uFFFF') ) {
             	        input.consume();
@@ -2188,8 +2188,8 @@ public class DrqlAntlrLexer extends Lexer {
     // $ANTLR start "EXPONENT"
     public final void mEXPONENT() throws RecognitionException {
         try {
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:240:10: ( ( 'e' | 'E' ) ( '+' | '-' )? ( '0' .. '9' )+ )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:240:12: ( 'e' | 'E' ) ( '+' | '-' )? ( '0' .. '9' )+
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:240:10: ( ( 'e' | 'E' ) ( '+' | '-' )? ( '0' .. '9' )+ )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:240:12: ( 'e' | 'E' ) ( '+' | '-' )? ( '0' .. '9' )+
             {
             if ( input.LA(1)=='E'||input.LA(1)=='e' ) {
                 input.consume();
@@ -2201,7 +2201,7 @@ public class DrqlAntlrLexer extends Lexer {
             }
 
 
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:240:22: ( '+' | '-' )?
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:240:22: ( '+' | '-' )?
             int alt17=2;
             int LA17_0 = input.LA(1);
 
@@ -2210,7 +2210,7 @@ public class DrqlAntlrLexer extends Lexer {
             }
             switch (alt17) {
                 case 1 :
-                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
+                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
                     {
                     if ( input.LA(1)=='+'||input.LA(1)=='-' ) {
                         input.consume();
@@ -2228,7 +2228,7 @@ public class DrqlAntlrLexer extends Lexer {
             }
 
 
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:240:33: ( '0' .. '9' )+
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:240:33: ( '0' .. '9' )+
             int cnt18=0;
             loop18:
             do {
@@ -2242,7 +2242,7 @@ public class DrqlAntlrLexer extends Lexer {
 
                 switch (alt18) {
             	case 1 :
-            	    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
+            	    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
             	    {
             	    if ( (input.LA(1) >= '0' && input.LA(1) <= '9') ) {
             	        input.consume();
@@ -2280,8 +2280,8 @@ public class DrqlAntlrLexer extends Lexer {
     // $ANTLR start "HEX_DIGIT"
     public final void mHEX_DIGIT() throws RecognitionException {
         try {
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:243:11: ( ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:243:11: ( ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
             {
             if ( (input.LA(1) >= '0' && input.LA(1) <= '9')||(input.LA(1) >= 'A' && input.LA(1) <= 'F')||(input.LA(1) >= 'a' && input.LA(1) <= 'f') ) {
                 input.consume();
@@ -2306,7 +2306,7 @@ public class DrqlAntlrLexer extends Lexer {
     // $ANTLR start "ESC_SEQ"
     public final void mESC_SEQ() throws RecognitionException {
         try {
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:247:5: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' ) | UNICODE_ESC | OCTAL_ESC )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:247:5: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' ) | UNICODE_ESC | OCTAL_ESC )
             int alt19=3;
             int LA19_0 = input.LA(1);
 
@@ -2359,7 +2359,7 @@ public class DrqlAntlrLexer extends Lexer {
             }
             switch (alt19) {
                 case 1 :
-                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:247:9: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' )
+                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:247:9: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' )
                     {
                     match('\\'); 
 
@@ -2376,7 +2376,7 @@ public class DrqlAntlrLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:248:9: UNICODE_ESC
+                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:248:9: UNICODE_ESC
                     {
                     mUNICODE_ESC(); 
 
@@ -2384,7 +2384,7 @@ public class DrqlAntlrLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:249:9: OCTAL_ESC
+                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:249:9: OCTAL_ESC
                     {
                     mOCTAL_ESC(); 
 
@@ -2404,7 +2404,7 @@ public class DrqlAntlrLexer extends Lexer {
     // $ANTLR start "OCTAL_ESC"
     public final void mOCTAL_ESC() throws RecognitionException {
         try {
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:254:5: ( '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:254:5: ( '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) )
             int alt20=3;
             int LA20_0 = input.LA(1);
 
@@ -2455,7 +2455,7 @@ public class DrqlAntlrLexer extends Lexer {
             }
             switch (alt20) {
                 case 1 :
-                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:254:9: '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' )
+                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:254:9: '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' )
                     {
                     match('\\'); 
 
@@ -2492,7 +2492,7 @@ public class DrqlAntlrLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:255:9: '\\\\' ( '0' .. '7' ) ( '0' .. '7' )
+                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:255:9: '\\\\' ( '0' .. '7' ) ( '0' .. '7' )
                     {
                     match('\\'); 
 
@@ -2519,7 +2519,7 @@ public class DrqlAntlrLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:256:9: '\\\\' ( '0' .. '7' )
+                    // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:256:9: '\\\\' ( '0' .. '7' )
                     {
                     match('\\'); 
 
@@ -2548,8 +2548,8 @@ public class DrqlAntlrLexer extends Lexer {
     // $ANTLR start "UNICODE_ESC"
     public final void mUNICODE_ESC() throws RecognitionException {
         try {
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:261:5: ( '\\\\' 'u' HEX_DIGIT HEX_DIGIT HEX_DIGIT HEX_DIGIT )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:261:9: '\\\\' 'u' HEX_DIGIT HEX_DIGIT HEX_DIGIT HEX_DIGIT
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:261:5: ( '\\\\' 'u' HEX_DIGIT HEX_DIGIT HEX_DIGIT HEX_DIGIT )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:261:9: '\\\\' 'u' HEX_DIGIT HEX_DIGIT HEX_DIGIT HEX_DIGIT
             {
             match('\\'); 
 
@@ -2580,8 +2580,8 @@ public class DrqlAntlrLexer extends Lexer {
     // $ANTLR start "A"
     public final void mA() throws RecognitionException {
         try {
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:264:11: ( ( 'a' | 'A' ) )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:264:11: ( ( 'a' | 'A' ) )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
             {
             if ( input.LA(1)=='A'||input.LA(1)=='a' ) {
                 input.consume();
@@ -2606,8 +2606,8 @@ public class DrqlAntlrLexer extends Lexer {
     // $ANTLR start "B"
     public final void mB() throws RecognitionException {
         try {
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:265:11: ( ( 'b' | 'B' ) )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:265:11: ( ( 'b' | 'B' ) )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
             {
             if ( input.LA(1)=='B'||input.LA(1)=='b' ) {
                 input.consume();
@@ -2632,8 +2632,8 @@ public class DrqlAntlrLexer extends Lexer {
     // $ANTLR start "C"
     public final void mC() throws RecognitionException {
         try {
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:266:11: ( ( 'c' | 'C' ) )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:266:11: ( ( 'c' | 'C' ) )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
             {
             if ( input.LA(1)=='C'||input.LA(1)=='c' ) {
                 input.consume();
@@ -2658,8 +2658,8 @@ public class DrqlAntlrLexer extends Lexer {
     // $ANTLR start "D"
     public final void mD() throws RecognitionException {
         try {
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:267:11: ( ( 'd' | 'D' ) )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:267:11: ( ( 'd' | 'D' ) )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
             {
             if ( input.LA(1)=='D'||input.LA(1)=='d' ) {
                 input.consume();
@@ -2684,8 +2684,8 @@ public class DrqlAntlrLexer extends Lexer {
     // $ANTLR start "E"
     public final void mE() throws RecognitionException {
         try {
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:268:11: ( ( 'e' | 'E' ) )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:268:11: ( ( 'e' | 'E' ) )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
             {
             if ( input.LA(1)=='E'||input.LA(1)=='e' ) {
                 input.consume();
@@ -2710,8 +2710,8 @@ public class DrqlAntlrLexer extends Lexer {
     // $ANTLR start "F"
     public final void mF() throws RecognitionException {
         try {
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:269:11: ( ( 'f' | 'F' ) )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:269:11: ( ( 'f' | 'F' ) )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
             {
             if ( input.LA(1)=='F'||input.LA(1)=='f' ) {
                 input.consume();
@@ -2736,8 +2736,8 @@ public class DrqlAntlrLexer extends Lexer {
     // $ANTLR start "G"
     public final void mG() throws RecognitionException {
         try {
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:270:11: ( ( 'g' | 'G' ) )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:270:11: ( ( 'g' | 'G' ) )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
             {
             if ( input.LA(1)=='G'||input.LA(1)=='g' ) {
                 input.consume();
@@ -2762,8 +2762,8 @@ public class DrqlAntlrLexer extends Lexer {
     // $ANTLR start "H"
     public final void mH() throws RecognitionException {
         try {
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:271:11: ( ( 'h' | 'H' ) )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:271:11: ( ( 'h' | 'H' ) )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
             {
             if ( input.LA(1)=='H'||input.LA(1)=='h' ) {
                 input.consume();
@@ -2788,8 +2788,8 @@ public class DrqlAntlrLexer extends Lexer {
     // $ANTLR start "I"
     public final void mI() throws RecognitionException {
         try {
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:272:11: ( ( 'i' | 'I' ) )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:272:11: ( ( 'i' | 'I' ) )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
             {
             if ( input.LA(1)=='I'||input.LA(1)=='i' ) {
                 input.consume();
@@ -2814,8 +2814,8 @@ public class DrqlAntlrLexer extends Lexer {
     // $ANTLR start "J"
     public final void mJ() throws RecognitionException {
         try {
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:273:11: ( ( 'j' | 'J' ) )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:273:11: ( ( 'j' | 'J' ) )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
             {
             if ( input.LA(1)=='J'||input.LA(1)=='j' ) {
                 input.consume();
@@ -2840,8 +2840,8 @@ public class DrqlAntlrLexer extends Lexer {
     // $ANTLR start "K"
     public final void mK() throws RecognitionException {
         try {
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:274:11: ( ( 'k' | 'K' ) )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:274:11: ( ( 'k' | 'K' ) )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
             {
             if ( input.LA(1)=='K'||input.LA(1)=='k' ) {
                 input.consume();
@@ -2866,8 +2866,8 @@ public class DrqlAntlrLexer extends Lexer {
     // $ANTLR start "L"
     public final void mL() throws RecognitionException {
         try {
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:275:11: ( ( 'l' | 'L' ) )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:275:11: ( ( 'l' | 'L' ) )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
             {
             if ( input.LA(1)=='L'||input.LA(1)=='l' ) {
                 input.consume();
@@ -2892,8 +2892,8 @@ public class DrqlAntlrLexer extends Lexer {
     // $ANTLR start "M"
     public final void mM() throws RecognitionException {
         try {
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:276:11: ( ( 'm' | 'M' ) )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:276:11: ( ( 'm' | 'M' ) )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
             {
             if ( input.LA(1)=='M'||input.LA(1)=='m' ) {
                 input.consume();
@@ -2918,8 +2918,8 @@ public class DrqlAntlrLexer extends Lexer {
     // $ANTLR start "N"
     public final void mN() throws RecognitionException {
         try {
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:277:11: ( ( 'n' | 'N' ) )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:277:11: ( ( 'n' | 'N' ) )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
             {
             if ( input.LA(1)=='N'||input.LA(1)=='n' ) {
                 input.consume();
@@ -2944,8 +2944,8 @@ public class DrqlAntlrLexer extends Lexer {
     // $ANTLR start "O"
     public final void mO() throws RecognitionException {
         try {
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:278:11: ( ( 'o' | 'O' ) )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:278:11: ( ( 'o' | 'O' ) )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
             {
             if ( input.LA(1)=='O'||input.LA(1)=='o' ) {
                 input.consume();
@@ -2970,8 +2970,8 @@ public class DrqlAntlrLexer extends Lexer {
     // $ANTLR start "P"
     public final void mP() throws RecognitionException {
         try {
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:279:11: ( ( 'p' | 'P' ) )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:279:11: ( ( 'p' | 'P' ) )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
             {
             if ( input.LA(1)=='P'||input.LA(1)=='p' ) {
                 input.consume();
@@ -2996,8 +2996,8 @@ public class DrqlAntlrLexer extends Lexer {
     // $ANTLR start "Q"
     public final void mQ() throws RecognitionException {
         try {
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:280:11: ( ( 'q' | 'Q' ) )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:280:11: ( ( 'q' | 'Q' ) )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
             {
             if ( input.LA(1)=='Q'||input.LA(1)=='q' ) {
                 input.consume();
@@ -3022,8 +3022,8 @@ public class DrqlAntlrLexer extends Lexer {
     // $ANTLR start "R"
     public final void mR() throws RecognitionException {
         try {
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:281:11: ( ( 'r' | 'R' ) )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:281:11: ( ( 'r' | 'R' ) )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
             {
             if ( input.LA(1)=='R'||input.LA(1)=='r' ) {
                 input.consume();
@@ -3048,8 +3048,8 @@ public class DrqlAntlrLexer extends Lexer {
     // $ANTLR start "S"
     public final void mS() throws RecognitionException {
         try {
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:282:11: ( ( 's' | 'S' ) )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:282:11: ( ( 's' | 'S' ) )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
             {
             if ( input.LA(1)=='S'||input.LA(1)=='s' ) {
                 input.consume();
@@ -3074,8 +3074,8 @@ public class DrqlAntlrLexer extends Lexer {
     // $ANTLR start "T"
     public final void mT() throws RecognitionException {
         try {
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:283:11: ( ( 't' | 'T' ) )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:283:11: ( ( 't' | 'T' ) )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
             {
             if ( input.LA(1)=='T'||input.LA(1)=='t' ) {
                 input.consume();
@@ -3100,8 +3100,8 @@ public class DrqlAntlrLexer extends Lexer {
     // $ANTLR start "U"
     public final void mU() throws RecognitionException {
         try {
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:284:11: ( ( 'u' | 'U' ) )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:284:11: ( ( 'u' | 'U' ) )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
             {
             if ( input.LA(1)=='U'||input.LA(1)=='u' ) {
                 input.consume();
@@ -3126,8 +3126,8 @@ public class DrqlAntlrLexer extends Lexer {
     // $ANTLR start "V"
     public final void mV() throws RecognitionException {
         try {
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:285:11: ( ( 'v' | 'V' ) )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:285:11: ( ( 'v' | 'V' ) )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
             {
             if ( input.LA(1)=='V'||input.LA(1)=='v' ) {
                 input.consume();
@@ -3152,8 +3152,8 @@ public class DrqlAntlrLexer extends Lexer {
     // $ANTLR start "W"
     public final void mW() throws RecognitionException {
         try {
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:286:11: ( ( 'w' | 'W' ) )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:286:11: ( ( 'w' | 'W' ) )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
             {
             if ( input.LA(1)=='W'||input.LA(1)=='w' ) {
                 input.consume();
@@ -3178,8 +3178,8 @@ public class DrqlAntlrLexer extends Lexer {
     // $ANTLR start "X"
     public final void mX() throws RecognitionException {
         try {
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:287:11: ( ( 'x' | 'X' ) )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:287:11: ( ( 'x' | 'X' ) )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
             {
             if ( input.LA(1)=='X'||input.LA(1)=='x' ) {
                 input.consume();
@@ -3204,8 +3204,8 @@ public class DrqlAntlrLexer extends Lexer {
     // $ANTLR start "Y"
     public final void mY() throws RecognitionException {
         try {
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:288:11: ( ( 'y' | 'Y' ) )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:288:11: ( ( 'y' | 'Y' ) )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
             {
             if ( input.LA(1)=='Y'||input.LA(1)=='y' ) {
                 input.consume();
@@ -3230,8 +3230,8 @@ public class DrqlAntlrLexer extends Lexer {
     // $ANTLR start "Z"
     public final void mZ() throws RecognitionException {
         try {
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:289:11: ( ( 'z' | 'Z' ) )
-            // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:289:11: ( ( 'z' | 'Z' ) )
+            // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:
             {
             if ( input.LA(1)=='Z'||input.LA(1)=='z' ) {
                 input.consume();
@@ -3254,12 +3254,12 @@ public class DrqlAntlrLexer extends Lexer {
     // $ANTLR end "Z"
 
     public void mTokens() throws RecognitionException {
-        // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:8: ( SELECT | WITHIN | RECORD | AS | FROM | INNER | LEFT | OUTER | JOIN | ON | WHERE | GROUPBY | HAVING | ORDERBY | DESC | ASC | LIMIT | LOGICAL_OR | LOGICAL_AND | LOGICAL_NOT | CONTAINS | IN | BITWISE_AND | BITWISE_NOT | BITWISE_OR | BITWISE_XOR | EQUAL | NOT_EQUAL | LESS_THAN_OR_EQUAL | LESS_THAN | GREATER_THAN_OR_EQUAL | GREATER_THAN | SLASH | DIV | STAR | ADD | SUBSTRUCT | REMAINDER | BITWISE_LEFT_SHIFT | BITWISE_RIGHT_SHIFT | DOT | COLON | COMMA | SEMICOLON | LPAREN | RPAREN | LSQUARE | RSQUARE | LCURLY | RCURLY | ID | INT | FLOAT | COMMENT | WS | STRING )
+        // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:8: ( SELECT | WITHIN | RECORD | AS | FROM | INNER | LEFT | OUTER | JOIN | ON | WHERE | GROUPBY | HAVING | ORDERBY | DESC | ASC | LIMIT | LOGICAL_OR | LOGICAL_AND | LOGICAL_NOT | CONTAINS | IN | BITWISE_AND | BITWISE_NOT | BITWISE_OR | BITWISE_XOR | EQUAL | NOT_EQUAL | LESS_THAN_OR_EQUAL | LESS_THAN | GREATER_THAN_OR_EQUAL | GREATER_THAN | SLASH | DIV | STAR | ADD | SUBSTRUCT | REMAINDER | BITWISE_LEFT_SHIFT | BITWISE_RIGHT_SHIFT | DOT | COLON | COMMA | SEMICOLON | LPAREN | RPAREN | LSQUARE | RSQUARE | LCURLY | RCURLY | ID | INT | FLOAT | COMMENT | WS | STRING )
         int alt21=56;
         alt21 = dfa21.predict(input);
         switch (alt21) {
             case 1 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:10: SELECT
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:10: SELECT
                 {
                 mSELECT(); 
 
@@ -3267,7 +3267,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 2 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:17: WITHIN
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:17: WITHIN
                 {
                 mWITHIN(); 
 
@@ -3275,7 +3275,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 3 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:24: RECORD
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:24: RECORD
                 {
                 mRECORD(); 
 
@@ -3283,7 +3283,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 4 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:31: AS
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:31: AS
                 {
                 mAS(); 
 
@@ -3291,7 +3291,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 5 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:34: FROM
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:34: FROM
                 {
                 mFROM(); 
 
@@ -3299,7 +3299,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 6 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:39: INNER
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:39: INNER
                 {
                 mINNER(); 
 
@@ -3307,7 +3307,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 7 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:45: LEFT
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:45: LEFT
                 {
                 mLEFT(); 
 
@@ -3315,7 +3315,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 8 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:50: OUTER
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:50: OUTER
                 {
                 mOUTER(); 
 
@@ -3323,7 +3323,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 9 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:56: JOIN
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:56: JOIN
                 {
                 mJOIN(); 
 
@@ -3331,7 +3331,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 10 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:61: ON
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:61: ON
                 {
                 mON(); 
 
@@ -3339,7 +3339,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 11 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:64: WHERE
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:64: WHERE
                 {
                 mWHERE(); 
 
@@ -3347,7 +3347,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 12 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:70: GROUPBY
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:70: GROUPBY
                 {
                 mGROUPBY(); 
 
@@ -3355,7 +3355,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 13 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:78: HAVING
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:78: HAVING
                 {
                 mHAVING(); 
 
@@ -3363,7 +3363,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 14 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:85: ORDERBY
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:85: ORDERBY
                 {
                 mORDERBY(); 
 
@@ -3371,7 +3371,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 15 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:93: DESC
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:93: DESC
                 {
                 mDESC(); 
 
@@ -3379,7 +3379,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 16 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:98: ASC
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:98: ASC
                 {
                 mASC(); 
 
@@ -3387,7 +3387,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 17 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:102: LIMIT
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:102: LIMIT
                 {
                 mLIMIT(); 
 
@@ -3395,7 +3395,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 18 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:108: LOGICAL_OR
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:108: LOGICAL_OR
                 {
                 mLOGICAL_OR(); 
 
@@ -3403,7 +3403,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 19 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:119: LOGICAL_AND
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:119: LOGICAL_AND
                 {
                 mLOGICAL_AND(); 
 
@@ -3411,7 +3411,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 20 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:131: LOGICAL_NOT
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:131: LOGICAL_NOT
                 {
                 mLOGICAL_NOT(); 
 
@@ -3419,7 +3419,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 21 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:143: CONTAINS
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:143: CONTAINS
                 {
                 mCONTAINS(); 
 
@@ -3427,7 +3427,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 22 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:152: IN
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:152: IN
                 {
                 mIN(); 
 
@@ -3435,7 +3435,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 23 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:155: BITWISE_AND
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:155: BITWISE_AND
                 {
                 mBITWISE_AND(); 
 
@@ -3443,7 +3443,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 24 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:167: BITWISE_NOT
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:167: BITWISE_NOT
                 {
                 mBITWISE_NOT(); 
 
@@ -3451,7 +3451,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 25 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:179: BITWISE_OR
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:179: BITWISE_OR
                 {
                 mBITWISE_OR(); 
 
@@ -3459,7 +3459,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 26 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:190: BITWISE_XOR
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:190: BITWISE_XOR
                 {
                 mBITWISE_XOR(); 
 
@@ -3467,7 +3467,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 27 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:202: EQUAL
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:202: EQUAL
                 {
                 mEQUAL(); 
 
@@ -3475,7 +3475,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 28 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:208: NOT_EQUAL
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:208: NOT_EQUAL
                 {
                 mNOT_EQUAL(); 
 
@@ -3483,7 +3483,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 29 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:218: LESS_THAN_OR_EQUAL
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:218: LESS_THAN_OR_EQUAL
                 {
                 mLESS_THAN_OR_EQUAL(); 
 
@@ -3491,7 +3491,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 30 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:237: LESS_THAN
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:237: LESS_THAN
                 {
                 mLESS_THAN(); 
 
@@ -3499,7 +3499,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 31 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:247: GREATER_THAN_OR_EQUAL
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:247: GREATER_THAN_OR_EQUAL
                 {
                 mGREATER_THAN_OR_EQUAL(); 
 
@@ -3507,7 +3507,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 32 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:269: GREATER_THAN
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:269: GREATER_THAN
                 {
                 mGREATER_THAN(); 
 
@@ -3515,7 +3515,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 33 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:282: SLASH
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:282: SLASH
                 {
                 mSLASH(); 
 
@@ -3523,7 +3523,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 34 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:288: DIV
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:288: DIV
                 {
                 mDIV(); 
 
@@ -3531,7 +3531,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 35 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:292: STAR
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:292: STAR
                 {
                 mSTAR(); 
 
@@ -3539,7 +3539,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 36 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:297: ADD
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:297: ADD
                 {
                 mADD(); 
 
@@ -3547,7 +3547,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 37 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:301: SUBSTRUCT
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:301: SUBSTRUCT
                 {
                 mSUBSTRUCT(); 
 
@@ -3555,7 +3555,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 38 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:311: REMAINDER
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:311: REMAINDER
                 {
                 mREMAINDER(); 
 
@@ -3563,7 +3563,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 39 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:321: BITWISE_LEFT_SHIFT
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:321: BITWISE_LEFT_SHIFT
                 {
                 mBITWISE_LEFT_SHIFT(); 
 
@@ -3571,7 +3571,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 40 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:340: BITWISE_RIGHT_SHIFT
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:340: BITWISE_RIGHT_SHIFT
                 {
                 mBITWISE_RIGHT_SHIFT(); 
 
@@ -3579,7 +3579,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 41 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:360: DOT
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:360: DOT
                 {
                 mDOT(); 
 
@@ -3587,7 +3587,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 42 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:364: COLON
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:364: COLON
                 {
                 mCOLON(); 
 
@@ -3595,7 +3595,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 43 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:370: COMMA
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:370: COMMA
                 {
                 mCOMMA(); 
 
@@ -3603,7 +3603,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 44 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:376: SEMICOLON
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:376: SEMICOLON
                 {
                 mSEMICOLON(); 
 
@@ -3611,7 +3611,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 45 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:386: LPAREN
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:386: LPAREN
                 {
                 mLPAREN(); 
 
@@ -3619,7 +3619,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 46 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:393: RPAREN
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:393: RPAREN
                 {
                 mRPAREN(); 
 
@@ -3627,7 +3627,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 47 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:400: LSQUARE
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:400: LSQUARE
                 {
                 mLSQUARE(); 
 
@@ -3635,7 +3635,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 48 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:408: RSQUARE
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:408: RSQUARE
                 {
                 mRSQUARE(); 
 
@@ -3643,7 +3643,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 49 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:416: LCURLY
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:416: LCURLY
                 {
                 mLCURLY(); 
 
@@ -3651,7 +3651,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 50 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:423: RCURLY
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:423: RCURLY
                 {
                 mRCURLY(); 
 
@@ -3659,7 +3659,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 51 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:430: ID
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:430: ID
                 {
                 mID(); 
 
@@ -3667,7 +3667,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 52 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:433: INT
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:433: INT
                 {
                 mINT(); 
 
@@ -3675,7 +3675,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 53 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:437: FLOAT
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:437: FLOAT
                 {
                 mFLOAT(); 
 
@@ -3683,7 +3683,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 54 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:443: COMMENT
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:443: COMMENT
                 {
                 mCOMMENT(); 
 
@@ -3691,7 +3691,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 55 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:451: WS
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:451: WS
                 {
                 mWS(); 
 
@@ -3699,7 +3699,7 @@ public class DrqlAntlrLexer extends Lexer {
                 }
                 break;
             case 56 :
-                // /Users/antonio/Development/Projects/java/apache_drill_parser2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:454: STRING
+                // /home/leon/workspace/Drill2/src/org/apache/drill/parsers/impl/drqlantlr/DrqlAntlr.g:1:454: STRING
                 {
                 mSTRING(); 
 

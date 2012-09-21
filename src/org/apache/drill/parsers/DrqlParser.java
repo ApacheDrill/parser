@@ -41,7 +41,8 @@ public interface DrqlParser {
 		interface Expression {
 				interface BinaryOp extends Expression {
 					enum Operators {CONTAINS, GREATER_THAN, GREATER_THAN_OR_EQUAL, 
-						LESS_THAN, LESS_THAN_OR_EQUAL, EQUAL, AND, OR}
+						LESS_THAN, LESS_THAN_OR_EQUAL, EQUAL, AND, OR, ADD, SUBTRACT,
+						MULTIPLY, DIVIDE}
 					Expression getLeftExpression();
 					Expression getRightExpression();
 					Operators getOperator();

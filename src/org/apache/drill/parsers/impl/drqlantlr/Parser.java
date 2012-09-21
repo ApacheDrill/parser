@@ -384,17 +384,55 @@ public class Parser implements DrqlParser{
 			binaryOp.operator = Operators.LESS_THAN_OR_EQUAL;
 			result = binaryOp;
 			break;
+		
+		case DrqlAntlrParser.N_SUBSTRUCT:
+			assert (node.getChildCount() == 2);
+			binaryOp = new SemanticModel.Expression.BinaryOp();
+			binaryOp.left = createExpression((AstNode) node.getChild(0));
+			binaryOp.right = createExpression((AstNode) node.getChild(1));
+			binaryOp.operator = Operators.SUBTRACT;
+			result = binaryOp;
+			break;
+			
+		case DrqlAntlrParser.N_ADD:
+			assert (node.getChildCount() == 2);
+			binaryOp = new SemanticModel.Expression.BinaryOp();
+			binaryOp.left = createExpression((AstNode) node.getChild(0));
+			binaryOp.right = createExpression((AstNode) node.getChild(1));
+			binaryOp.operator = Operators.ADD;
+			result = binaryOp;
+			break;
+			
+		case DrqlAntlrParser.N_MULTIPLY:
+			assert (node.getChildCount() == 2);
+			binaryOp = new SemanticModel.Expression.BinaryOp();
+			binaryOp.left = createExpression((AstNode) node.getChild(0));
+			binaryOp.right = createExpression((AstNode) node.getChild(1));
+			binaryOp.operator = Operators.MULTIPLY;
+			result = binaryOp;
+			break;
+			
+		case DrqlAntlrParser.N_DIVIDE:
+			assert (node.getChildCount() == 2);
+			binaryOp = new SemanticModel.Expression.BinaryOp();
+			binaryOp.left = createExpression((AstNode) node.getChild(0));
+			binaryOp.right = createExpression((AstNode) node.getChild(1));
+			binaryOp.operator = Operators.DIVIDE;
+			result = binaryOp;
+			break;
 			
 		case DrqlAntlrParser.N_EXPRESSION:
 			assert(node.getChildCount() == 1);
 			n2 = (AstNode) node.getChild(0);
 			if (n2.getType() == DrqlAntlrParser.N_CALL_PARAMS) {
 				result = parseFunction(n2);
-			} else {
+			} else if (n2.getType() == DrqlAntlrParser.N_ID) {
 				SemanticModel.Expression.Column colExpr = new SemanticModel.Expression.Column();
 				colExpr.column = new SemanticModel.Symbol();
 				colExpr.column.name = idNode2String(n2);
 				result = colExpr;
+			} else {
+				result = createExpression(n2);
 			}
 			break;
 			

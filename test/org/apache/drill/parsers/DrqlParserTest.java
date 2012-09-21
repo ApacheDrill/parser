@@ -336,4 +336,124 @@ public class DrqlParserTest {
 		assertTrue(query.getJoinOnClause() == null);
 		assertTrue(query.getOrderByClause().size() == 0);
 	}
+	
+	void testColumnBinaryOpC1(ResultColumn col, Operators op) {
+		assertTrue(col.getScope() == Scope.FULL);
+		assertTrue(col.getAlias() == null);
+		assertTrue(col.getColumnScope() == null);
+		Expression expr = col.getExpression();
+		assertTrue(expr instanceof Expression.BinaryOp);
+		Expression.BinaryOp colExpr = (Expression.BinaryOp) expr;
+		assertTrue(colExpr.getOperator() == op);
+		Expression left = colExpr.getLeftExpression();
+		Expression right = colExpr.getRightExpression();
+		assertTrue(left instanceof Expression.Column);
+		assertTrue(right instanceof Expression.Constant);
+		Expression.Column leftExpr = (Expression.Column) left;
+		Expression.Constant rightExpr = (Expression.Constant) right;
+		Symbol sym = leftExpr.getSymbol();
+		testBasicSymbol(sym, "c");
+		assertTrue((Integer)rightExpr.getValue() == 1);
+	}
+	
+	@Test
+	public void testQuery8() throws IOException {
+		
+		String drqlQueryText = "SELECT c - 1, c + 1, c / 1, c * 1 FROM table1;";
+		DrqlParser parser = new Parser();
+		SemanticModelReader query = parser.parse(drqlQueryText);
+
+		//result column list
+		List<ResultColumn> resColList = query.getResultColumnList();
+		assertTrue(resColList.size() == 4);
+		ResultColumn col1 = resColList.get(0);
+		testColumnBinaryOpC1(col1, Operators.SUBTRACT);
+		ResultColumn col2 = resColList.get(1);
+		testColumnBinaryOpC1(col2, Operators.ADD);
+		ResultColumn col3 = resColList.get(2);
+		testColumnBinaryOpC1(col3, Operators.DIVIDE);
+		ResultColumn col4 = resColList.get(3);
+		testColumnBinaryOpC1(col4, Operators.MULTIPLY);
+		
+		//from clause
+		List<SemanticModelReader> subQueryList = query.getFromClause();
+		assertTrue(subQueryList.size() == 1);
+		SemanticModelReader subQuery = subQueryList.get(0);
+		testBasicTable(subQuery, "table1");
+		
+		//check the rest of the model
+		assertTrue(query.getLimitClause() == null);
+		assertTrue(query.getGroupByClause().size() == 0);
+		assertTrue(query.getJoinOnClause() == null);
+		assertTrue(query.getOrderByClause().size() == 0);
+	}
+	
+	@Test
+	public void testQuery9() throws IOException {
+		
+		String drqlQueryText = "SELECT c - 1 + 2 FROM table1;";
+		DrqlParser parser = new Parser();
+		SemanticModelReader query = parser.parse(drqlQueryText);
+
+		//result column list
+		List<ResultColumn> resColList = query.getResultColumnList();
+		assertTrue(resColList.size() == 1);
+		ResultColumn col1 = resColList.get(0);
+		assertTrue(col1.getScope() == Scope.FULL);
+		assertTrue(col1.getAlias() == null);
+		assertTrue(col1.getColumnScope() == null);
+		Expression expr = col1.getExpression();
+		assertTrue(expr instanceof Expression.BinaryOp);
+		Expression.BinaryOp colExpr = (Expression.BinaryOp) expr;
+		assertTrue(colExpr.getOperator() == Operators.ADD);
+		Expression left1 = colExpr.getLeftExpression();
+		Expression right1 = colExpr.getRightExpression();
+		assertTrue(left1 instanceof Expression.BinaryOp);
+		assertTrue(right1 instanceof Expression.Constant);
+		Expression.BinaryOp leftExpr1 = (Expression.BinaryOp) left1;
+		Expression.Constant rightExpr1 = (Expression.Constant) right1;
+		assertTrue((Integer)rightExpr1.getValue() == 2);
+		assertTrue(leftExpr1.getOperator() == Operators.SUBTRACT);
+		Expression left1_2 = leftExpr1.getLeftExpression();
+		Expression right1_2 = leftExpr1.getRightExpression();
+		Expression.Column leftExpr1_2 = (Expression.Column) left1_2;
+		Expression.Constant rightExpr1_2 = (Expression.Constant) right1_2;
+		Symbol sym = leftExpr1_2.getSymbol();
+		testBasicSymbol(sym, "c");
+		assertTrue((Integer)rightExpr1_2.getValue() == 1);
+		
+		//from clause
+		List<SemanticModelReader> subQueryList = query.getFromClause();
+		assertTrue(subQueryList.size() == 1);
+		SemanticModelReader subQuery = subQueryList.get(0);
+		testBasicTable(subQuery, "table1");
+		
+		//check the rest of the model
+		assertTrue(query.getLimitClause() == null);
+		assertTrue(query.getGroupByClause().size() == 0);
+		assertTrue(query.getJoinOnClause() == null);
+		assertTrue(query.getOrderByClause().size() == 0);
+	}
+	
+	@Test
+	public void testSyntaxErrorQuery1() throws IOException {
+		
+		String drqlQueryText = "blah blah blah";
+		
+		// TODO: provide syntax error messages in g file. write this test.
+		
+		/*
+		DrqlParser parser = new Parser();
+		SemanticModelReader query = parser.parse(drqlQueryText);
+		
+		
+		//check the rest of the model
+		assertTrue(query.getResultColumnList().size() == 0);
+		assertTrue(query.getFromClause().size() == 0);
+		assertTrue(query.getGroupByClause().size() == 0);
+		assertTrue(query.getJoinOnClause() == null);
+		assertTrue(query.getLimitClause() == null);
+		assertTrue(query.getOrderByClause().size() == 0);
+		*/
+	}
 }
